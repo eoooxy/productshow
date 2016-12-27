@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.ProductParameterEntityMapper">
+  <resultMap id="BaseResultMap" type="com.ahoo.entity.ProductParameterEntity">
+    <id column="REC_ID" jdbcType="INTEGER" property="recId" />
+    <result column="CONDUCTOR_A" jdbcType="VARCHAR" property="conductorA" />
+    <result column="CONDUCTOR_B" jdbcType="VARCHAR" property="conductorB" />
+    <result column="MODEL_NUMBER" jdbcType="VARCHAR" property="modelNumber" />
+    <result column="MODEL_TYPE" jdbcType="VARCHAR" property="modelType" />
+    <result column="POWER_TYPE" jdbcType="VARCHAR" property="powerType" />
+    <result column="MODEL_CLIP" jdbcType="VARCHAR" property="modelClip" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="FK_CHILD_REC_ID" jdbcType="INTEGER" property="fkChildRecId" />
+    <result column="REMARK2" jdbcType="VARCHAR" property="remark2" />
+    <result column="REMARK3" jdbcType="VARCHAR" property="remark3" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    REC_ID, CONDUCTOR_A, CONDUCTOR_B, MODEL_NUMBER, MODEL_TYPE, POWER_TYPE, MODEL_CLIP, 
+    REMARK, FK_CHILD_REC_ID, REMARK2, REMARK3
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from productparameter
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from productparameter
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ahoo.entity.ProductParameterEntity">
+    insert into productparameter (REC_ID, CONDUCTOR_A, CONDUCTOR_B, 
+      MODEL_NUMBER, MODEL_TYPE, POWER_TYPE, 
+      MODEL_CLIP, REMARK, FK_CHILD_REC_ID, 
+      REMARK2, REMARK3)
+    values (#{recId,jdbcType=INTEGER}, #{conductorA,jdbcType=VARCHAR}, #{conductorB,jdbcType=VARCHAR}, 
+      #{modelNumber,jdbcType=VARCHAR}, #{modelType,jdbcType=VARCHAR}, #{powerType,jdbcType=VARCHAR}, 
+      #{modelClip,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{fkChildRecId,jdbcType=INTEGER}, 
+      #{remark2,jdbcType=VARCHAR}, #{remark3,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ahoo.entity.ProductParameterEntity">
+    insert into productparameter
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        REC_ID,
+      </if>
+      <if test="conductorA != null">
+        CONDUCTOR_A,
+      </if>
+      <if test="conductorB != null">
+        CONDUCTOR_B,
+      </if>
+      <if test="modelNumber != null">
+        MODEL_NUMBER,
+      </if>
+      <if test="modelType != null">
+        MODEL_TYPE,
+      </if>
+      <if test="powerType != null">
+        POWER_TYPE,
+      </if>
+      <if test="modelClip != null">
+        MODEL_CLIP,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="fkChildRecId != null">
+        FK_CHILD_REC_ID,
+      </if>
+      <if test="remark2 != null">
+        REMARK2,
+      </if>
+      <if test="remark3 != null">
+        REMARK3,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        #{recId,jdbcType=INTEGER},
+      </if>
+      <if test="conductorA != null">
+        #{conductorA,jdbcType=VARCHAR},
+      </if>
+      <if test="conductorB != null">
+        #{conductorB,jdbcType=VARCHAR},
+      </if>
+      <if test="modelNumber != null">
+        #{modelNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="modelType != null">
+        #{modelType,jdbcType=VARCHAR},
+      </if>
+      <if test="powerType != null">
+        #{powerType,jdbcType=VARCHAR},
+      </if>
+      <if test="modelClip != null">
+        #{modelClip,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkChildRecId != null">
+        #{fkChildRecId,jdbcType=INTEGER},
+      </if>
+      <if test="remark2 != null">
+        #{remark2,jdbcType=VARCHAR},
+      </if>
+      <if test="remark3 != null">
+        #{remark3,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.ProductParameterEntity">
+    update productparameter
+    <set>
+      <if test="conductorA != null">
+        CONDUCTOR_A = #{conductorA,jdbcType=VARCHAR},
+      </if>
+      <if test="conductorB != null">
+        CONDUCTOR_B = #{conductorB,jdbcType=VARCHAR},
+      </if>
+      <if test="modelNumber != null">
+        MODEL_NUMBER = #{modelNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="modelType != null">
+        MODEL_TYPE = #{modelType,jdbcType=VARCHAR},
+      </if>
+      <if test="powerType != null">
+        POWER_TYPE = #{powerType,jdbcType=VARCHAR},
+      </if>
+      <if test="modelClip != null">
+        MODEL_CLIP = #{modelClip,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkChildRecId != null">
+        FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER},
+      </if>
+      <if test="remark2 != null">
+        REMARK2 = #{remark2,jdbcType=VARCHAR},
+      </if>
+      <if test="remark3 != null">
+        REMARK3 = #{remark3,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.ProductParameterEntity">
+    update productparameter
+    set CONDUCTOR_A = #{conductorA,jdbcType=VARCHAR},
+      CONDUCTOR_B = #{conductorB,jdbcType=VARCHAR},
+      MODEL_NUMBER = #{modelNumber,jdbcType=VARCHAR},
+      MODEL_TYPE = #{modelType,jdbcType=VARCHAR},
+      POWER_TYPE = #{powerType,jdbcType=VARCHAR},
+      MODEL_CLIP = #{modelClip,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER},
+      REMARK2 = #{remark2,jdbcType=VARCHAR},
+      REMARK3 = #{remark3,jdbcType=VARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+</mapper>

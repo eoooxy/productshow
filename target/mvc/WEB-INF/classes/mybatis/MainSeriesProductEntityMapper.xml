@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.MainSeriesProductEntityMapper">
+    <resultMap id="BaseResultMap" type="com.ahoo.entity.MainSeriesProductEntity">
+        <id column="REC_ID" jdbcType="INTEGER" property="recId"/>
+        <result column="PRODUCT_MAIN_TYPE" jdbcType="VARCHAR" property="productMainType"/>
+        <result column="PRODUCT_MAIN_URL" jdbcType="VARCHAR" property="productMainUrl"/>
+        <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
+        <result column="REMARK2" jdbcType="VARCHAR" property="remark2"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    REC_ID, PRODUCT_MAIN_TYPE, PRODUCT_MAIN_URL, REMARK, REMARK2
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mainseriesproduct
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from mainseriesproduct
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.ahoo.entity.MainSeriesProductEntity">
+    insert into mainseriesproduct (REC_ID, PRODUCT_MAIN_TYPE, PRODUCT_MAIN_URL, 
+      REMARK, REMARK2)
+    values (#{recId,jdbcType=INTEGER}, #{productMainType,jdbcType=VARCHAR}, #{productMainUrl,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{remark2,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.ahoo.entity.MainSeriesProductEntity">
+        insert into mainseriesproduct
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                REC_ID,
+            </if>
+            <if test="productMainType != null">
+                PRODUCT_MAIN_TYPE,
+            </if>
+            <if test="productMainUrl != null">
+                PRODUCT_MAIN_URL,
+            </if>
+            <if test="remark != null">
+                REMARK,
+            </if>
+            <if test="remark2 != null">
+                REMARK2,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                #{recId,jdbcType=INTEGER},
+            </if>
+            <if test="productMainType != null">
+                #{productMainType,jdbcType=VARCHAR},
+            </if>
+            <if test="productMainUrl != null">
+                #{productMainUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="remark2 != null">
+                #{remark2,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.MainSeriesProductEntity">
+        update mainseriesproduct
+        <set>
+            <if test="productMainType != null">
+                PRODUCT_MAIN_TYPE = #{productMainType,jdbcType=VARCHAR},
+            </if>
+            <if test="productMainUrl != null">
+                PRODUCT_MAIN_URL = #{productMainUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                REMARK = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="remark2 != null">
+                REMARK2 = #{remark2,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.MainSeriesProductEntity">
+    update mainseriesproduct
+    set PRODUCT_MAIN_TYPE = #{productMainType,jdbcType=VARCHAR},
+      PRODUCT_MAIN_URL = #{productMainUrl,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      REMARK2 = #{remark2,jdbcType=VARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mainseriesproduct
+    </select>
+</mapper>
