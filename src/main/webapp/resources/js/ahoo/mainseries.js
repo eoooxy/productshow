@@ -35,7 +35,7 @@ function getChildSeriesProduct(id) {
 
             $("#convert-ul").find("#child-li").remove();
             $("#convert-ul").find("#des-li").remove();
-            var li = "<li class='active' id='child-li'><a href='#' onclick='getChildSeriesProduct(" + id + ")'>分类选择</a></li>";
+            var li = "<li id='child-li'><a href='#' onclick='getChildSeriesProduct(" + id + ")'>分类选择</a></li>";
             $("#convert-ul").append(li);
         }
     });
@@ -45,7 +45,7 @@ function getChildSeriesProduct(id) {
 
 function getDesProductParam(id) {
 
-    var data = {"fkRecId": id};
+    var data = {"childFkId": id};
     $.ajax({
         type: "post",
         url: "desParam.do",
@@ -55,7 +55,7 @@ function getDesProductParam(id) {
             $("#convert").html(data);
 
             $("#convert-ul").find("#des-li").remove();
-            var li = "<li class='active' id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>参数列表</a></li>";
+            var li = "<li id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>参数列表</a></li>";
             $("#convert-ul").append(li);
         }
     });

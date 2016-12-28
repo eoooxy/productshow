@@ -26,6 +26,8 @@ public class ProductParameterDto {
 
     private String remark3;
 
+    //private ProductParameterDto.Query  query;
+
     private List<ProductParameter> productParameterList;
 
     public List<ProductParameter> getProductParameterList() {
@@ -234,5 +236,8 @@ public class ProductParameterDto {
         public void setRemark3(String remark3) {
             this.remark3 = remark3;
         }
+    }
+
+    public class Query {
     }
 }

@@ -161,4 +161,11 @@
       REMARK3 = #{remark3,jdbcType=VARCHAR}
     where REC_ID = #{recId,jdbcType=INTEGER}
   </update>
+
+  <select id="selectDesByFkId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from productparameter
+    where FK_CHILD_REC_ID = #{fkRecId,jdbcType=INTEGER}
+  </select>
 </mapper>

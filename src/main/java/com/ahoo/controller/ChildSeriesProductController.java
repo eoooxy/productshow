@@ -24,7 +24,7 @@ public class ChildSeriesProductController {
     ChildSeriesProductService childSeriesProductService;
 
     @RequestMapping("proChild.do")
-    public String getChildProduct(ModelMap modelMap, int fkRecId) {
+    public String getChildProduct(ModelMap modelMap, Integer fkRecId) {
 
         List<ChildSeriesProductEntity> entities = childSeriesProductService.selectChildProductByFk(fkRecId);
         if (entities.size() > 0) {
@@ -32,6 +32,7 @@ public class ChildSeriesProductController {
             ChildSeriesProductDto dto = new ChildSeriesProductDto();
             dto.setChildSeriesProductList(dtos);
             modelMap.put("dto", dto);
+
             return "product_child";
         }
         return "product_child";

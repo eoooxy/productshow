@@ -59,11 +59,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="portfolio-categ" id="convert-ul">
-                        <li style="background-color: #e48907;color:#FFFFFF;"><a style="color: #fff">当前位置：</a></li>
-                        <li class="active"><a href="#" onclick="getMainSeriesProduct()" >大类选择</a></li>
-                       <%-- <li><a href="#" title="">Finance</a></li>
-                        <li><a href="#" title="">Products</a></li>
-                        <li><a href="#" title="">Services</a></li>--%>
+                        <li><a >当前位置：</a></li>
+                        <li><a href="#" onclick="getMainSeriesProduct()">大类选择</a></li>
+                        <%-- <li><a href="#" title="">Finance</a></li>
+                         <li><a href="#" title="">Products</a></li>
+                         <li><a href="#" title="">Services</a></li>--%>
                     </ul>
                 </div>
             </div>
@@ -131,15 +131,17 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="<%=request.getContextPath()%>/resources/js/jquery.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/jquery.easing.1.3.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
+
+<%--<script src="<%=request.getContextPath()%>/resources/js/jquery.easing.1.3.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.fancybox.pack.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.fancybox-media.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/portfolio/jquery.quicksand.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/portfolio/setting.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.flexslider.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/animate.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>--%>
+
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
 </body>
