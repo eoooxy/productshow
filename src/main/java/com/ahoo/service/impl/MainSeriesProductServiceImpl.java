@@ -22,7 +22,7 @@ public class MainSeriesProductServiceImpl implements MainSeriesProductService {
 
     @Override
     public List<MainSeriesProductEntity> selectAllProduct() {
-        List<MainSeriesProductEntity> entities = mainSeriesProductEntityMapper.selectAll();
+        List<MainSeriesProductEntity> entities = mainSeriesProductEntityMapper.selectAllProduct();
         if (entities.size() > 0) {
             return entities;
         }

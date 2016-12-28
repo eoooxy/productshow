@@ -54,28 +54,23 @@
         </div>
     </header>
     <!-- end header -->
-    <%-- <section id="inner-headline">
-         <div class="container">
-             <div class="row">
-                 <div class="col-lg-12">
-                     <h2 class="pageTitle">产品</h2>
-                 </div>
-             </div>
-         </div>
-     </section>--%>
     <section id="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div><h2>Our Portfolio Glance</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-                        quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident,
-                        doloribus omnis minus temporibus perferendis nesciunt..
-                    </div>
-                    <br>
+                <div class="col-lg-12">
+                    <ul class="portfolio-categ" id="convert-ul">
+                        <li style="background-color: #e48907;color:#FFFFFF;"><a style="color: #fff">当前位置：</a></li>
+                        <li class="active"><a href="#" onclick="getMainSeriesProduct()" >大类选择</a></li>
+                       <%-- <li><a href="#" title="">Finance</a></li>
+                        <li><a href="#" title="">Products</a></li>
+                        <li><a href="#" title="">Services</a></li>--%>
+                    </ul>
                 </div>
             </div>
-            <div id="convert"></div>
-           <%-- <jsp:include page="products.jsp"/>--%>
+        </div>
+        <div class="container" id="convert" style="margin-top:-55px">
+
+            <%-- <jsp:include page="product_total.jsp"/>--%>
         </div>
     </section>
     <footer>
@@ -146,5 +141,11 @@
 <script src="<%=request.getContextPath()%>/resources/js/animate.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
 </body>
+<script>
+    window.onload = function () {
+        getMainSeriesProduct();
+    };
+</script>
 </html>

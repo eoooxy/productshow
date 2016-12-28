@@ -19,5 +19,5 @@ public interface MainSeriesProductEntityMapper {
 
     int updateByPrimaryKey(MainSeriesProductEntity record);
 
-    List<MainSeriesProductEntity> selectAll();
+    List<MainSeriesProductEntity> selectAllProduct();
 }

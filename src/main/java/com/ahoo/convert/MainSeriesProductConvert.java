@@ -16,8 +16,8 @@ import java.util.stream.Collectors;
  */
 public class MainSeriesProductConvert {
 
-    public static MainSeriesProductDto convertFromEntity(MainSeriesProductEntity entity) {
-        MainSeriesProductDto dto = new MainSeriesProductDto();
+    public static MainSeriesProductDto.MainSeriesProduct convertFromEntity(MainSeriesProductEntity entity) {
+        MainSeriesProductDto.MainSeriesProduct dto = new MainSeriesProductDto.MainSeriesProduct();
         try {
             BeanPropertiesCopy.propertiesCopy(entity, dto);
         } catch (IllegalAccessException e) {
@@ -26,14 +26,14 @@ public class MainSeriesProductConvert {
         return dto;
     }
 
-    public static List<MainSeriesProductDto> convertFromEntity(List<MainSeriesProductEntity> entities) {
-        List<MainSeriesProductDto> dtos = new ArrayList<>();
+    public static List<MainSeriesProductDto.MainSeriesProduct> convertFromEntity(List<MainSeriesProductEntity> entities) {
+        List<MainSeriesProductDto.MainSeriesProduct> dtos = new ArrayList<>();
         dtos.addAll(entities.stream().map(MainSeriesProductConvert::convertFromEntity).collect(Collectors.toList()));
         return dtos;
     }
 
 
-    public static MainSeriesProductEntity convertFromDto(MainSeriesProductDto dto) {
+    public static MainSeriesProductEntity convertFromDto(MainSeriesProductDto.MainSeriesProduct dto) {
         MainSeriesProductEntity entity = new MainSeriesProductEntity();
         try {
             BeanPropertiesCopy.propertiesCopy(dto, entity);
@@ -43,7 +43,7 @@ public class MainSeriesProductConvert {
         return entity;
     }
 
-    public static List<MainSeriesProductEntity> convertFromDto(List<MainSeriesProductDto> dtos) {
+    public static List<MainSeriesProductEntity> convertFromDto(List<MainSeriesProductDto.MainSeriesProduct> dtos) {
         List<MainSeriesProductEntity> entities = new ArrayList<>();
         entities.addAll(dtos.stream().map(MainSeriesProductConvert::convertFromDto).collect(Collectors.toList()));
         return entities;

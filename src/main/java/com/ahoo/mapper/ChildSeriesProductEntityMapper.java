@@ -3,6 +3,8 @@ package com.ahoo.mapper;
 import com.ahoo.entity.ChildSeriesProductEntity;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ChildSeriesProductEntityMapper {
     int deleteByPrimaryKey(Integer recId);
@@ -16,4 +18,6 @@ public interface ChildSeriesProductEntityMapper {
     int updateByPrimaryKeySelective(ChildSeriesProductEntity record);
 
     int updateByPrimaryKey(ChildSeriesProductEntity record);
+
+    List<ChildSeriesProductEntity> selectChildProductByFk(int fkRecId);
 }

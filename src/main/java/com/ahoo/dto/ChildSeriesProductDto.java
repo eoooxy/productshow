@@ -1,17 +1,30 @@
 package com.ahoo.dto;
 
+import java.io.Serializable;
+import java.util.List;
+
 public class ChildSeriesProductDto {
     private Integer recId;
 
     private String productChildType;
 
-    private String productChildUrl;
+    private String productChildPicUrl;
 
-    private String remark;
+    private String productChildTitle;
 
-    private String remark2;
+    private String productChildDes;
 
     private Integer fkRecId;
+
+    private List<ChildSeriesProduct> childSeriesProductList;
+
+    public List<ChildSeriesProduct> getChildSeriesProductList() {
+        return childSeriesProductList;
+    }
+
+    public void setChildSeriesProductList(List<ChildSeriesProduct> childSeriesProductList) {
+        this.childSeriesProductList = childSeriesProductList;
+    }
 
     public Integer getRecId() {
         return recId;
@@ -29,28 +42,28 @@ public class ChildSeriesProductDto {
         this.productChildType = productChildType == null ? null : productChildType.trim();
     }
 
-    public String getProductChildUrl() {
-        return productChildUrl;
+    public String getProductChildPicUrl() {
+        return productChildPicUrl;
     }
 
-    public void setProductChildUrl(String productChildUrl) {
-        this.productChildUrl = productChildUrl == null ? null : productChildUrl.trim();
+    public void setProductChildPicUrl(String productChildPicUrl) {
+        this.productChildPicUrl = productChildPicUrl == null ? null : productChildPicUrl.trim();
     }
 
-    public String getRemark() {
-        return remark;
+    public String getProductChildTitle() {
+        return productChildTitle;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
+    public void setProductChildTitle(String productChildTitle) {
+        this.productChildTitle = productChildTitle == null ? null : productChildTitle.trim();
     }
 
-    public String getRemark2() {
-        return remark2;
+    public String getProductChildDes() {
+        return productChildDes;
     }
 
-    public void setRemark2(String remark2) {
-        this.remark2 = remark2 == null ? null : remark2.trim();
+    public void setProductChildDes(String productChildDes) {
+        this.productChildDes = productChildDes == null ? null : productChildDes.trim();
     }
 
     public Integer getFkRecId() {
@@ -59,5 +72,68 @@ public class ChildSeriesProductDto {
 
     public void setFkRecId(Integer fkRecId) {
         this.fkRecId = fkRecId;
+    }
+
+
+    public static class ChildSeriesProduct implements Serializable {
+        private Integer recId;
+
+        private String productChildType;
+
+        private String productChildPicUrl;
+
+        private String productChildTitle;
+
+        private String productChildDes;
+
+        private Integer fkRecId;
+
+        public Integer getRecId() {
+            return recId;
+        }
+
+        public void setRecId(Integer recId) {
+            this.recId = recId;
+        }
+
+        public String getProductChildType() {
+            return productChildType;
+        }
+
+        public void setProductChildType(String productChildType) {
+            this.productChildType = productChildType;
+        }
+
+        public String getProductChildPicUrl() {
+            return productChildPicUrl;
+        }
+
+        public void setProductChildPicUrl(String productChildPicUrl) {
+            this.productChildPicUrl = productChildPicUrl;
+        }
+
+        public String getProductChildTitle() {
+            return productChildTitle;
+        }
+
+        public void setProductChildTitle(String productChildTitle) {
+            this.productChildTitle = productChildTitle;
+        }
+
+        public String getProductChildDes() {
+            return productChildDes;
+        }
+
+        public void setProductChildDes(String productChildDes) {
+            this.productChildDes = productChildDes;
+        }
+
+        public Integer getFkRecId() {
+            return fkRecId;
+        }
+
+        public void setFkRecId(Integer fkRecId) {
+            this.fkRecId = fkRecId;
+        }
     }
 }

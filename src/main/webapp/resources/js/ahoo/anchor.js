@@ -13,7 +13,6 @@ function jumpIndex() {
 
 function jumpProduct() {
     location.href = "/product.do";
-    getMainSeriesProduct();
 }
 
 function jumpServices() {
@@ -22,19 +21,4 @@ function jumpServices() {
 
 function jumpAbout() {
     location.href = "/about.do";
-}
-
-function getMainSeriesProduct() {
-    $.ajax({
-        type: "post",
-        url: "products.do",
-        //data:data,
-        success: function (data) {
-            console.log(data);
-            $("#convert").innerHTML = "<h1>123</h1>"
-
-            $("#convert").load(data);
-            window.location.reload();
-        }
-    });
 }

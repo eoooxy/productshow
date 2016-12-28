@@ -5,11 +5,11 @@ public class MainSeriesProductEntity {
 
     private String productMainType;
 
-    private String productMainUrl;
+    private String productPicUrl;
 
-    private String remark;
+    private String productMainTitle;
 
-    private String remark2;
+    private String productMainDes;
 
     public Integer getRecId() {
         return recId;
@@ -27,27 +27,27 @@ public class MainSeriesProductEntity {
         this.productMainType = productMainType == null ? null : productMainType.trim();
     }
 
-    public String getProductMainUrl() {
-        return productMainUrl;
+    public String getProductPicUrl() {
+        return productPicUrl;
     }
 
-    public void setProductMainUrl(String productMainUrl) {
-        this.productMainUrl = productMainUrl == null ? null : productMainUrl.trim();
+    public void setProductPicUrl(String productPicUrl) {
+        this.productPicUrl = productPicUrl == null ? null : productPicUrl.trim();
     }
 
-    public String getRemark() {
-        return remark;
+    public String getProductMainTitle() {
+        return productMainTitle;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
+    public void setProductMainTitle(String productMainTitle) {
+        this.productMainTitle = productMainTitle == null ? null : productMainTitle.trim();
     }
 
-    public String getRemark2() {
-        return remark2;
+    public String getProductMainDes() {
+        return productMainDes;
     }
 
-    public void setRemark2(String remark2) {
-        this.remark2 = remark2 == null ? null : remark2.trim();
+    public void setProductMainDes(String productMainDes) {
+        this.productMainDes = productMainDes == null ? null : productMainDes.trim();
     }
 }

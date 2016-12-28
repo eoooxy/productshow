@@ -5,11 +5,11 @@ public class ChildSeriesProductEntity {
 
     private String productChildType;
 
-    private String productChildUrl;
+    private String productChildPicUrl;
 
-    private String remark;
+    private String productChildTitle;
 
-    private String remark2;
+    private String productChildDes;
 
     private Integer fkRecId;
 
@@ -29,28 +29,28 @@ public class ChildSeriesProductEntity {
         this.productChildType = productChildType == null ? null : productChildType.trim();
     }
 
-    public String getProductChildUrl() {
-        return productChildUrl;
+    public String getProductChildPicUrl() {
+        return productChildPicUrl;
     }
 
-    public void setProductChildUrl(String productChildUrl) {
-        this.productChildUrl = productChildUrl == null ? null : productChildUrl.trim();
+    public void setProductChildPicUrl(String productChildPicUrl) {
+        this.productChildPicUrl = productChildPicUrl == null ? null : productChildPicUrl.trim();
     }
 
-    public String getRemark() {
-        return remark;
+    public String getProductChildTitle() {
+        return productChildTitle;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
+    public void setProductChildTitle(String productChildTitle) {
+        this.productChildTitle = productChildTitle == null ? null : productChildTitle.trim();
     }
 
-    public String getRemark2() {
-        return remark2;
+    public String getProductChildDes() {
+        return productChildDes;
     }
 
-    public void setRemark2(String remark2) {
-        this.remark2 = remark2 == null ? null : remark2.trim();
+    public void setProductChildDes(String productChildDes) {
+        this.productChildDes = productChildDes == null ? null : productChildDes.trim();
     }
 
     public Integer getFkRecId() {
