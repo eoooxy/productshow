@@ -1,7 +1,6 @@
 package com.ahoo.service.impl;
 
 import com.ahoo.entity.ChildSeriesProductEntity;
-import com.ahoo.entity.MainSeriesProductEntity;
 import com.ahoo.mapper.ChildSeriesProductEntityMapper;
 import com.ahoo.service.ChildSeriesProductService;
 import org.springframework.beans.factory.annotation.Autowired;

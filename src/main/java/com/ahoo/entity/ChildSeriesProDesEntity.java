@@ -1,11 +1,13 @@
 package com.ahoo.entity;
 
-public class ChildSeriesProductEntity {
+public class ChildSeriesProDesEntity {
     private Integer recId;
 
     private String productChildType;
 
-    private String productChildUrl;
+    private String productTitle;
+
+    private String productDes;
 
     private String remark;
 
@@ -27,12 +29,20 @@ public class ChildSeriesProductEntity {
         this.productChildType = productChildType == null ? null : productChildType.trim();
     }
 
-    public String getProductChildUrl() {
-        return productChildUrl;
+    public String getProductTitle() {
+        return productTitle;
     }
 
-    public void setProductChildUrl(String productChildUrl) {
-        this.productChildUrl = productChildUrl == null ? null : productChildUrl.trim();
+    public void setProductTitle(String productTitle) {
+        this.productTitle = productTitle == null ? null : productTitle.trim();
+    }
+
+    public String getProductDes() {
+        return productDes;
+    }
+
+    public void setProductDes(String productDes) {
+        this.productDes = productDes == null ? null : productDes.trim();
     }
 
     public String getRemark() {

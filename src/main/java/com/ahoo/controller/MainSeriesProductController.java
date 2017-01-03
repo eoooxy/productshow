@@ -2,7 +2,9 @@ package com.ahoo.controller;
 
 import com.ahoo.convert.MainSeriesProductConvert;
 import com.ahoo.dto.MainSeriesProductDto;
+import com.ahoo.entity.MainSeriesProDesEntity;
 import com.ahoo.entity.MainSeriesProductEntity;
+import com.ahoo.service.MainSeriesProDesService;
 import com.ahoo.service.MainSeriesProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,15 +26,20 @@ public class MainSeriesProductController {
     @Autowired
     MainSeriesProductService mainSeriesProductService;
 
+    @Autowired
+    MainSeriesProDesService mainSeriesProDesService;
+
 
     @RequestMapping("proTotal.do")
     public String getProduct(ModelMap modelMap) {
 
         List<MainSeriesProductEntity> entities = mainSeriesProductService.selectAllProduct();
-        if (entities.size() > 0) {
+        MainSeriesProDesEntity mainSeriesProDesEntity = mainSeriesProDesService.selectById(999);
+        if (entities.size() > 0 && mainSeriesProDesEntity != null) {
             List<MainSeriesProductDto.MainSeriesProduct> dtos = MainSeriesProductConvert.convertFromEntity(entities);
             MainSeriesProductDto dto = new MainSeriesProductDto();
             dto.setMainSeriesProductList(dtos);
+            dto.setDesEntity(mainSeriesProDesEntity);
             modelMap.put("dto", dto);
             return "product_total";
         }

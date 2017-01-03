@@ -35,8 +35,8 @@
                         <td>${v.modelType}</td>
                         <td>${v.powerType}</td>
                         <td>${v.modelClip}</td>
-                        <td>${v.remark2}</td>
-                        <td>${v.remark3}</td>
+                        <td>${v.parameter1}</td>
+                        <td>${v.parameter2}</td>
                         <td>
                             <button type="button" class="btn btn-sm btn-default">选   择 &raquo;</button>
                         </td>

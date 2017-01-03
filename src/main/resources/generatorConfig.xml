@@ -5,7 +5,9 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="E:\MavenRepertory\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>
+
+            location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>
+    <!--location="E:\MavenRepertory\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>-->
     <context id="my" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="false"/>
@@ -18,19 +20,23 @@
                         password="root"/>
 
         <javaModelGenerator targetPackage="com.ahoo.entity"
-                            targetProject="D:/work/JavaSpace/ProductShow/src/main/java">
+                            targetProject="E:/ideaWorkSpace/productshow/src/main/java">
+                           <!-- targetProject="D:/work/JavaSpace/ProductShow/src/main/java">-->
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mybatis"
-                         targetProject="D:/work/JavaSpace/ProductShow/src/main/resources">
+                         targetProject="E:/ideaWorkSpace/productshow/src/main/resources">
+                       <!--  targetProject="D:/work/JavaSpace/ProductShow/src/main/resources">-->
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator targetPackage="com.ahoo.mapper"
-                             targetProject="D:/work/JavaSpace/ProductShow/src/main/java"
+                             targetProject="E:/ideaWorkSpace/productshow/src/main/java"
                              type="XMLMAPPER">
+          <!--                  targetProject="D:/work/JavaSpace/ProductShow/src/main/java"
+                            type="XMLMAPPER">-->
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
@@ -49,5 +55,16 @@
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
+        <table tableName="mainseriesprodes" domainObjectName="MainSeriesProDesEntity"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>
+        <table tableName="childseriesprodes" domainObjectName="ChildSeriesProDesEntity"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+        </table>
+
     </context>
 </generatorConfiguration>

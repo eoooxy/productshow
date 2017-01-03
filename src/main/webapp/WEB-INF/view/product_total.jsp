@@ -10,9 +10,8 @@
 <div class="row">
     <div class="col-md-12">
         <div>
-            <div><h2>Our Portfolio Glance</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
-                porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident, doloribus omnis
-                minus temporibus perferendis nesciunt..
+            <div><h2>${dto.desEntity.productTitle}</h2>
+                ${dto.desEntity.productDes}
             </div>
         </div>
         <br>
@@ -42,7 +41,7 @@
                                         class="icon-info-blocks fa fa-check-square"></i></span>
                             </a>
                             <!-- Thumb Image and Description -->
-                            <img style="border: 1px solid" src="<%=request.getContextPath()%>${v.productPicUrl}"
+                            <img style="border: 1px solid" src="<%=request.getContextPath()%>${v.productMainUrl}"
                                  alt="">
                         </li>
                     </c:forEach>

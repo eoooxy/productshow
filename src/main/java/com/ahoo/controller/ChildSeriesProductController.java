@@ -2,7 +2,9 @@ package com.ahoo.controller;
 
 import com.ahoo.convert.ChildSeriesProductConvert;
 import com.ahoo.dto.ChildSeriesProductDto;
+import com.ahoo.entity.ChildSeriesProDesEntity;
 import com.ahoo.entity.ChildSeriesProductEntity;
+import com.ahoo.service.ChildSeriesProDesService;
 import com.ahoo.service.ChildSeriesProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,14 +25,20 @@ public class ChildSeriesProductController {
     @Autowired
     ChildSeriesProductService childSeriesProductService;
 
+    @Autowired
+    ChildSeriesProDesService childSeriesProDesService;
+
     @RequestMapping("proChild.do")
     public String getChildProduct(ModelMap modelMap, Integer fkRecId) {
 
         List<ChildSeriesProductEntity> entities = childSeriesProductService.selectChildProductByFk(fkRecId);
-        if (entities.size() > 0) {
+
+        ChildSeriesProDesEntity childSeriesProDesEntity = childSeriesProDesService.selectByFkId(fkRecId);
+        if (entities.size() > 0 && childSeriesProDesEntity != null) {
             List<ChildSeriesProductDto.ChildSeriesProduct> dtos = ChildSeriesProductConvert.convertFromEntity(entities);
             ChildSeriesProductDto dto = new ChildSeriesProductDto();
             dto.setChildSeriesProductList(dtos);
+            dto.setDesEntity(childSeriesProDesEntity);
             modelMap.put("dto", dto);
 
             return "product_child";

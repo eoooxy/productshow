@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.MainSeriesProDesEntityMapper">
+  <resultMap id="BaseResultMap" type="com.ahoo.entity.MainSeriesProDesEntity">
+    <id column="REC_ID" jdbcType="INTEGER" property="recId" />
+    <result column="PRODUCT_TITLE" jdbcType="VARCHAR" property="productTitle" />
+    <result column="PRODUCT_DES" jdbcType="VARCHAR" property="productDes" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="FK_REC_ID" jdbcType="INTEGER" property="fkRecId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    REC_ID, PRODUCT_TITLE, PRODUCT_DES, REMARK, FK_REC_ID
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from mainseriesprodes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from mainseriesprodes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ahoo.entity.MainSeriesProDesEntity">
+    insert into mainseriesprodes (REC_ID, PRODUCT_TITLE, PRODUCT_DES, 
+      REMARK, FK_REC_ID)
+    values (#{recId,jdbcType=INTEGER}, #{productTitle,jdbcType=VARCHAR}, #{productDes,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{fkRecId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ahoo.entity.MainSeriesProDesEntity">
+    insert into mainseriesprodes
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        REC_ID,
+      </if>
+      <if test="productTitle != null">
+        PRODUCT_TITLE,
+      </if>
+      <if test="productDes != null">
+        PRODUCT_DES,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="fkRecId != null">
+        FK_REC_ID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        #{recId,jdbcType=INTEGER},
+      </if>
+      <if test="productTitle != null">
+        #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="productDes != null">
+        #{productDes,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkRecId != null">
+        #{fkRecId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.MainSeriesProDesEntity">
+    update mainseriesprodes
+    <set>
+      <if test="productTitle != null">
+        PRODUCT_TITLE = #{productTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="productDes != null">
+        PRODUCT_DES = #{productDes,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkRecId != null">
+        FK_REC_ID = #{fkRecId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.MainSeriesProDesEntity">
+    update mainseriesprodes
+    set PRODUCT_TITLE = #{productTitle,jdbcType=VARCHAR},
+      PRODUCT_DES = #{productDes,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      FK_REC_ID = #{fkRecId,jdbcType=INTEGER}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+</mapper>

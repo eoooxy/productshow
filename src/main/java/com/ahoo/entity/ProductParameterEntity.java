@@ -15,13 +15,13 @@ public class ProductParameterEntity {
 
     private String modelClip;
 
+    private String parameter1;
+
+    private String parameter2;
+
     private String remark;
 
     private Integer fkChildRecId;
-
-    private String remark2;
-
-    private String remark3;
 
     public Integer getRecId() {
         return recId;
@@ -79,6 +79,22 @@ public class ProductParameterEntity {
         this.modelClip = modelClip == null ? null : modelClip.trim();
     }
 
+    public String getParameter1() {
+        return parameter1;
+    }
+
+    public void setParameter1(String parameter1) {
+        this.parameter1 = parameter1 == null ? null : parameter1.trim();
+    }
+
+    public String getParameter2() {
+        return parameter2;
+    }
+
+    public void setParameter2(String parameter2) {
+        this.parameter2 = parameter2 == null ? null : parameter2.trim();
+    }
+
     public String getRemark() {
         return remark;
     }
@@ -93,21 +109,5 @@ public class ProductParameterEntity {
 
     public void setFkChildRecId(Integer fkChildRecId) {
         this.fkChildRecId = fkChildRecId;
-    }
-
-    public String getRemark2() {
-        return remark2;
-    }
-
-    public void setRemark2(String remark2) {
-        this.remark2 = remark2 == null ? null : remark2.trim();
-    }
-
-    public String getRemark3() {
-        return remark3;
-    }
-
-    public void setRemark3(String remark3) {
-        this.remark3 = remark3 == null ? null : remark3.trim();
     }
 }

@@ -42,7 +42,7 @@
                                         class="icon-info-blocks fa fa-check-square"></i></span>
                             </a>
                             <!-- Thumb Image and Description -->
-                            <img style="border: 1px solid" src="<%=request.getContextPath()%>${v.productChildPicUrl}"
+                            <img style="border: 1px solid" src="<%=request.getContextPath()%>${v.productChildUrl}"
                                  alt="">
                         </li>
                     </c:forEach>

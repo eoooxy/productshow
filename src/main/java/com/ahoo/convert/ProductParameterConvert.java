@@ -1,7 +1,6 @@
 package com.ahoo.convert;
 
 import com.ahoo.dto.ProductParameterDto;
-import com.ahoo.dto.ProductParameterDto;
 import com.ahoo.entity.ProductParameterEntity;
 import com.ahoo.util.BeanPropertiesCopy;
 

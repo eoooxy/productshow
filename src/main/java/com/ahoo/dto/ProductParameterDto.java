@@ -18,25 +18,15 @@ public class ProductParameterDto {
 
     private String modelClip;
 
+    private String parameter1;
+
+    private String parameter2;
+
     private String remark;
 
     private Integer fkChildRecId;
 
-    private String remark2;
-
-    private String remark3;
-
-    //private ProductParameterDto.Query  query;
-
     private List<ProductParameter> productParameterList;
-
-    public List<ProductParameter> getProductParameterList() {
-        return productParameterList;
-    }
-
-    public void setProductParameterList(List<ProductParameter> productParameterList) {
-        this.productParameterList = productParameterList;
-    }
 
     public Integer getRecId() {
         return recId;
@@ -51,7 +41,7 @@ public class ProductParameterDto {
     }
 
     public void setConductorA(String conductorA) {
-        this.conductorA = conductorA == null ? null : conductorA.trim();
+        this.conductorA = conductorA;
     }
 
     public String getConductorB() {
@@ -59,7 +49,7 @@ public class ProductParameterDto {
     }
 
     public void setConductorB(String conductorB) {
-        this.conductorB = conductorB == null ? null : conductorB.trim();
+        this.conductorB = conductorB;
     }
 
     public String getModelNumber() {
@@ -67,7 +57,7 @@ public class ProductParameterDto {
     }
 
     public void setModelNumber(String modelNumber) {
-        this.modelNumber = modelNumber == null ? null : modelNumber.trim();
+        this.modelNumber = modelNumber;
     }
 
     public String getModelType() {
@@ -75,7 +65,7 @@ public class ProductParameterDto {
     }
 
     public void setModelType(String modelType) {
-        this.modelType = modelType == null ? null : modelType.trim();
+        this.modelType = modelType;
     }
 
     public String getPowerType() {
@@ -83,7 +73,7 @@ public class ProductParameterDto {
     }
 
     public void setPowerType(String powerType) {
-        this.powerType = powerType == null ? null : powerType.trim();
+        this.powerType = powerType;
     }
 
     public String getModelClip() {
@@ -91,7 +81,23 @@ public class ProductParameterDto {
     }
 
     public void setModelClip(String modelClip) {
-        this.modelClip = modelClip == null ? null : modelClip.trim();
+        this.modelClip = modelClip;
+    }
+
+    public String getParameter1() {
+        return parameter1;
+    }
+
+    public void setParameter1(String parameter1) {
+        this.parameter1 = parameter1;
+    }
+
+    public String getParameter2() {
+        return parameter2;
+    }
+
+    public void setParameter2(String parameter2) {
+        this.parameter2 = parameter2;
     }
 
     public String getRemark() {
@@ -99,7 +105,7 @@ public class ProductParameterDto {
     }
 
     public void setRemark(String remark) {
-        this.remark = remark == null ? null : remark.trim();
+        this.remark = remark;
     }
 
     public Integer getFkChildRecId() {
@@ -110,23 +116,15 @@ public class ProductParameterDto {
         this.fkChildRecId = fkChildRecId;
     }
 
-    public String getRemark2() {
-        return remark2;
+    public List<ProductParameter> getProductParameterList() {
+        return productParameterList;
     }
 
-    public void setRemark2(String remark2) {
-        this.remark2 = remark2 == null ? null : remark2.trim();
+    public void setProductParameterList(List<ProductParameter> productParameterList) {
+        this.productParameterList = productParameterList;
     }
 
-    public String getRemark3() {
-        return remark3;
-    }
-
-    public void setRemark3(String remark3) {
-        this.remark3 = remark3 == null ? null : remark3.trim();
-    }
-
-    public  static class ProductParameter implements Serializable {
+    public static class ProductParameter implements Serializable {
         private Integer recId;
 
         private String conductorA;
@@ -141,13 +139,14 @@ public class ProductParameterDto {
 
         private String modelClip;
 
+        private String parameter1;
+
+        private String parameter2;
+
         private String remark;
 
         private Integer fkChildRecId;
 
-        private String remark2;
-
-        private String remark3;
 
         public Integer getRecId() {
             return recId;
@@ -205,6 +204,22 @@ public class ProductParameterDto {
             this.modelClip = modelClip;
         }
 
+        public String getParameter1() {
+            return parameter1;
+        }
+
+        public void setParameter1(String parameter1) {
+            this.parameter1 = parameter1;
+        }
+
+        public String getParameter2() {
+            return parameter2;
+        }
+
+        public void setParameter2(String parameter2) {
+            this.parameter2 = parameter2;
+        }
+
         public String getRemark() {
             return remark;
         }
@@ -219,22 +234,6 @@ public class ProductParameterDto {
 
         public void setFkChildRecId(Integer fkChildRecId) {
             this.fkChildRecId = fkChildRecId;
-        }
-
-        public String getRemark2() {
-            return remark2;
-        }
-
-        public void setRemark2(String remark2) {
-            this.remark2 = remark2;
-        }
-
-        public String getRemark3() {
-            return remark3;
-        }
-
-        public void setRemark3(String remark3) {
-            this.remark3 = remark3;
         }
     }
 

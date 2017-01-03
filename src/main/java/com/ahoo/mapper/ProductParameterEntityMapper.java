@@ -4,6 +4,7 @@ import com.ahoo.entity.ProductParameterEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface ProductParameterEntityMapper {
@@ -18,6 +19,8 @@ public interface ProductParameterEntityMapper {
     int updateByPrimaryKeySelective(ProductParameterEntity record);
 
     int updateByPrimaryKey(ProductParameterEntity record);
+
+    ProductParameterEntity selectDesByParame(Map map);
 
     List<ProductParameterEntity> selectDesByFkId(int fkRecId);
 }

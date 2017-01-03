@@ -1,5 +1,7 @@
 package com.ahoo.dto;
 
+import com.ahoo.entity.MainSeriesProDesEntity;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -8,20 +10,21 @@ public class MainSeriesProductDto {
 
     private String productMainType;
 
-    private String productPicUrl;
+    private String productMainUrl;
 
-    private String productMainTitle;
+    private String remark;
 
-    private String productMainDes;
+    private MainSeriesProDesEntity desEntity;
 
-    public List<MainSeriesProduct> mainSeriesProductList;
+    private List<MainSeriesProduct> mainSeriesProductList;
 
-    public List<MainSeriesProduct> getMainSeriesProductList() {
-        return mainSeriesProductList;
+
+    public MainSeriesProDesEntity getDesEntity() {
+        return desEntity;
     }
 
-    public void setMainSeriesProductList(List<MainSeriesProduct> mainSeriesProductList) {
-        this.mainSeriesProductList = mainSeriesProductList;
+    public void setDesEntity(MainSeriesProDesEntity desEntity) {
+        this.desEntity = desEntity;
     }
 
     public Integer getRecId() {
@@ -37,31 +40,31 @@ public class MainSeriesProductDto {
     }
 
     public void setProductMainType(String productMainType) {
-        this.productMainType = productMainType == null ? null : productMainType.trim();
+        this.productMainType = productMainType;
     }
 
-    public String getProductPicUrl() {
-        return productPicUrl;
+    public String getProductMainUrl() {
+        return productMainUrl;
     }
 
-    public void setProductPicUrl(String productPicUrl) {
-        this.productPicUrl = productPicUrl == null ? null : productPicUrl.trim();
+    public void setProductMainUrl(String productMainUrl) {
+        this.productMainUrl = productMainUrl;
     }
 
-    public String getProductMainTitle() {
-        return productMainTitle;
+    public String getRemark() {
+        return remark;
     }
 
-    public void setProductMainTitle(String productMainTitle) {
-        this.productMainTitle = productMainTitle == null ? null : productMainTitle.trim();
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 
-    public String getProductMainDes() {
-        return productMainDes;
+    public List<MainSeriesProduct> getMainSeriesProductList() {
+        return mainSeriesProductList;
     }
 
-    public void setProductMainDes(String productMainDes) {
-        this.productMainDes = productMainDes == null ? null : productMainDes.trim();
+    public void setMainSeriesProductList(List<MainSeriesProduct> mainSeriesProductList) {
+        this.mainSeriesProductList = mainSeriesProductList;
     }
 
     public static class MainSeriesProduct implements Serializable {
@@ -70,11 +73,9 @@ public class MainSeriesProductDto {
 
         private String productMainType;
 
-        private String productPicUrl;
+        private String productMainUrl;
 
-        private String productMainTitle;
-
-        private String productMainDes;
+        private String remark;
 
         public Integer getRecId() {
             return recId;
@@ -92,28 +93,20 @@ public class MainSeriesProductDto {
             this.productMainType = productMainType;
         }
 
-        public String getProductPicUrl() {
-            return productPicUrl;
+        public String getProductMainUrl() {
+            return productMainUrl;
         }
 
-        public void setProductPicUrl(String productPicUrl) {
-            this.productPicUrl = productPicUrl;
+        public void setProductMainUrl(String productMainUrl) {
+            this.productMainUrl = productMainUrl;
         }
 
-        public String getProductMainTitle() {
-            return productMainTitle;
+        public String getRemark() {
+            return remark;
         }
 
-        public void setProductMainTitle(String productMainTitle) {
-            this.productMainTitle = productMainTitle;
-        }
-
-        public String getProductMainDes() {
-            return productMainDes;
-        }
-
-        public void setProductMainDes(String productMainDes) {
-            this.productMainDes = productMainDes;
+        public void setRemark(String remark) {
+            this.remark = remark;
         }
     }
 }
