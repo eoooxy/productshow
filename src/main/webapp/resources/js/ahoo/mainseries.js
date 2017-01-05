@@ -22,9 +22,12 @@ function getParamB() {
         success: function (data) {
 
             var obj = data.dtoB;
-            //alert(obj.conductorB);
             $("#parameterB").empty();
-            $("#parameterB").append("<option selected='selected' value='Value'>" + obj.conductorB + "</option>");
+            $("#parameterB").append("<option>请选择您需要导体B</option>");
+            for (var o in obj) {
+                $("#parameterB").append("<option>" + o.conductorB + "</option>");
+            }
+
         }
     });
 
@@ -32,7 +35,7 @@ function getParamB() {
 function getOneParam() {
     var fkId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
-    var paramB = $("#parameterB option:selected").val();
+    var paramB = $("#parameterB option:selected").text();
     if (paramB == undefined) {
         var data = {"fkId": fkId, "paramA": paramA, "paramB": null};
     } else {
@@ -45,7 +48,7 @@ function getOneParam() {
         dataType: "html",
         data: data,
         success: function (data) {
-            $("#convert").html(data);
+            $("#oneDesParam").html(data);
         }
     });
 

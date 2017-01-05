@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.ProductParameterPicUrlEntityMapper">
+  <resultMap id="BaseResultMap" type="com.ahoo.entity.ProductParameterPicUrlEntity">
+    <id column="REC_ID" jdbcType="INTEGER" property="recId" />
+    <result column="CONDUCTOR_URL" jdbcType="VARCHAR" property="conductorUrl" />
+    <result column="MODEL_NUMBER_URL" jdbcType="VARCHAR" property="modelNumberUrl" />
+    <result column="MODEL_TYPE_URL" jdbcType="VARCHAR" property="modelTypeUrl" />
+    <result column="POWER_TYPE_URL" jdbcType="VARCHAR" property="powerTypeUrl" />
+    <result column="MODEL_CLIP_URL" jdbcType="VARCHAR" property="modelClipUrl" />
+    <result column="PARAMETER1_URL" jdbcType="VARCHAR" property="parameter1Url" />
+    <result column="PARAMETER2_URL" jdbcType="VARCHAR" property="parameter2Url" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="FK_CHILD_REC_ID" jdbcType="INTEGER" property="fkChildRecId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    REC_ID, CONDUCTOR_URL, MODEL_NUMBER_URL, MODEL_TYPE_URL, POWER_TYPE_URL, MODEL_CLIP_URL, 
+    PARAMETER1_URL, PARAMETER2_URL, REMARK, FK_CHILD_REC_ID
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from productparameterpicurl
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from productparameterpicurl
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ahoo.entity.ProductParameterPicUrlEntity">
+    insert into productparameterpicurl (REC_ID, CONDUCTOR_URL, MODEL_NUMBER_URL, 
+      MODEL_TYPE_URL, POWER_TYPE_URL, MODEL_CLIP_URL, 
+      PARAMETER1_URL, PARAMETER2_URL, REMARK, 
+      FK_CHILD_REC_ID)
+    values (#{recId,jdbcType=INTEGER}, #{conductorUrl,jdbcType=VARCHAR}, #{modelNumberUrl,jdbcType=VARCHAR}, 
+      #{modelTypeUrl,jdbcType=VARCHAR}, #{powerTypeUrl,jdbcType=VARCHAR}, #{modelClipUrl,jdbcType=VARCHAR}, 
+      #{parameter1Url,jdbcType=VARCHAR}, #{parameter2Url,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{fkChildRecId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ahoo.entity.ProductParameterPicUrlEntity">
+    insert into productparameterpicurl
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        REC_ID,
+      </if>
+      <if test="conductorUrl != null">
+        CONDUCTOR_URL,
+      </if>
+      <if test="modelNumberUrl != null">
+        MODEL_NUMBER_URL,
+      </if>
+      <if test="modelTypeUrl != null">
+        MODEL_TYPE_URL,
+      </if>
+      <if test="powerTypeUrl != null">
+        POWER_TYPE_URL,
+      </if>
+      <if test="modelClipUrl != null">
+        MODEL_CLIP_URL,
+      </if>
+      <if test="parameter1Url != null">
+        PARAMETER1_URL,
+      </if>
+      <if test="parameter2Url != null">
+        PARAMETER2_URL,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="fkChildRecId != null">
+        FK_CHILD_REC_ID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        #{recId,jdbcType=INTEGER},
+      </if>
+      <if test="conductorUrl != null">
+        #{conductorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelNumberUrl != null">
+        #{modelNumberUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelTypeUrl != null">
+        #{modelTypeUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="powerTypeUrl != null">
+        #{powerTypeUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelClipUrl != null">
+        #{modelClipUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="parameter1Url != null">
+        #{parameter1Url,jdbcType=VARCHAR},
+      </if>
+      <if test="parameter2Url != null">
+        #{parameter2Url,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkChildRecId != null">
+        #{fkChildRecId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.ProductParameterPicUrlEntity">
+    update productparameterpicurl
+    <set>
+      <if test="conductorUrl != null">
+        CONDUCTOR_URL = #{conductorUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelNumberUrl != null">
+        MODEL_NUMBER_URL = #{modelNumberUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelTypeUrl != null">
+        MODEL_TYPE_URL = #{modelTypeUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="powerTypeUrl != null">
+        POWER_TYPE_URL = #{powerTypeUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="modelClipUrl != null">
+        MODEL_CLIP_URL = #{modelClipUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="parameter1Url != null">
+        PARAMETER1_URL = #{parameter1Url,jdbcType=VARCHAR},
+      </if>
+      <if test="parameter2Url != null">
+        PARAMETER2_URL = #{parameter2Url,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="fkChildRecId != null">
+        FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.ProductParameterPicUrlEntity">
+    update productparameterpicurl
+    set CONDUCTOR_URL = #{conductorUrl,jdbcType=VARCHAR},
+      MODEL_NUMBER_URL = #{modelNumberUrl,jdbcType=VARCHAR},
+      MODEL_TYPE_URL = #{modelTypeUrl,jdbcType=VARCHAR},
+      POWER_TYPE_URL = #{powerTypeUrl,jdbcType=VARCHAR},
+      MODEL_CLIP_URL = #{modelClipUrl,jdbcType=VARCHAR},
+      PARAMETER1_URL = #{parameter1Url,jdbcType=VARCHAR},
+      PARAMETER2_URL = #{parameter2Url,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+
+  <select id="selectByFkId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from productparameterpicurl
+    where FK_REC_ID = #{fkId,jdbcType=INTEGER}
+  </select>
+
+</mapper>

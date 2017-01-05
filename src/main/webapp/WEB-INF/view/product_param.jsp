@@ -9,8 +9,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="form-group">
-    <div class="input-group col-md-12">
-        <input type="hidden" id="fkId" value="${dto.fkChildRecId}"/>
+    <div class="input-group col-lg-12">
+        <input type="hidden" id="fkId" value="${dto.recId}"/>
         <div>
             <div><h2>${dto.desEntity.productTitle}</h2>
                 ${dto.desEntity.productDes}

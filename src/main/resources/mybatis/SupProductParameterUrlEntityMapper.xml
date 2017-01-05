@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.SupProductParameterUrlEntityMapper">
+    <resultMap id="BaseResultMap" type="com.ahoo.entity.SupProductParameterUrlEntity">
+        <id column="REC_ID" jdbcType="INTEGER" property="recId"/>
+        <result column="TOOLBOX_URL" jdbcType="VARCHAR" property="toolboxUrl"/>
+        <result column="DHQ_URL" jdbcType="VARCHAR" property="dhqUrl"/>
+        <result column="PD1_URL" jdbcType="VARCHAR" property="pd1Url"/>
+        <result column="PD2_URL" jdbcType="VARCHAR" property="pd2Url"/>
+        <result column="PD3_URL" jdbcType="VARCHAR" property="pd3Url"/>
+        <result column="QM1_URL" jdbcType="VARCHAR" property="qm1Url"/>
+        <result column="QM2_URL" jdbcType="VARCHAR" property="qm2Url"/>
+        <result column="MJ1_URL" jdbcType="VARCHAR" property="mj1Url"/>
+        <result column="MJ2_URL" jdbcType="VARCHAR" property="mj2Url"/>
+        <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
+        <result column="FK_CHILD_REC_ID" jdbcType="INTEGER" property="fkChildRecId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    REC_ID, TOOLBOX_URL, DHQ_URL, PD1_URL, PD2_URL, PD3_URL, QM1_URL, QM2_URL, MJ1_URL, 
+    MJ2_URL, REMARK, FK_CHILD_REC_ID
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from supproductparameterurl
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from supproductparameterurl
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.ahoo.entity.SupProductParameterUrlEntity">
+    insert into supproductparameterurl (REC_ID, TOOLBOX_URL, DHQ_URL, 
+      PD1_URL, PD2_URL, PD3_URL, 
+      QM1_URL, QM2_URL, MJ1_URL, 
+      MJ2_URL, REMARK, FK_CHILD_REC_ID
+      )
+    values (#{recId,jdbcType=INTEGER}, #{toolboxUrl,jdbcType=VARCHAR}, #{dhqUrl,jdbcType=VARCHAR}, 
+      #{pd1Url,jdbcType=VARCHAR}, #{pd2Url,jdbcType=VARCHAR}, #{pd3Url,jdbcType=VARCHAR}, 
+      #{qm1Url,jdbcType=VARCHAR}, #{qm2Url,jdbcType=VARCHAR}, #{mj1Url,jdbcType=VARCHAR}, 
+      #{mj2Url,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{fkChildRecId,jdbcType=INTEGER}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.ahoo.entity.SupProductParameterUrlEntity">
+        insert into supproductparameterurl
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                REC_ID,
+            </if>
+            <if test="toolboxUrl != null">
+                TOOLBOX_URL,
+            </if>
+            <if test="dhqUrl != null">
+                DHQ_URL,
+            </if>
+            <if test="pd1Url != null">
+                PD1_URL,
+            </if>
+            <if test="pd2Url != null">
+                PD2_URL,
+            </if>
+            <if test="pd3Url != null">
+                PD3_URL,
+            </if>
+            <if test="qm1Url != null">
+                QM1_URL,
+            </if>
+            <if test="qm2Url != null">
+                QM2_URL,
+            </if>
+            <if test="mj1Url != null">
+                MJ1_URL,
+            </if>
+            <if test="mj2Url != null">
+                MJ2_URL,
+            </if>
+            <if test="remark != null">
+                REMARK,
+            </if>
+            <if test="fkChildRecId != null">
+                FK_CHILD_REC_ID,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                #{recId,jdbcType=INTEGER},
+            </if>
+            <if test="toolboxUrl != null">
+                #{toolboxUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="dhqUrl != null">
+                #{dhqUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="pd1Url != null">
+                #{pd1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="pd2Url != null">
+                #{pd2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="pd3Url != null">
+                #{pd3Url,jdbcType=VARCHAR},
+            </if>
+            <if test="qm1Url != null">
+                #{qm1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="qm2Url != null">
+                #{qm2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="mj1Url != null">
+                #{mj1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="mj2Url != null">
+                #{mj2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="fkChildRecId != null">
+                #{fkChildRecId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.SupProductParameterUrlEntity">
+        update supproductparameterurl
+        <set>
+            <if test="toolboxUrl != null">
+                TOOLBOX_URL = #{toolboxUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="dhqUrl != null">
+                DHQ_URL = #{dhqUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="pd1Url != null">
+                PD1_URL = #{pd1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="pd2Url != null">
+                PD2_URL = #{pd2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="pd3Url != null">
+                PD3_URL = #{pd3Url,jdbcType=VARCHAR},
+            </if>
+            <if test="qm1Url != null">
+                QM1_URL = #{qm1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="qm2Url != null">
+                QM2_URL = #{qm2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="mj1Url != null">
+                MJ1_URL = #{mj1Url,jdbcType=VARCHAR},
+            </if>
+            <if test="mj2Url != null">
+                MJ2_URL = #{mj2Url,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                REMARK = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="fkChildRecId != null">
+                FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER},
+            </if>
+        </set>
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.SupProductParameterUrlEntity">
+    update supproductparameterurl
+    set TOOLBOX_URL = #{toolboxUrl,jdbcType=VARCHAR},
+      DHQ_URL = #{dhqUrl,jdbcType=VARCHAR},
+      PD1_URL = #{pd1Url,jdbcType=VARCHAR},
+      PD2_URL = #{pd2Url,jdbcType=VARCHAR},
+      PD3_URL = #{pd3Url,jdbcType=VARCHAR},
+      QM1_URL = #{qm1Url,jdbcType=VARCHAR},
+      QM2_URL = #{qm2Url,jdbcType=VARCHAR},
+      MJ1_URL = #{mj1Url,jdbcType=VARCHAR},
+      MJ2_URL = #{mj2Url,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      FK_CHILD_REC_ID = #{fkChildRecId,jdbcType=INTEGER}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+    <select id="selectByFkId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from supproductparameterurl
+        where FK_REC_ID = #{fkId,jdbcType=INTEGER}
+    </select>
+</mapper>

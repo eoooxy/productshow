@@ -1,6 +1,9 @@
 package com.ahoo.dto;
 
 import com.ahoo.entity.ChildSeriesProDesEntity;
+import com.ahoo.entity.ProductParameterPicUrlEntity;
+import com.ahoo.entity.SupProductParameterEntity;
+import com.ahoo.entity.SupProductParameterUrlEntity;
 
 import java.io.Serializable;
 import java.util.List;
@@ -32,10 +35,39 @@ public class ProductParameterDto {
 
     private List<ProductParameter> productParameterList;
 
-    //private
+    private ProductParameterPicUrlEntity productParameterPicUrlEntity;
+
+    private SupProductParameterEntity supProductParameterEntity;
+
+    private SupProductParameterUrlEntity supProductParameterUrlEntity;
 
     public ChildSeriesProDesEntity getDesEntity() {
         return desEntity;
+    }
+
+
+    public ProductParameterPicUrlEntity getProductParameterPicUrlEntity() {
+        return productParameterPicUrlEntity;
+    }
+
+    public void setProductParameterPicUrlEntity(ProductParameterPicUrlEntity productParameterPicUrlEntity) {
+        this.productParameterPicUrlEntity = productParameterPicUrlEntity;
+    }
+
+    public SupProductParameterEntity getSupProductParameterEntity() {
+        return supProductParameterEntity;
+    }
+
+    public void setSupProductParameterEntity(SupProductParameterEntity supProductParameterEntity) {
+        this.supProductParameterEntity = supProductParameterEntity;
+    }
+
+    public SupProductParameterUrlEntity getSupProductParameterUrlEntity() {
+        return supProductParameterUrlEntity;
+    }
+
+    public void setSupProductParameterUrlEntity(SupProductParameterUrlEntity supProductParameterUrlEntity) {
+        this.supProductParameterUrlEntity = supProductParameterUrlEntity;
     }
 
     public void setDesEntity(ChildSeriesProDesEntity desEntity) {

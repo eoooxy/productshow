@@ -8,7 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-lg-12">
         <div>
             <div><h2>${dto.desEntity.productTitle}</h2>
                 ${dto.desEntity.productDes}

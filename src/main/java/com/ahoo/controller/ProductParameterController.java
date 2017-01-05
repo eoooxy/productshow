@@ -2,10 +2,8 @@ package com.ahoo.controller;
 
 import com.ahoo.convert.ProductParameterConvert;
 import com.ahoo.dto.ProductParameterDto;
-import com.ahoo.entity.ChildSeriesProDesEntity;
-import com.ahoo.entity.ProductParameterEntity;
-import com.ahoo.service.ChildSeriesProDesService;
-import com.ahoo.service.ProductParameterService;
+import com.ahoo.entity.*;
+import com.ahoo.service.*;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,6 +30,16 @@ public class ProductParameterController {
     @Autowired
     ChildSeriesProDesService childSeriesProDesService;
 
+    @Autowired
+    ProductParameterPicUrlService productParameterPicUrlService;
+
+    @Autowired
+    SupProductParameterService supProductParameterService;
+
+    @Autowired
+    SupProductParameterUrlService supProductParameterUrlService;
+
+
     @RequestMapping("desParam.do")
     public String getProductDes(ModelMap modelMap, Integer childFkId) {
 
@@ -44,7 +52,8 @@ public class ProductParameterController {
             ProductParameterDto dto = new ProductParameterDto();
             dto.setProductParameterList(dtos);
             dto.setDesEntity(childSeriesProDesEntity);
-            dto.setFkChildRecId(childFkId);
+            //dto.setFkChildRecId(childFkId);
+            dto.setRecId(childFkId);
             modelMap.put("dto", dto);
 
             return "product_param";
@@ -55,13 +64,13 @@ public class ProductParameterController {
     @RequestMapping("selectB.json")
     public String getSelectB(ModelMap modelMap, Integer fkId, String paramA) {
 
-        ProductParameterEntity entity = productParameterService.selectParamB(fkId, paramA);
+        List<ProductParameterEntity> entities = productParameterService.selectParamB(fkId, paramA);
         String jsonStr = "";
-        if (entity != null) {
-            ProductParameterDto.ProductParameter dtoB = ProductParameterConvert.convertFromEntity(entity);
+        if (entities.size()>0) {
+            List<ProductParameterDto.ProductParameter> dtoB = ProductParameterConvert.convertFromEntity(entities);
             modelMap.put("dtoB", dtoB);
 
-            jsonStr = JSON.toJSONString(entity);
+            jsonStr = JSON.toJSONString(dtoB);
             return jsonStr;
         }
         return jsonStr;
@@ -71,16 +80,21 @@ public class ProductParameterController {
     public String getSelectOne(ModelMap modelMap, Integer fkId, String paramA, String paramB) {
 
         ProductParameterEntity entity = productParameterService.selectProByParam(fkId, paramA, paramB);
+        ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(fkId);
+        SupProductParameterEntity supProductParameterEntity = supProductParameterService.selectByFkId(fkId);
+        SupProductParameterUrlEntity supProductParameterUrlEntity = supProductParameterUrlService.selectByFkId(fkId);
 
+//&& productParameterPicUrlEntity != null && supProductParameterEntity != null && supProductParameterUrlEntity != null
         if (entity != null) {
             ProductParameterDto.ProductParameter parameter = ProductParameterConvert.convertFromEntity(entity);
             ProductParameterDto dto = new ProductParameterDto();
             List<ProductParameterDto.ProductParameter> list = new ArrayList<ProductParameterDto.ProductParameter>();
             list.add(parameter);
 
+            dto.setProductParameterPicUrlEntity(productParameterPicUrlEntity);
+            dto.setSupProductParameterEntity(supProductParameterEntity);
+            dto.setSupProductParameterUrlEntity(supProductParameterUrlEntity);
             dto.setProductParameterList(list);
-            
-
 
             modelMap.put("dto", dto);
 
