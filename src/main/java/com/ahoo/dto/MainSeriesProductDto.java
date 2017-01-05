@@ -18,7 +18,6 @@ public class MainSeriesProductDto {
 
     private List<MainSeriesProduct> mainSeriesProductList;
 
-
     public MainSeriesProDesEntity getDesEntity() {
         return desEntity;
     }

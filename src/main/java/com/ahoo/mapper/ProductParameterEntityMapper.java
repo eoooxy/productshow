@@ -20,7 +20,9 @@ public interface ProductParameterEntityMapper {
 
     int updateByPrimaryKey(ProductParameterEntity record);
 
-    ProductParameterEntity selectDesByParame(Map map);
+    ProductParameterEntity selectDesByParam(Map map);
 
     List<ProductParameterEntity> selectDesByFkId(int fkRecId);
+
+    ProductParameterEntity selectParamB(Map map);
 }

@@ -169,4 +169,37 @@
         where FK_CHILD_REC_ID = #{fkRecId,jdbcType=INTEGER}
     </select>
 
+    <select id="selectDesByParam" parameterType="java.util.Map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from productparameter
+
+        <if test="paramA!=null and paramA!=''">
+            WHERE CONDUCTOR_A = #{paramA,jdbcType=VARCHAR}
+        </if>
+        <if test="paramB!=null and paramB!=''">
+            AND CONDUCTOR_B = #{paramB,jdbcType=VARCHAR}
+        </if>
+        <if test="fkId!=null and fkId!=''">
+            AND FK_CHILD_REC_ID = #{fkId,jdbcType=INTEGER}
+        </if>
+
+    </select>
+
+    <select id="selectParamB" parameterType="java.util.Map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from productparameter
+
+        <if test="fkId !=null and fkId!=''">
+            WHERE FK_CHILD_REC_ID = #{fkId,jdbcType=INTEGER}
+        </if>
+        <if test="paramA !=null and paramA!=''">
+            AND CONDUCTOR_A = #{paramA,jdbcType=VARCHAR}
+        </if>
+    </select>
+
+
+
+
 </mapper>

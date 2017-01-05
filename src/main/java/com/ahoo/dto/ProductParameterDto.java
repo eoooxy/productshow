@@ -1,5 +1,7 @@
 package com.ahoo.dto;
 
+import com.ahoo.entity.ChildSeriesProDesEntity;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -26,7 +28,19 @@ public class ProductParameterDto {
 
     private Integer fkChildRecId;
 
+    private ChildSeriesProDesEntity desEntity;
+
     private List<ProductParameter> productParameterList;
+
+    //private
+
+    public ChildSeriesProDesEntity getDesEntity() {
+        return desEntity;
+    }
+
+    public void setDesEntity(ChildSeriesProDesEntity desEntity) {
+        this.desEntity = desEntity;
+    }
 
     public Integer getRecId() {
         return recId;

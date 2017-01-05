@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="portfolio-categ" id="convert-ul">
-                        <li><a >当前位置：</a></li>
+                        <li><a>当前位置：</a></li>
                         <li><a href="#" onclick="getMainSeriesProduct()">大类选择</a></li>
                         <%-- <li><a href="#" title="">Finance</a></li>
                          <li><a href="#" title="">Products</a></li>
@@ -146,6 +146,7 @@
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
 </body>
 <script>
+
     window.onload = function () {
         getMainSeriesProduct();
     };

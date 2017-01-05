@@ -16,4 +16,6 @@ public interface MainSeriesProDesEntityMapper {
     int updateByPrimaryKeySelective(MainSeriesProDesEntity record);
 
     int updateByPrimaryKey(MainSeriesProDesEntity record);
+
+    MainSeriesProDesEntity selectByFkId(Integer fkId);
 }

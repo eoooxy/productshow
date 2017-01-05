@@ -12,5 +12,9 @@ import java.util.List;
  */
 public interface ProductParameterService {
 
-    List<ProductParameterEntity> selectProDesParam(int fkRecId);
+    List<ProductParameterEntity> selectProDesParamByFkId(int fkRecId);
+
+    ProductParameterEntity selectParamB(int fkId, String paramA);
+
+    ProductParameterEntity selectProByParam(int fkId, String paramA, String paramB);
 }

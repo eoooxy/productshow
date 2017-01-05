@@ -9,4 +9,6 @@ import com.ahoo.entity.MainSeriesProDesEntity;
 public interface MainSeriesProDesService {
 
     MainSeriesProDesEntity selectById(int id);
+
+    MainSeriesProDesEntity selectByFkId(int fkId);
 }

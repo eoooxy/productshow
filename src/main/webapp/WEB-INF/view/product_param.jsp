@@ -8,41 +8,36 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div class="row">
-    <div class="col-md-12">
+<div class="form-group">
+    <div class="input-group col-md-12">
+        <input type="hidden" id="fkId" value="${dto.fkChildRecId}"/>
         <div>
-            <h2>&nbsp;&nbsp;&nbsp;请选择您需要的规格:</h2>
+            <div><h2>${dto.desEntity.productTitle}</h2>
+                ${dto.desEntity.productDes}
+            </div>
+
+            <div style="margin-top: 50px;">
+                <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
+                    <option>请选择您需要导体A</option>
+                    <c:forEach items="${dto.productParameterList}" var="v">
+                        <option>${v.conductorA}</option>
+                    </c:forEach>
+                </select>
+
+
+                <c:if test="${dto.productParameterList[0].conductorB !=null}">
+                    <select id="parameterB" class="form-control" style="width:190px; margin-left: 10px;">
+                        <option>请选择您需要导体B</option>
+                    </select>
+                </c:if>
+
+                <input type="button" class="btn btn-default" style="margin-left: 10px" value="查询"
+                       onclick="getOneParam()">
+            </div>
         </div>
-        <br>
-        <div>
-            <table class="table table-bordered table-striped" style="text-align: center;font-size: 14px">
-                <tr>
-                    <td>导体A</td>
-                    <td>导体B</td>
-                    <td>模具型号</td>
-                    <td>价格体系</td>
-                    <td>放热焊粉型号</td>
-                    <td>模具夹</td>
-                    <td>其他1</td>
-                    <td>其他2</td>
-                    <td>操作</td>
-                </tr>
-                <c:forEach items="${dto.productParameterList}" var="v">
-                    <tr>
-                        <td>${v.conductorA}</td>
-                        <td>${v.conductorB}</td>
-                        <td>${v.modelNumber}</td>
-                        <td>${v.modelType}</td>
-                        <td>${v.powerType}</td>
-                        <td>${v.modelClip}</td>
-                        <td>${v.parameter1}</td>
-                        <td>${v.parameter2}</td>
-                        <td>
-                            <button type="button" class="btn btn-sm btn-default">选   择 &raquo;</button>
-                        </td>
-                    </tr>
-                </c:forEach>
-            </table>
+
+        <div class="panel panel-default" style="margin-top: 20px"  id="oneDesParam">
+
         </div>
 
     </div>

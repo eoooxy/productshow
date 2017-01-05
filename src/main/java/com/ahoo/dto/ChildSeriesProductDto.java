@@ -1,6 +1,6 @@
 package com.ahoo.dto;
 
-import com.ahoo.entity.ChildSeriesProDesEntity;
+import com.ahoo.entity.MainSeriesProDesEntity;
 
 import java.io.Serializable;
 import java.util.List;
@@ -17,15 +17,15 @@ public class ChildSeriesProductDto {
 
     private Integer fkRecId;
 
-    private ChildSeriesProDesEntity desEntity;
+    private MainSeriesProDesEntity desEntity;
 
     private List<ChildSeriesProduct> childSeriesProductList;
 
-    public ChildSeriesProDesEntity getDesEntity() {
+    public MainSeriesProDesEntity getDesEntity() {
         return desEntity;
     }
 
-    public void setDesEntity(ChildSeriesProDesEntity desEntity) {
+    public void setDesEntity(MainSeriesProDesEntity desEntity) {
         this.desEntity = desEntity;
     }
 

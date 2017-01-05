@@ -6,6 +6,51 @@
  */
 
 
+
+
+
+function getParamB() {
+    var fkId = $("#fkId").val();
+    var paramA = $("#parameterA option:selected").val();
+    var data = {"fkId": fkId, "paramA": paramA};
+
+    $.ajax({
+        type: "post",
+        url: "selectB.json",
+        dataType: "json",
+        data: data,
+        success: function (data) {
+
+            var obj = data.dtoB;
+            //alert(obj.conductorB);
+            $("#parameterB").empty();
+            $("#parameterB").append("<option selected='selected' value='Value'>" + obj.conductorB + "</option>");
+        }
+    });
+
+}
+function getOneParam() {
+    var fkId = $("#fkId").val();
+    var paramA = $("#parameterA option:selected").val();
+    var paramB = $("#parameterB option:selected").val();
+    if (paramB == undefined) {
+        var data = {"fkId": fkId, "paramA": paramA, "paramB": null};
+    } else {
+        var data = {"fkId": fkId, "paramA": paramA, "paramB": paramB};
+    }
+
+    $.ajax({
+        type: "post",
+        url: "queryOne.do",
+        dataType: "html",
+        data: data,
+        success: function (data) {
+            $("#convert").html(data);
+        }
+    });
+
+}
+
 function getMainSeriesProduct() {
     //alert(div);
     $.ajax({
@@ -55,7 +100,7 @@ function getDesProductParam(id) {
             $("#convert").html(data);
 
             $("#convert-ul").find("#des-li").remove();
-            var li = "<li id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>参数列表</a></li>";
+            var li = "<li id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>参数选择</a></li>";
             $("#convert-ul").append(li);
         }
     });

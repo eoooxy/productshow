@@ -23,4 +23,12 @@ public class MainSeriesProDesServiceImpl implements MainSeriesProDesService {
 
         return entity;
     }
+
+    @Override
+    public MainSeriesProDesEntity selectByFkId(int fkId) {
+
+        MainSeriesProDesEntity entity = mainSeriesProDesEntityMapper.selectByFkId(fkId);
+
+        return entity;
+    }
 }
