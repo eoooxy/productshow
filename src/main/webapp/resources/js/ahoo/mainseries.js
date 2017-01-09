@@ -6,7 +6,37 @@
  */
 
 
+function queryDes(value) {
+    switch (value) {
+        case 1:
+            ahoo.Common.ArtDialogCommon();
+            break;
+    }
+}
 
+function select_checkbox() {
+    var flag = 0;
+    //console.log($("input[name='m']:checkbox"));
+    $("input[name='m']:checkbox").each(function () {
+        if ($(this).attr("checked")) {
+
+            console.log($("#childtype").text() + $(this).parent().text());
+            //console.log($(this).attr('value'));
+            flag += 1;
+        }
+    });
+    if (flag < 1) {
+        var d = dialog({
+            content: '至少要选中一个！'
+        });
+        d.show();
+        setTimeout(function () {
+            d.close().remove();
+        }, 1000);
+        return false;
+    }
+
+}
 
 
 function getParamB() {
@@ -24,7 +54,7 @@ function getParamB() {
             var obj = data.dtoB;
             $("#parameterB").empty();
             $("#parameterB").append("<option>请选择您需要导体B</option>");
-            for(var i =0;i<obj.length;i++){
+            for (var i = 0; i < obj.length; i++) {
                 //console.log(obj[i].conductorB);
                 $("#parameterB").append("<option>" + obj[i].conductorB + "</option>");
             }

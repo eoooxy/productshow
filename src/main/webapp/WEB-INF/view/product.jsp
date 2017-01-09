@@ -19,6 +19,7 @@
     <link href="<%=request.getContextPath()%>/resources/css/fancybox/jquery.fancybox.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/resources/css/flexslider.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet"/>
+    <link href="<%=request.getContextPath()%>/resources/js/artdialog//ui-dialog.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -141,9 +142,12 @@
 <script src="<%=request.getContextPath()%>/resources/js/jquery.flexslider.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/animate.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>--%>
-
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
+
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery-1.10.2.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/dialog-min.js"></script>
 </body>
 <script>
 

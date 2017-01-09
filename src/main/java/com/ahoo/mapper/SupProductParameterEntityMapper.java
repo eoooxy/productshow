@@ -1,8 +1,9 @@
 package com.ahoo.mapper;
 
-import com.ahoo.entity.ProductParameterPicUrlEntity;
 import com.ahoo.entity.SupProductParameterEntity;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface SupProductParameterEntityMapper {
     int deleteByPrimaryKey(Integer recId);
 

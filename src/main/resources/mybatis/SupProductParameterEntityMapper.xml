@@ -176,7 +176,7 @@
     select
     <include refid="Base_Column_List"/>
     from supproductparameter
-    where FK_REC_ID = #{fkId,jdbcType=INTEGER}
+    where FK_CHILD_REC_ID = #{fkId,jdbcType=INTEGER}
   </select>
 
 </mapper>
