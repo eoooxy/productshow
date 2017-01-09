@@ -24,10 +24,10 @@ function getParamB() {
             var obj = data.dtoB;
             $("#parameterB").empty();
             $("#parameterB").append("<option>请选择您需要导体B</option>");
-            for (var o in obj) {
-                $("#parameterB").append("<option>" + o.conductorB + "</option>");
+            for(var i =0;i<obj.length;i++){
+                //console.log(obj[i].conductorB);
+                $("#parameterB").append("<option>" + obj[i].conductorB + "</option>");
             }
-
         }
     });
 
