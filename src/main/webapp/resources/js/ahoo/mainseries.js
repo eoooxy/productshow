@@ -9,31 +9,38 @@
 function queryDes(value) {
     switch (value) {
         case 1:
-            ahoo.Common.ArtDialogCommon();
+            $.ajax({
+                type: "post",
+                url: "desParam.do",
+                dataType: "html",
+                data: data,
+                success: function (data) {
+                    var d = dialog({
+                        title: '警告',
+                        content: data,
+                        cancel: false,
+                        ok: function () {
+                        }
+                    }).height(600).width(800).focus().show();
+                }
+            });
             break;
     }
 }
 
 function select_checkbox() {
     var flag = 0;
-    //console.log($("input[name='m']:checkbox"));
-    $("input[name='m']:checkbox").each(function () {
-        if ($(this).attr("checked")) {
 
-            console.log($("#childtype").text() + $(this).parent().text());
-            //console.log($(this).attr('value'));
+    $("input[name='m']:checkbox").each(function () {
+
+        console.log($(this));
+        if ($(this).attr("checked")) {
+            console.log($(this).parent().text());
             flag += 1;
         }
     });
     if (flag < 1) {
-        var d = dialog({
-            content: '至少要选中一个！'
-        });
-        d.show();
-        setTimeout(function () {
-            d.close().remove();
-        }, 1000);
-        return false;
+        alert("至少要选中一个！");
     }
 
 }
@@ -63,6 +70,7 @@ function getParamB() {
 
 }
 function getOneParam() {
+
     var fkId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").text();
@@ -85,13 +93,19 @@ function getOneParam() {
 }
 
 function getMainSeriesProduct() {
-    //alert(div);
+    var d = dialog({
+        width: 60,
+        height: 60
+    });
+    d.show();
+
     $.ajax({
         type: "post",
         url: "proTotal.do",
         dataType: "html",
         //data:data,
         success: function (data) {
+            d.close().remove();
             $("#convert").html(data);
 
             $("#convert-ul").find("#child-li").remove();
@@ -101,6 +115,11 @@ function getMainSeriesProduct() {
 }
 
 function getChildSeriesProduct(id) {
+    var d = dialog({
+        width: 60,
+        height: 60
+    });
+    d.show();
 
     var data = {"fkRecId": id};
     $.ajax({
@@ -109,6 +128,7 @@ function getChildSeriesProduct(id) {
         dataType: "html",
         data: data,
         success: function (data) {
+            d.close().remove();
             $("#convert").html(data);
 
             $("#convert-ul").find("#child-li").remove();
@@ -123,6 +143,12 @@ function getChildSeriesProduct(id) {
 
 function getDesProductParam(id) {
 
+    var d = dialog({
+        width: 60,
+        height: 60
+    });
+    d.show();
+
     var data = {"childFkId": id};
     $.ajax({
         type: "post",
@@ -130,6 +156,7 @@ function getDesProductParam(id) {
         dataType: "html",
         data: data,
         success: function (data) {
+            d.close().remove();
             $("#convert").html(data);
 
             $("#convert-ul").find("#des-li").remove();

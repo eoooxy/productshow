@@ -25,7 +25,7 @@
                 </select>
 
 
-                <c:if test="${dto.productParameterList[0].conductorB !=null}">
+                <c:if test="${dto.productParameterList[0].conductorB !=null && dto.productParameterList[0].conductorB !=''}">
                     <select id="parameterB" class="form-control" style="width:190px; margin-left: 10px;">
                         <option>请选择您需要导体B</option>
                     </select>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="panel panel-default" style="margin-top: 20px"  id="oneDesParam">
+        <div class="panel panel-default" style="margin-top: 20px" id="oneDesParam">
 
         </div>
 
