@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.SingleParameDesEntityMapper">
+  <resultMap id="BaseResultMap" type="com.ahoo.entity.SingleParameDesEntity">
+    <id column="REC_ID" jdbcType="INTEGER" property="recId" />
+    <result column="TYPE" jdbcType="VARCHAR" property="type" />
+    <result column="TITLE" jdbcType="VARCHAR" property="title" />
+    <result column="CONTENT" jdbcType="VARCHAR" property="content" />
+    <result column="URL1" jdbcType="VARCHAR" property="url1" />
+    <result column="URL2" jdbcType="VARCHAR" property="url2" />
+    <result column="URL3" jdbcType="VARCHAR" property="url3" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    REC_ID, TYPE, TITLE, CONTENT, URL1, URL2, URL3, REMARK
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from singleparamedes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from singleparamedes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ahoo.entity.SingleParameDesEntity">
+    insert into singleparamedes (REC_ID, TYPE, TITLE, 
+      CONTENT, URL1, URL2, 
+      URL3, REMARK)
+    values (#{recId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{url1,jdbcType=VARCHAR}, #{url2,jdbcType=VARCHAR}, 
+      #{url3,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ahoo.entity.SingleParameDesEntity">
+    insert into singleparamedes
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        REC_ID,
+      </if>
+      <if test="type != null">
+        TYPE,
+      </if>
+      <if test="title != null">
+        TITLE,
+      </if>
+      <if test="content != null">
+        CONTENT,
+      </if>
+      <if test="url1 != null">
+        URL1,
+      </if>
+      <if test="url2 != null">
+        URL2,
+      </if>
+      <if test="url3 != null">
+        URL3,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        #{recId,jdbcType=INTEGER},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="url1 != null">
+        #{url1,jdbcType=VARCHAR},
+      </if>
+      <if test="url2 != null">
+        #{url2,jdbcType=VARCHAR},
+      </if>
+      <if test="url3 != null">
+        #{url3,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.SingleParameDesEntity">
+    update singleparamedes
+    <set>
+      <if test="type != null">
+        TYPE = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        TITLE = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        CONTENT = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="url1 != null">
+        URL1 = #{url1,jdbcType=VARCHAR},
+      </if>
+      <if test="url2 != null">
+        URL2 = #{url2,jdbcType=VARCHAR},
+      </if>
+      <if test="url3 != null">
+        URL3 = #{url3,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.SingleParameDesEntity">
+    update singleparamedes
+    set TYPE = #{type,jdbcType=VARCHAR},
+      TITLE = #{title,jdbcType=VARCHAR},
+      CONTENT = #{content,jdbcType=VARCHAR},
+      URL1 = #{url1,jdbcType=VARCHAR},
+      URL2 = #{url2,jdbcType=VARCHAR},
+      URL3 = #{url3,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByParame" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from singleparamedes
+
+    <if test="type !=null and type!=''">
+      WHERE TYPE = #{type,jdbcType=INTEGER}
+    </if>
+    <if test="des !=null and des!=''">
+      AND REMARK = #{des,jdbcType=VARCHAR}
+    </if>
+  </select>
+
+
+</mapper>
