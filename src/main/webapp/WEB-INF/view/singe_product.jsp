@@ -19,7 +19,7 @@
                 <div align="center">
                     <span style="font-size: 14px;align-content: center"><input type="checkbox" name="m"
                                                                                value="">导体A:${dto.productParameterList[0].conductorA}</span>
-                    <img style="" onclick="queryDes('导体')"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
                          src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                          class="img-rounded">
                 </div>
@@ -30,7 +30,7 @@
                     <div align="center">
                         <span style="font-size: 14px"><input type="checkbox" name="m"
                                                              value="">导体B:${dto.productParameterList[0].conductorB}</span>
-                        <img style="" onclick="queryDes('导体')"
+                        <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
                              src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                              class="img-rounded">
                     </div>
@@ -41,7 +41,7 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">模具型号:${dto.productParameterList[0].modelNumber}</span>
 
-                    <img style="" onclick="queryDes('模具型号')"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('模具型号')"
                          src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                          class="img-rounded">
                 </div>
@@ -49,9 +49,9 @@
             <td class="col-lg-3">
                 <div align="center">
                     <span style="font-size: 14px"><input type="checkbox" name="m"
-                                                         value="">价格体系:${dto.productParameterList[0].modelType}</span>
+                                                         value="">价格体系:${dto.productParameterList[0].modelType}</span><br/>
 
-                    <img style="" onclick="queryDes('价格体系')"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('价格体系')"
                          src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                          class="img-rounded">
                 </div>
@@ -63,7 +63,7 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">焊粉型号:${dto.productParameterList[0].powerType}</span>
 
-                    <img style="" onclick="queryDes('焊粉型号')"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('焊粉型号')"
                          src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                          class="img-rounded">
                 </div>
@@ -73,7 +73,7 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">模具夹:${dto.productParameterList[0].modelClip}</span>
 
-                    <img style="" onclick="queryDes('模具夹')"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('模具夹')"
                          src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
                          class="img-rounded">
                 </div>
@@ -121,8 +121,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">工具箱:${dto.supProductParameterEntity.toolbox}</span>
 
-                    <img style="" onclick="queryDes('工具箱')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('工具箱')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.toolboxUrl}"
                          class="img-rounded">
                 </div>
             </td>
@@ -131,8 +131,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">点火枪:${dto.supProductParameterEntity.dhq}</span>
 
-                    <img style="" onclick="queryDes('点火枪')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('点火枪')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.dhqUrl}"
                          class="img-rounded">
                 </div>
             </td>
@@ -141,8 +141,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">喷灯(套装):${dto.supProductParameterEntity.pd3}</span>
 
-                    <img style="" onclick="queryDes('喷灯')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('喷灯')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.pd3Url}"
                          class="img-rounded">
                 </div>
             </td>
@@ -151,8 +151,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">清模铜刷:${dto.supProductParameterEntity.qm1}</span>
 
-                    <img style="" onclick="queryDes('清模铜刷')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('清模铜刷')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.qm1Url}"
                          class="img-rounded">
                 </div>
             </td>
@@ -163,8 +163,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">清模毛刷:${dto.supProductParameterEntity.qm2}</span>
 
-                    <img style="" onclick="queryDes('清模毛刷')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('清模毛刷')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.qm2Url}"
                          class="img-rounded">
                 </div>
             </td>
@@ -173,8 +173,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">C型夹:${dto.supProductParameterEntity.mj1}</span>
 
-                    <img style="" onclick="queryDes('C型夹')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('C型夹')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.mj1Url}"
                          class="img-rounded">
                 </div>
             </td>
@@ -183,8 +183,8 @@
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">F型夹:${dto.supProductParameterEntity.mj2}</span>
 
-                    <img style="" onclick="queryDes('F型夹')"
-                         src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('F型夹')"
+                         src="<%=request.getContextPath()%>${dto.supProductParameterUrlEntity.mj2Url}"
                          class="img-rounded">
                 </div>
             </td>

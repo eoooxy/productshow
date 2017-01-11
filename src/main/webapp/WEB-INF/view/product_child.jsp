@@ -19,12 +19,6 @@
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <%--<ul class="portfolio-categ filter">--%>
-        <%--<li class="all active"><a href="#">All</a></li>--%>
-        <%--<li class="web"><a href="#" title="">Finance</a></li>--%>
-        <%--<li class="icon"><a href="#" title="">Products</a></li>--%>
-        <%--<li class="graphic"><a href="#" title="">Services</a></li>--%>
-        <%--</ul>--%>
         <div class="clearfix">
         </div>
         <div class="row">
@@ -41,7 +35,7 @@
                                         class="icon-info-blocks fa fa-check-square"></i></span>
                             </a>
                             <!-- Thumb Image and Description -->
-                            <img style="border: 1px solid" src="<%=request.getContextPath()%>${v.productChildUrl}"
+                            <img style="border: 1px solid #dddddd" src="<%=request.getContextPath()%>${v.productChildUrl}"
                                  alt="">
                         </li>
                     </c:forEach>

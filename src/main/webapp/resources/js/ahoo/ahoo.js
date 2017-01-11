@@ -36,7 +36,7 @@ function ArtDialogCommon(options) {
         drag: false,
         resize: false,
         left: '50%',
-        top: '20%'
+        top: '5%'
 
     });
    /* //彈出窗口后的初始化操作

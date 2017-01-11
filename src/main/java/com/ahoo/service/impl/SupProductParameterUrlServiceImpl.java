@@ -1,7 +1,9 @@
 package com.ahoo.service.impl;
 
 import com.ahoo.entity.SupProductParameterUrlEntity;
+import com.ahoo.mapper.SupProductParameterUrlEntityMapper;
 import com.ahoo.service.SupProductParameterUrlService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,9 +14,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class SupProductParameterUrlServiceImpl implements SupProductParameterUrlService {
 
+    @Autowired
+    SupProductParameterUrlEntityMapper supProductParameterUrlEntityMapper;
 
     @Override
     public SupProductParameterUrlEntity selectByFkId(int fkId) {
-        return null;
+        return supProductParameterUrlEntityMapper.selectByFkId(fkId);
     }
 }

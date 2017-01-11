@@ -13,7 +13,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '导体', height: 600, width: 800,
+                        id: 'edit', content: data, title: '导体', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -25,7 +25,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '模具型号', height: 600, width: 800,
+                        id: 'edit', content: data, title: '模具型号', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -37,7 +37,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '价格体系', height: 600, width: 800,
+                        id: 'edit', content: data, title: '价格体系', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -49,7 +49,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '焊粉型号', height: 600, width: 800,
+                        id: 'edit', content: data, title: '焊粉型号', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -61,7 +61,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '模具夹', height: 600, width: 800,
+                        id: 'edit', content: data, title: '模具夹', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -73,7 +73,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '套管', height: 600, width: 800,
+                        id: 'edit', content: data, title: '套管', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -85,7 +85,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '整形模具', height: 600, width: 800,
+                        id: 'edit', content: data, title: '整形模具', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -97,7 +97,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '工具箱', height: 600, width: 800,
+                        id: 'edit', content: data, title: '工具箱', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -109,7 +109,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '点火枪', height: 600, width: 800,
+                        id: 'edit', content: data, title: '点火枪', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -121,7 +121,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '喷灯', height: 600, width: 800,
+                        id: 'edit', content: data, title: '喷灯', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -133,7 +133,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '清模铜刷', height: 600, width: 800,
+                        id: 'edit', content: data, title: '清模铜刷', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -145,7 +145,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: '清模毛刷', height: 600, width: 800,
+                        id: 'edit', content: data, title: '清模毛刷', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -157,7 +157,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: 'C型夹', height: 600, width: 800,
+                        id: 'edit', content: data, title: 'C型夹', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -169,7 +169,7 @@ function queryDes(value) {
                 type: "post", url: "getParameDes.do", dataType: "html",//data: data,
                 success: function (data) {
                     ArtDialogCommon({
-                        id: 'edit', content: data, title: 'F型夹', height: 600, width: 800,
+                        id: 'edit', content: data, title: 'F型夹', height: 500, width: 700,
                         close: function () {
                         }
                     });
@@ -181,36 +181,51 @@ function queryDes(value) {
     }
 }
 
-function alertResult(list) {
-    console.log(list)
-    console.log(list.size())
-    $.each(list, function (n, value) {
-        console.log(n + ' ' + value);
-    })
-    /* var html = "<div align='center'><h2>选择的型号是：" + type + "</h2>" +
+function alertResult(map) {
+    var mapUri = {
+        "导体A": "导体A-url", "导体B": "导体B-url", "模具型号": "模具型号-url"
+        , "价格体系": "价格体系-url", "焊粉型号": "焊粉型号-url", "模具夹": "模具夹-url"
+        , "工具箱": "工具箱-url", "点火枪": "点火枪-url", "喷灯(套装)": "喷灯(套装)-url"
+        , "清模铜刷": "清模铜刷-url", "清模毛刷": "清模毛刷-url", "C型夹": "C型夹-url"
+        , "F型夹": "F型夹-url", "套管(迷你模具)": "套管(迷你模具)-url"
+        , "整形模具(防漏材料)": "整形模具(防漏材料)-url"
+    };
+
+    var html = "<div align='center'>"
+    for (var key in map) {
+        //var html =new StringBuffer();
+        if (map.hasOwnProperty(key)) {
+            if (map[key] != null && map[key] != '') {
+                var info = key + "的购买链接地址为：" + mapUri[key] + "备注为:" + map[key];
+                console.log(key + "的购买链接地址为：" + mapUri[key] + "备注为:" + map[key]);
+                html += "<span style='font-size: 14px'>" + info + "</span><br/>";
+            }
+        }
+    }
+    html += "</div>";
 
 
-     +"</div>";
-
-
-     ArtDialogCommon({
-     id: 'edit', content: html, title: '选择结果', height: 300, width: 400,
-     close: function () {
-     }
-     });*/
+    ArtDialogCommon({
+        id: 'edit', content: html, title: '选择结果', height: 300, width: 550,
+        close: function () {
+        }
+    });
 }
 
 function select_checkbox() {
 
     var flag = 0;
-    var list = new Array;
+    var map = {};
     $("input[name='m']:checkbox").each(function () {
         if ($(this).prop("checked")) {
-            console.log(($(this).parent().text()).split(':')[0] + ":" + $(this).parent().text());
-            list.push("{" + ($(this).parent().text()).split(':')[0] + ":" + $(this).parent().text() + "}");
+            //console.log(($(this).parent().text()).split(':')[0] + ":" + $(this).parent().text());
+            map[($(this).parent().text()).split(':')[0]] = $(this).parent().text();
+
+            //list.push("{" + ($(this).parent().text()).split(':')[0] + ":" + $(this).parent().text() + "}");
             flag += 1;
         } else {
-            list.push("{" + ($(this).parent().text()).split(':')[0] + ":" + '' + "}");
+            map[($(this).parent().text()).split(':')[0]] = '';
+            //list.push("{" + ($(this).parent().text()).split(':')[0] + ":" + '' + "}");
         }
     });
 
@@ -219,7 +234,7 @@ function select_checkbox() {
             title: '提示',
             id: 'alert',
             left: '50%',
-            top: '20%',
+            top: '10%',
             background: '#000', // 背景色
             opacity: 0.2, // 透明度
             content: '至少要选中一个！',
@@ -228,10 +243,10 @@ function select_checkbox() {
             resize: false,
             fixed: true
         });
+    } else {
+        alertResult(map);
     }
 
-    //
-    alertResult(list);
 
 }
 
