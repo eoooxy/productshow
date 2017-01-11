@@ -5,6 +5,7 @@
  * Time: 20:42
  */
 
+var pageFlag = 0;
 
 function queryDes(value) {
     switch (value) {
@@ -277,6 +278,7 @@ function getParamB() {
 
 function getOneParam() {
 
+    pageFlag = 0;
     var fkId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").text();
@@ -357,4 +359,73 @@ function getDesProductParam(id) {
         }
     });
 
+}
+
+//1/${dto.productParameterList.size()}
+function subPage(listSize) {
+    pageFlag -= 1;
+    if (pageFlag < 0) {
+        art.dialog({
+            title: '提示',
+            id: 'alert',
+            left: '50%',
+            top: '10%',
+            background: '#000', // 背景色
+            opacity: 0.2, // 透明度
+            content: '已经是第一页啦！',
+            lock: true,
+            drag: false,
+            resize: false,
+            fixed: true
+        });
+        pageFlag = 0;
+    } else {
+        getOneProTab(pageFlag, listSize);
+    }
+
+}
+function addPage(listSize) {
+    pageFlag += 1;
+    if (pageFlag > listSize - 1) {
+        art.dialog({
+            title: '提示',
+            id: 'alert',
+            left: '50%',
+            top: '10%',
+            background: '#000', // 背景色
+            opacity: 0.2, // 透明度
+            content: '已经是最后一页啦！',
+            lock: true,
+            drag: false,
+            resize: false,
+            fixed: true
+        });
+        pageFlag -= 1;
+    } else {
+        getOneProTab(pageFlag, listSize);
+    }
+
+}
+
+function getOneProTab(pageFlag, listSize) {
+
+    var fkId = $("#fkId").val();
+    var paramA = $("#parameterA option:selected").val();
+    var paramB = $("#parameterB option:selected").text();
+    var data = {"page": pageFlag, "fkId": fkId, "paramA": paramA, "paramB": paramB};
+
+    $.ajax({
+        type: "post",
+        url: "page.do",
+        dataType: "html",
+        data: data,
+        success: function (data) {
+
+            $("#tableDiv").html(data);
+
+            $("#pageNum").text("");
+            var lables = pageFlag + 1 + "/" + listSize;
+            $("#pageNum").html(lables);
+        }
+    });
 }

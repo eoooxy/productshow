@@ -7,6 +7,7 @@ import com.ahoo.entity.SupProductParameterUrlEntity;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public class ProductParameterDto {
     private Integer recId;
@@ -35,11 +36,62 @@ public class ProductParameterDto {
 
     private List<ProductParameter> productParameterList;
 
+    private Map productParameterMap;
+
+    private Map productParameterPicUrlMap;
+
+    private Map supProductParameterMap;
+
+    private Map supProductParameterUrlMap;
+
+    private List<String> strings;
+
+    public List<String> getStrings() {
+        return strings;
+    }
+
+    public void setStrings(List<String> strings) {
+        this.strings = strings;
+    }
+
     private ProductParameterPicUrlEntity productParameterPicUrlEntity;
 
     private SupProductParameterEntity supProductParameterEntity;
 
     private SupProductParameterUrlEntity supProductParameterUrlEntity;
+
+
+    public Map getProductParameterMap() {
+        return productParameterMap;
+    }
+
+    public void setProductParameterMap(Map productParameterMap) {
+        this.productParameterMap = productParameterMap;
+    }
+
+    public Map getProductParameterPicUrlMap() {
+        return productParameterPicUrlMap;
+    }
+
+    public void setProductParameterPicUrlMap(Map productParameterPicUrlMap) {
+        this.productParameterPicUrlMap = productParameterPicUrlMap;
+    }
+
+    public Map getSupProductParameterMap() {
+        return supProductParameterMap;
+    }
+
+    public void setSupProductParameterMap(Map supProductParameterMap) {
+        this.supProductParameterMap = supProductParameterMap;
+    }
+
+    public Map getSupProductParameterUrlMap() {
+        return supProductParameterUrlMap;
+    }
+
+    public void setSupProductParameterUrlMap(Map supProductParameterUrlMap) {
+        this.supProductParameterUrlMap = supProductParameterUrlMap;
+    }
 
     public ChildSeriesProDesEntity getDesEntity() {
         return desEntity;

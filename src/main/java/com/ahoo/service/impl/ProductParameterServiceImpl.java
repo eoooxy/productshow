@@ -42,12 +42,12 @@ public class ProductParameterServiceImpl implements ProductParameterService {
     }
 
     @Override
-    public ProductParameterEntity selectProByParam(int fkId, String paramA, String paramB) {
+    public List<ProductParameterEntity> selectProByParam(int fkId, String paramA, String paramB) {
         Map map = new HashMap<>();
         map.put("fkId", fkId);
         map.put("paramA", paramA);
         map.put("paramB", paramB);
-        ProductParameterEntity entity = productParameterEntityMapper.selectDesByParam(map);
-        return entity;
+        List<ProductParameterEntity> entities = productParameterEntityMapper.selectDesByParam(map);
+        return entities;
     }
 }

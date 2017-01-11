@@ -40,6 +40,10 @@ public class ProductParameterController {
     SupProductParameterUrlService supProductParameterUrlService;
 
 
+    //List<ProductParameterEntity> entities;
+    //ProductParameterPicUrlEntity productParameterPicUrlEntity;
+
+
     @RequestMapping("desParam.do")
     public String getProductDes(ModelMap modelMap, Integer childFkId) {
 
@@ -54,6 +58,17 @@ public class ProductParameterController {
             dto.setDesEntity(childSeriesProDesEntity);
             //dto.setFkChildRecId(childFkId);
             dto.setRecId(childFkId);
+
+            //得到不重复的导体a的参数
+
+            List<String> strings = new ArrayList<String>();
+            for (ProductParameterDto.ProductParameter d : dtos) {
+                if (!strings.contains(d.getConductorA())) {
+                    strings.add(d.getConductorA());
+                }
+            }
+            dto.setStrings(strings);
+
             modelMap.put("dto", dto);
 
             return "product_param";
@@ -66,7 +81,7 @@ public class ProductParameterController {
 
         List<ProductParameterEntity> entities = productParameterService.selectParamB(fkId, paramA);
         String jsonStr = "";
-        if (entities.size()>0) {
+        if (entities.size() > 0) {
             List<ProductParameterDto.ProductParameter> dtoB = ProductParameterConvert.convertFromEntity(entities);
             modelMap.put("dtoB", dtoB);
 
@@ -79,28 +94,56 @@ public class ProductParameterController {
     @RequestMapping("queryOne.do")
     public String getSelectOne(ModelMap modelMap, Integer fkId, String paramA, String paramB) {
 
-        ProductParameterEntity entity = productParameterService.selectProByParam(fkId, paramA, paramB);
+        List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkId, paramA, paramB);
         ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(fkId);
         SupProductParameterEntity supProductParameterEntity = supProductParameterService.selectByFkId(fkId);
         SupProductParameterUrlEntity supProductParameterUrlEntity = supProductParameterUrlService.selectByFkId(fkId);
 
-//&& productParameterPicUrlEntity != null && supProductParameterEntity != null && supProductParameterUrlEntity != null
-        if (entity != null) {
-            ProductParameterDto.ProductParameter parameter = ProductParameterConvert.convertFromEntity(entity);
+//productParameterPicUrlEntity != null &&
+        if (entities.size() > 0 && supProductParameterEntity != null && supProductParameterUrlEntity != null) {
+            List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);
             ProductParameterDto dto = new ProductParameterDto();
-            List<ProductParameterDto.ProductParameter> list = new ArrayList<ProductParameterDto.ProductParameter>();
-            list.add(parameter);
 
             dto.setProductParameterPicUrlEntity(productParameterPicUrlEntity);
             dto.setSupProductParameterEntity(supProductParameterEntity);
             dto.setSupProductParameterUrlEntity(supProductParameterUrlEntity);
-            dto.setProductParameterList(list);
+            dto.setProductParameterList(parameters);
+
+
+            //Map productParameterMap = Bean2MapConvert.transBean2Map(entity);
+            //Map productParameterPicUrlMap = Bean2MapConvert.transBean2Map(productParameterPicUrlEntity);
+            //Map supProductParameterMap = Bean2MapConvert.transBean2Map(supProductParameterEntity);
+            //Map supProductParameterUrlMap = Bean2MapConvert.transBean2Map(supProductParameterUrlEntity);
+
+            //dto.setProductParameterMap(productParameterMap);
+            //dto.setProductParameterPicUrlMap(productParameterPicUrlMap);
+            //dto.setSupProductParameterMap(supProductParameterMap);
+            //dto.setSupProductParameterUrlMap(supProductParameterUrlMap);
+
 
             modelMap.put("dto", dto);
 
             return "singe_product";
         }
         return "singe_product";
+    }
+
+
+    @RequestMapping("page.do")
+    public String getPage(ModelMap modelMap, Integer page, Integer fkId, String paramA, String paramB) {
+
+        List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkId, paramA, paramB);
+        ProductParameterPicUrlEntity entity = productParameterPicUrlService.selectByFkId(fkId);
+        if (entities.size() > 0) {
+
+            List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);
+            ProductParameterDto.ProductParameter dto = parameters.get(page);
+            modelMap.put("dto", dto);
+            modelMap.put("entity", entity);
+
+            return "paramtable";
+        }
+        return "paramtable";
     }
 
 

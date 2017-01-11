@@ -16,5 +16,5 @@ public interface ProductParameterService {
 
     List<ProductParameterEntity> selectParamB(int fkId, String paramA);
 
-    ProductParameterEntity selectProByParam(int fkId, String paramA, String paramB);
+    List<ProductParameterEntity>  selectProByParam(int fkId, String paramA, String paramB);
 }

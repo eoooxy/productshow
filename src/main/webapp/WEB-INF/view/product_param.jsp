@@ -1,3 +1,5 @@
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%--
@@ -19,8 +21,8 @@
             <div style="margin-top: 50px;">
                 <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
                     <option>请选择您需要导体A</option>
-                    <c:forEach items="${dto.productParameterList}" var="v">
-                        <option>${v.conductorA}</option>
+                    <c:forEach items="${dto.strings}" var="v">
+                        <option>${v}</option>
                     </c:forEach>
                 </select>
 
