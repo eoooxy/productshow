@@ -16,31 +16,42 @@ public class AnchorController {
 
     @RequestMapping("index.do")
     public String getIndex() {
-
-        System.out.println("index");
         return "index";
     }
 
-    @RequestMapping("product.do")
-    public String getProduct() {
-
-        System.out.println("product");
-        return "product";
+    @RequestMapping("productType.do")
+    public String getProductType() {
+        return "product_type";
     }
 
     @RequestMapping("services.do")
     public String getServices() {
-
-        System.out.println("services");
         return "services";
     }
 
     @RequestMapping("about.do")
     public String getAbout() {
-
-        System.out.println("about");
         return "about";
     }
 
+    @RequestMapping("productOne.do")
+    public String getProductOne() {
+        return "product_one";
+    }
+
+    @RequestMapping("productTwo.do")
+    public String getProductTwo() {
+        return "product_two";
+    }
+
+    @RequestMapping("productThere.do")
+    public String getProductThere() {
+        return "product_there";
+    }
+
+    @RequestMapping("back/login.do")
+    public String getBackLogin() {
+        return "back/index";
+    }
 
 }

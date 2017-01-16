@@ -354,7 +354,7 @@ function getDesProductParam(id) {
             $("#convert").html(data);
 
             $("#convert-ul").find("#des-li").remove();
-            var li = "<li id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>参数选择</a></li>";
+            var li = "<li id='des-li'><a href='#' onclick='getDesProductParam(" + id + ")'>详细参数</a></li>";
             $("#convert-ul").append(li);
         }
     });

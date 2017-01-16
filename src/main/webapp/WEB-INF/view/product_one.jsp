@@ -59,8 +59,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="portfolio-categ" id="convert-ul">
-                        <li><a>当前位置：</a></li>
-                        <li><a href="#" onclick="getMainSeriesProduct()">大类选择</a></li>
+                        <li><a href="javascript:void(0);" onclick="jumpProduct()">产品类型：</a></li>
+                        <li><a href="javascript:void(0);" onclick="getMainSeriesProduct()">焊接类</a></li>
                         <%-- <li><a href="#" title="">Finance</a></li>
                          <li><a href="#" title="">Products</a></li>
                          <li><a href="#" title="">Services</a></li>--%>

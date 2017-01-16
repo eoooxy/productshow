@@ -103,65 +103,6 @@
     </section>
 
 
-    <section id="content">
-        <div class="container">
-            <div class="row">
-                <div class="skill-home">
-                    <div class="skill-home-solid clearfix">
-
-                        <div class="col-md-3 text-center">
-                            <div class="box">
-                                <span class="icons c1"><i class="icon-settings icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Chemical</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 text-center">
-                            <div class="box">
-                                <span class="icons c2"><i class="icon-diamond icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Rubber</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 text-center">
-                            <div class="box">
-                                <span class="icons c3"><i class="icon-user icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Marbel</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 text-center">
-                            <div class="box">
-                                <span class="icons c4"><i class="icon-home icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Chemical</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-
     <section class="clients">
         <div class="container">
             <div class="clients-slider">

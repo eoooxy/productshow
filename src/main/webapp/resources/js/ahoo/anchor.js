@@ -12,7 +12,7 @@ function jumpIndex() {
 }
 
 function jumpProduct() {
-    location.href = "/product.do";
+    location.href = "/productType.do";
 }
 
 function jumpServices() {
@@ -21,4 +21,16 @@ function jumpServices() {
 
 function jumpAbout() {
     location.href = "/about.do";
+}
+
+function getProductOne() {
+    location.href = "/productOne.do";
+}
+
+function getProductTwo() {
+    location.href = "/productTwo.do";
+}
+
+function getProductThere() {
+    location.href = "/productThere.do";
 }
