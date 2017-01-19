@@ -13,9 +13,9 @@
     <link href="<%=request.getContextPath()%>/resources/css/default.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/default/easyui.css" />
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/icon.css" />
-    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs//jquery.easyui.min.1.2.2.js"></script>
-    <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs//outlook2.js'> </script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.min.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'> </script>
     <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
 
 </head>
@@ -70,8 +70,8 @@
             </table>
         </div>
         <div region="south" border="false" style="text-align: right; height: 30px; line-height: 30px;">
-            <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">
-                确定</a> <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">取消</a>
+            <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">确定</a>
+            <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">取消</a>
         </div>
     </div>
 </div>

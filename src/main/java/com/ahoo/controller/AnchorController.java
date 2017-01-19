@@ -54,4 +54,9 @@ public class AnchorController {
         return "back/index";
     }
 
+    @RequestMapping("back/index.do")
+    public String getBackIndex() {
+        return "back/index";
+    }
+
 }

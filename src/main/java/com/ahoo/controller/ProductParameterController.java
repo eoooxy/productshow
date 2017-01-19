@@ -11,7 +11,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA.
@@ -76,28 +78,52 @@ public class ProductParameterController {
         return "product_param";
     }
 
-    @RequestMapping("selectB.json")
-    public String getSelectB(ModelMap modelMap, Integer fkId, String paramA) {
+    @RequestMapping("back/selectA.json")
+    public void getSelectA(ModelMap modelMap, Integer fkRecId) {
 
-        List<ProductParameterEntity> entities = productParameterService.selectParamB(fkId, paramA);
-        String jsonStr = "";
+        List<ProductParameterEntity> entities = productParameterService.selectProDesParamByFkId(fkRecId);
+        if (entities.size() > 0) {
+            List<ProductParameterDto.ProductParameter> dtoA = ProductParameterConvert.convertFromEntity(entities);
+
+            List<Map<String, Object>> mapList = new ArrayList<Map<String, Object>>();
+            List<String> strings = new ArrayList<>();
+            for (ProductParameterDto.ProductParameter d : dtoA) {
+                if (!strings.contains(d.getConductorA())) {
+                    Map<String, Object> map = new HashMap<>();
+                    strings.add("{'name':"+d.getConductorA()+"}");
+                    map.put("name", d.getConductorA());
+                    map.put("recId", d.getRecId());
+                    mapList.add(map);
+                }
+            }
+
+            String jsonStr = JSON.toJSONString(mapList);
+            modelMap.put("mapList", jsonStr);
+        }
+    }
+
+    @RequestMapping("selectB.json")
+    public void getSelectB(ModelMap modelMap, Integer fkRecId, String paramA) {
+
+        List<ProductParameterEntity> entities = productParameterService.selectParamB(fkRecId, paramA);
+        //String jsonStr = "";
         if (entities.size() > 0) {
             List<ProductParameterDto.ProductParameter> dtoB = ProductParameterConvert.convertFromEntity(entities);
             modelMap.put("dtoB", dtoB);
 
-            jsonStr = JSON.toJSONString(dtoB);
-            return jsonStr;
+            //jsonStr = JSON.toJSONString(dtoB);
+            //return jsonStr;
         }
-        return jsonStr;
+        //return jsonStr;
     }
 
     @RequestMapping("queryOne.do")
-    public String getSelectOne(ModelMap modelMap, Integer fkId, String paramA, String paramB) {
+    public String getSelectOne(ModelMap modelMap, Integer fkRecId, String paramA, String paramB) {
 
-        List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkId, paramA, paramB);
-        ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(fkId);
-        SupProductParameterEntity supProductParameterEntity = supProductParameterService.selectByFkId(fkId);
-        SupProductParameterUrlEntity supProductParameterUrlEntity = supProductParameterUrlService.selectByFkId(fkId);
+        List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkRecId, paramA, paramB);
+        ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(fkRecId);
+        SupProductParameterEntity supProductParameterEntity = supProductParameterService.selectByFkId(fkRecId);
+        SupProductParameterUrlEntity supProductParameterUrlEntity = supProductParameterUrlService.selectByFkId(fkRecId);
 
 //productParameterPicUrlEntity != null &&
         if (entities.size() > 0 && supProductParameterEntity != null && supProductParameterUrlEntity != null) {

@@ -253,9 +253,9 @@ function select_checkbox() {
 
 
 function getParamB() {
-    var fkId = $("#fkId").val();
+    var fkRecId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
-    var data = {"fkId": fkId, "paramA": paramA};
+    var data = {"fkRecId": fkRecId, "paramA": paramA};
 
     $.ajax({
         type: "post",
@@ -263,7 +263,6 @@ function getParamB() {
         dataType: "json",
         data: data,
         success: function (data) {
-
             var obj = data.dtoB;
             $("#parameterB").empty();
             $("#parameterB").append("<option>请选择您需要导体B</option>");
@@ -279,13 +278,13 @@ function getParamB() {
 function getOneParam() {
 
     pageFlag = 0;
-    var fkId = $("#fkId").val();
+    var fkRecId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").text();
     if (paramB == undefined) {
-        var data = {"fkId": fkId, "paramA": paramA, "paramB": null};
+        var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": null};
     } else {
-        var data = {"fkId": fkId, "paramA": paramA, "paramB": paramB};
+        var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": paramB};
     }
 
     $.ajax({

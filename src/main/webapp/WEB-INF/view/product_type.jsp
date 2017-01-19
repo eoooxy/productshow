@@ -189,7 +189,7 @@
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/ahoo/product.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/back/product.js"></script>
 
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>

@@ -1,13 +1,19 @@
 package com.ahoo.controller;
 
 import com.ahoo.convert.ChildSeriesProductConvert;
+import com.ahoo.convert.MainSeriesProductConvert;
+import com.ahoo.convert.ProductParameterConvert;
 import com.ahoo.dto.ChildSeriesProductDto;
+import com.ahoo.dto.MainSeriesProductDto;
+import com.ahoo.dto.ProductParameterDto;
 import com.ahoo.entity.ChildSeriesProDesEntity;
 import com.ahoo.entity.ChildSeriesProductEntity;
 import com.ahoo.entity.MainSeriesProDesEntity;
+import com.ahoo.entity.MainSeriesProductEntity;
 import com.ahoo.service.ChildSeriesProDesService;
 import com.ahoo.service.ChildSeriesProductService;
 import com.ahoo.service.MainSeriesProDesService;
+import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -48,4 +54,19 @@ public class ChildSeriesProductController {
         }
         return "product_child";
     }
+
+    @RequestMapping("back/childType.json")
+    public String getChildType(ModelMap modelMap, Integer fkRecId) {
+
+        List<ChildSeriesProductEntity> entities = childSeriesProductService.selectChildProductByFk(fkRecId);
+        String jsonStr = "";
+        if (entities.size() > 0) {
+            List<ChildSeriesProductDto.ChildSeriesProduct> childTypeDto = ChildSeriesProductConvert.convertFromEntity(entities);
+            modelMap.put("childTypeDto", childTypeDto);
+            jsonStr = JSON.toJSONString(childTypeDto);
+            return jsonStr;
+        }
+        return jsonStr;
+    }
+
 }

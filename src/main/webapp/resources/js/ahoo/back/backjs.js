@@ -4,30 +4,32 @@
 var _menus = {
     "menus": [
         {
-            "menuid": "1", "icon": "icon-sys", "menuname": "数据管理",
+            "menuid": "1", "icon": "icon-sys", "menuname": "产品数据",
             "menus": [
                 {"menuid": "11", "menuname": "用户管理", "icon": "icon-nav", "url": "login.do"},
                 {"menuid": "12", "menuname": "角色管理", "icon": "icon-nav", "url": "demo2.html"},
-                {"menuid": "13", "menuname": "权限设置", "icon": "icon-nav", "url": "demo.html"},
-                {"menuid": "14", "menuname": "系统日志", "icon": "icon-nav", "url": "demo1.html"}
+                {"menuid": "13", "menuname": "焊接类", "icon": "icon-nav", "url": "three_all.do"}
             ]
-        }/*, {
-         "menuid": "2", "icon": "icon-sys", "menuname": "主页数据修改",
-         "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
-         {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"}
-         ]
-         }, {
-         "menuid": "3", "icon": "icon-sys", "menuname": "服务页数据维护",
-         "menus": [{"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
-         {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"}
-         ]
-         }, {
-         "menuid": "4", "icon": "icon-sys", "menuname": "关于页数据维护",
-         "menus": [{"menuid": "41", "menuname": "收支分类", "icon": "icon-nav", "url": "demo.html"},
-         {"menuid": "42", "menuname": "报表统计", "icon": "icon-nav", "url": "demo1.html"},
-         {"menuid": "43", "menuname": "添加支出", "icon": "icon-nav", "url": "demo2.html"}
-         ]
-         }*/
+        }, {
+            "menuid": "2", "icon": "icon-sys", "menuname": "产品介绍",
+            "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
+                {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"}
+            ]
+        }, {
+            "menuid": "3", "icon": "icon-sys", "menuname": "产品描述",
+            "menus": [
+                {"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
+                {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"},
+                {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"}
+            ]
+        }, {
+            "menuid": "4", "icon": "icon-sys", "menuname": "其他",
+            "menus": [
+                {"menuid": "41", "menuname": "收支分类", "icon": "icon-nav", "url": "demo.html"},
+                {"menuid": "42", "menuname": "报表统计", "icon": "icon-nav", "url": "demo1.html"},
+                {"menuid": "43", "menuname": "添加支出", "icon": "icon-nav", "url": "demo2.html"}
+            ]
+        }
     ]
 };
 

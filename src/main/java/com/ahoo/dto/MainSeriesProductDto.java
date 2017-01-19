@@ -14,9 +14,19 @@ public class MainSeriesProductDto {
 
     private String remark;
 
+    private List<String> strings;
+
     private MainSeriesProDesEntity desEntity;
 
     private List<MainSeriesProduct> mainSeriesProductList;
+
+    public List<String> getStrings() {
+        return strings;
+    }
+
+    public void setStrings(List<String> strings) {
+        this.strings = strings;
+    }
 
     public MainSeriesProDesEntity getDesEntity() {
         return desEntity;

@@ -2,6 +2,7 @@ package com.ahoo.controller;
 
 import com.ahoo.convert.MainSeriesProductConvert;
 import com.ahoo.dto.MainSeriesProductDto;
+import com.ahoo.dto.ProductParameterDto;
 import com.ahoo.entity.MainSeriesProDesEntity;
 import com.ahoo.entity.MainSeriesProductEntity;
 import com.ahoo.service.MainSeriesProDesService;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -46,5 +48,25 @@ public class MainSeriesProductController {
         return "product_total";
     }
 
+    @RequestMapping("back/three_all.do")
+    public String getBackThree(ModelMap modelMap) {
+        List<MainSeriesProductEntity> entities = mainSeriesProductService.selectAllProduct();
+        if (entities.size() > 0) {
+            List<MainSeriesProductDto.MainSeriesProduct> dtos = MainSeriesProductConvert.convertFromEntity(entities);
+            MainSeriesProductDto dto = new MainSeriesProductDto();
 
+            List<String> strings = new ArrayList<String>();
+            for (MainSeriesProductDto.MainSeriesProduct d : dtos) {
+                if (!strings.contains(d.getProductMainType())) {
+                    strings.add(d.getProductMainType());
+                }
+            }
+            dto.setStrings(strings);
+            dto.setMainSeriesProductList(dtos);
+            modelMap.put("dto", dto);
+            return "back/three_all";
+        }
+        return "back/three_all";
+
+    }
 }
