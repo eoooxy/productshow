@@ -50,4 +50,16 @@ public class ProductParameterServiceImpl implements ProductParameterService {
         List<ProductParameterEntity> entities = productParameterEntityMapper.selectDesByParam(map);
         return entities;
     }
+
+    @Override
+    public List<ProductParameterEntity> selectProByParamPage(int fkId, String paramA, Integer page, Integer pageSize) {
+        Map map = new HashMap<>();
+        map.put("fkId", fkId);
+        map.put("paramA", paramA);
+        map.put("page", page);
+        map.put("pageSize", pageSize);
+        List<ProductParameterEntity> entities = productParameterEntityMapper.selectDesByParamPage(map);
+        return entities;
+    }
+
 }

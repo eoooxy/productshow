@@ -90,7 +90,7 @@ public class ProductParameterController {
             for (ProductParameterDto.ProductParameter d : dtoA) {
                 if (!strings.contains(d.getConductorA())) {
                     Map<String, Object> map = new HashMap<>();
-                    strings.add("{'name':"+d.getConductorA()+"}");
+                    strings.add(d.getConductorA());
                     map.put("name", d.getConductorA());
                     map.put("recId", d.getRecId());
                     mapList.add(map);
@@ -110,11 +110,7 @@ public class ProductParameterController {
         if (entities.size() > 0) {
             List<ProductParameterDto.ProductParameter> dtoB = ProductParameterConvert.convertFromEntity(entities);
             modelMap.put("dtoB", dtoB);
-
-            //jsonStr = JSON.toJSONString(dtoB);
-            //return jsonStr;
         }
-        //return jsonStr;
     }
 
     @RequestMapping("queryOne.do")
@@ -172,5 +168,21 @@ public class ProductParameterController {
         return "paramtable";
     }
 
+    @RequestMapping("back/table.do")
+    public String getTableData(ModelMap modelMap, Integer childRecId, String paramA, Integer page, Integer pageSize) {
+
+        List<ProductParameterEntity> entities = productParameterService.selectProByParamPage(childRecId, paramA, page * pageSize, pageSize);
+        List<ProductParameterEntity> entities1 = productParameterService.selectParamB(childRecId,paramA);
+        if (entities.size() > 0) {
+            List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);
+            ProductParameterDto dto = new ProductParameterDto();
+            dto.setProductParameterList(parameters);
+            dto.setTotalPage((entities1.size() + pageSize - 1) / pageSize);
+            modelMap.put("dto", dto);
+
+            return "back/protable";
+        }
+        return "protable";
+    }
 
 }

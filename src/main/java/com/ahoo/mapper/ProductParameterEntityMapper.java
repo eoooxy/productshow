@@ -25,4 +25,6 @@ public interface ProductParameterEntityMapper {
     List<ProductParameterEntity> selectDesByFkId(int fkRecId);
 
     List<ProductParameterEntity> selectParamB(Map map);
+
+    List<ProductParameterEntity> selectDesByParamPage(Map map);
 }

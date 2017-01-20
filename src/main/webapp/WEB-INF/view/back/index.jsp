@@ -34,7 +34,7 @@
 </div>
 <div region="west" hide="true" split="true" title="导航菜单" style="width:180px;" id="west">
     <div id="nav" class="easyui-accordion" fit="true" border="false">
-        <!--  导航内容 -->
+        <!--  导航内容 js中写了 -->
 
     </div>
 
@@ -42,11 +42,7 @@
 <div id="mainPanle" region="center" style="background: #eee; overflow-y:hidden">
     <div id="tabs" class="easyui-tabs" fit="true" border="false">
         <div title="欢迎使用" style="padding:20px;overflow:hidden; color:red; ">
-            <h1 style="font-size:24px;">* 作者：疯狂秀才 QQ：1055818239</h1>
-            <h1 style="font-size:24px;">* BLOG: <a style="font-size:24px;color:green;" href="http://www.mycodes.net">疯狂秀才的博客</a>
-            </h1>
-            <h1 style="font-size:24px;">* 讨论群：112044258、32994605、36534121、56271061</h1>
-            <h1 style="font-size:24px;">* 广告：本人承接各类大中小型管理系统的软件的设计与开发，有需要的朋友联系我啦~~~~</h1>
+
         </div>
     </div>
 </div>

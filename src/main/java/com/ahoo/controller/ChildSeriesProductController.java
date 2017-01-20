@@ -56,17 +56,13 @@ public class ChildSeriesProductController {
     }
 
     @RequestMapping("back/childType.json")
-    public String getChildType(ModelMap modelMap, Integer fkRecId) {
+    public void getChildType(ModelMap modelMap, Integer fkRecId) {
 
         List<ChildSeriesProductEntity> entities = childSeriesProductService.selectChildProductByFk(fkRecId);
-        String jsonStr = "";
         if (entities.size() > 0) {
             List<ChildSeriesProductDto.ChildSeriesProduct> childTypeDto = ChildSeriesProductConvert.convertFromEntity(entities);
             modelMap.put("childTypeDto", childTypeDto);
-            jsonStr = JSON.toJSONString(childTypeDto);
-            return jsonStr;
         }
-        return jsonStr;
     }
 
 }
