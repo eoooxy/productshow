@@ -1,4 +1,3 @@
-@import url('http://fonts.useso.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700');
 @import url('font-awesome.css');
 @import url('animate.css');
 
@@ -317,7 +316,7 @@ header ul.nav li ul li ul {
     border-right: none;
     border-bottom: none;
     border-left: none;
-   /* border-bottom-color: none;*/
+    /* border-bottom-color: none;*/
     content: none;
 }
 
@@ -534,7 +533,7 @@ img.img-center {
 .testimonial-area {
     padding: 0 0 0 0;
     margin: 0;
- /*   background: url(../img/low-poly01.jpg) fixed center center;*/
+    /*   background: url(../img/low-poly01.jpg) fixed center center;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1013,8 +1012,8 @@ ul.portfolio-categ li {
     margin: 0;
     float: left;
     list-style: none;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    /*font-weight: 600;*/
     border: 1px solid #D5D5D5;
     margin-right: 15px;
 }
@@ -1202,10 +1201,10 @@ blockquote cite a:visited {
 }
 
 /* --- button --- */
-.btn {
+.dy-btn {
     text-align: center;
-    background: #E48907;
-    color: #fff;
+    background: #eee;
+    color: #000;
     border-radius: 0;
     border: none;
     padding: 8px 15px;
@@ -1221,7 +1220,7 @@ blockquote cite a:visited {
 }
 
 .btn-theme:hover {
-    color: #eee;
+    color: #f6f6f6;
 }
 
 /* --- list style --- */
@@ -1716,7 +1715,6 @@ article img.pull-right, article .align-right {
     margin: 5px 0 15px 15px;
 }
 
-
 .clear-marginbot {
     margin-bottom: 0;
 }
@@ -2032,6 +2030,20 @@ header .nav .caret {
         margin: 1%;
     }
 }
-	
+
+.well-legend {
+    display: block;
+    font-size: 14px;
+    width: auto;
+    padding: 2px 7px 2px 5px;
+    margin-bottom: 20px;
+    line-height: inherit;
+    color: #333;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
 	
  

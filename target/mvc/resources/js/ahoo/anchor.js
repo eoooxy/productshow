@@ -12,8 +12,7 @@ function jumpIndex() {
 }
 
 function jumpProduct() {
-    location.href = "/product.do";
-    getMainSeriesProduct();
+    location.href = "/productType.do";
 }
 
 function jumpServices() {
@@ -24,17 +23,14 @@ function jumpAbout() {
     location.href = "/about.do";
 }
 
-function getMainSeriesProduct() {
-    $.ajax({
-        type: "post",
-        url: "products.do",
-        //data:data,
-        success: function (data) {
-            console.log(data);
-            $("#convert").innerHTML = "<h1>123</h1>"
+function getProductOne() {
+    location.href = "/productOne.do";
+}
 
-            $("#convert").load(data);
-            window.location.reload();
-        }
-    });
+function getProductTwo() {
+    location.href = "/productTwo.do";
+}
+
+function getProductThere() {
+    location.href = "/productThere.do";
 }

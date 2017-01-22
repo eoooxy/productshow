@@ -75,28 +75,28 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
-        <url-pattern>*.css</url-pattern>
+        <url-pattern>*.woff</url-pattern>
     </servlet-mapping>
 
     <!--添加font的支持 -->
     <servlet-mapping>
         <servlet-name>default</servlet-name>
-        <url-pattern>*.woff</url-pattern>
+        <url-pattern>*.css</url-pattern>
     </servlet-mapping>
- <!--   <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.eot</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.svg</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.ttf</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.woff2</url-pattern>
-    </servlet-mapping>-->
+    <!--   <servlet-mapping>
+           <servlet-name>default</servlet-name>
+           <url-pattern>*.eot</url-pattern>
+       </servlet-mapping>
+       <servlet-mapping>
+           <servlet-name>default</servlet-name>
+           <url-pattern>*.svg</url-pattern>
+       </servlet-mapping>
+       <servlet-mapping>
+           <servlet-name>default</servlet-name>
+           <url-pattern>*.ttf</url-pattern>
+       </servlet-mapping>
+       <servlet-mapping>
+           <servlet-name>default</servlet-name>
+           <url-pattern>*.woff2</url-pattern>
+       </servlet-mapping>-->
 </web-app>

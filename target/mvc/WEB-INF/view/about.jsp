@@ -401,7 +401,7 @@
 <script src="<%=request.getContextPath()%>/resources/js/jquery.flexslider.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/animate.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>
-
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
 </body>
 </html>

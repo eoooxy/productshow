@@ -11,9 +11,7 @@ public class Java8New {
 
     @Test
     public void testJava8Lambad() {
-        MathMethod add = (a, b, c) -> a + b + c;
-
-        System.out.println(" 10 - 5  = " + add.sumA_B(10, 5, 5));
+        System.out.println((10+9)/10);
 
 
     }

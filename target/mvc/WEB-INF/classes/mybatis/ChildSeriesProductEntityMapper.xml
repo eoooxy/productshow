@@ -6,11 +6,10 @@
     <result column="PRODUCT_CHILD_TYPE" jdbcType="VARCHAR" property="productChildType" />
     <result column="PRODUCT_CHILD_URL" jdbcType="VARCHAR" property="productChildUrl" />
     <result column="REMARK" jdbcType="VARCHAR" property="remark" />
-    <result column="REMARK2" jdbcType="VARCHAR" property="remark2" />
     <result column="FK_REC_ID" jdbcType="INTEGER" property="fkRecId" />
   </resultMap>
   <sql id="Base_Column_List">
-    REC_ID, PRODUCT_CHILD_TYPE, PRODUCT_CHILD_URL, REMARK, REMARK2, FK_REC_ID
+    REC_ID, PRODUCT_CHILD_TYPE, PRODUCT_CHILD_URL, REMARK, FK_REC_ID
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -24,11 +23,9 @@
   </delete>
   <insert id="insert" parameterType="com.ahoo.entity.ChildSeriesProductEntity">
     insert into childseriesproduct (REC_ID, PRODUCT_CHILD_TYPE, PRODUCT_CHILD_URL, 
-      REMARK, REMARK2, FK_REC_ID
-      )
+      REMARK, FK_REC_ID)
     values (#{recId,jdbcType=INTEGER}, #{productChildType,jdbcType=VARCHAR}, #{productChildUrl,jdbcType=VARCHAR}, 
-      #{remark,jdbcType=VARCHAR}, #{remark2,jdbcType=VARCHAR}, #{fkRecId,jdbcType=INTEGER}
-      )
+      #{remark,jdbcType=VARCHAR}, #{fkRecId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.ahoo.entity.ChildSeriesProductEntity">
     insert into childseriesproduct
@@ -44,9 +41,6 @@
       </if>
       <if test="remark != null">
         REMARK,
-      </if>
-      <if test="remark2 != null">
-        REMARK2,
       </if>
       <if test="fkRecId != null">
         FK_REC_ID,
@@ -65,9 +59,6 @@
       <if test="remark != null">
         #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="remark2 != null">
-        #{remark2,jdbcType=VARCHAR},
-      </if>
       <if test="fkRecId != null">
         #{fkRecId,jdbcType=INTEGER},
       </if>
@@ -85,9 +76,6 @@
       <if test="remark != null">
         REMARK = #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="remark2 != null">
-        REMARK2 = #{remark2,jdbcType=VARCHAR},
-      </if>
       <if test="fkRecId != null">
         FK_REC_ID = #{fkRecId,jdbcType=INTEGER},
       </if>
@@ -99,8 +87,15 @@
     set PRODUCT_CHILD_TYPE = #{productChildType,jdbcType=VARCHAR},
       PRODUCT_CHILD_URL = #{productChildUrl,jdbcType=VARCHAR},
       REMARK = #{remark,jdbcType=VARCHAR},
-      REMARK2 = #{remark2,jdbcType=VARCHAR},
       FK_REC_ID = #{fkRecId,jdbcType=INTEGER}
     where REC_ID = #{recId,jdbcType=INTEGER}
   </update>
+
+  <select id="selectChildProductByFk" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from childseriesproduct
+    where FK_REC_ID = #{fkRecId,jdbcType=INTEGER}
+  </select>
+
 </mapper>
