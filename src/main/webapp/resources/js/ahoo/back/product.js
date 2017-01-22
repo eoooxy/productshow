@@ -2,6 +2,20 @@
  * Created by Administrator on 2017-1-12 0012.
  */
 
+$(function () {
+
+    $('#desPro').window({
+        title: '修改产品参数',
+        width: 350,
+        height: 410,
+        modal: true,
+        shadow: true,
+        closed: false,
+        resizable: false,
+        draggable: false
+    });
+
+});
 
 var page = 0, pageSize = 15;
 
@@ -121,21 +135,18 @@ function back_subPage(totalPage) {
 }
 
 
-function back_edit(a, id) {
-    $('#desPro').window({
-        title: '参数查看',
-        width: 300,
-        modal: true,
-        shadow: true,
-        closed: true,
-        height: 160,
-        resizable: false
-    });
+function back_edit(id) {
+    var data = {"recId": id};
 
+
+    $('#desPro').window('open');
 }
 
-function back_del(a, id) {
+function back_del(id) {
 
+    var data = {"recId": id};
+
+    $('#desPro').window('close');
 }
 
 

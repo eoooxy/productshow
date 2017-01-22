@@ -172,7 +172,7 @@ public class ProductParameterController {
     public String getTableData(ModelMap modelMap, Integer childRecId, String paramA, Integer page, Integer pageSize) {
 
         List<ProductParameterEntity> entities = productParameterService.selectProByParamPage(childRecId, paramA, page * pageSize, pageSize);
-        List<ProductParameterEntity> entities1 = productParameterService.selectParamB(childRecId,paramA);
+        List<ProductParameterEntity> entities1 = productParameterService.selectParamB(childRecId, paramA);
         if (entities.size() > 0) {
             List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);
             ProductParameterDto dto = new ProductParameterDto();
@@ -183,6 +183,16 @@ public class ProductParameterController {
             return "back/protable";
         }
         return "protable";
+    }
+
+    @RequestMapping("back/editDes.json")
+    public void editDes(ModelMap modelMap, Integer recId) {
+
+       /* ProductParameterEntity entity = productParameterService.selectByRecid(recId);
+        if (entity != null) {
+            ProductParameterDto.ProductParameter dto = ProductParameterConvert.convertFromEntity(entity);
+            modelMap.put("dto", dto);
+        }*/
     }
 
 }

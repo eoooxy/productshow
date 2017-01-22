@@ -8,19 +8,20 @@ var _menus = {
             "menus": [
                 {"menuid": "11", "menuname": "用户管理", "icon": "icon-nav", "url": "login.do"},
                 {"menuid": "12", "menuname": "角色管理", "icon": "icon-nav", "url": "demo2.html"},
-                {"menuid": "13", "menuname": "焊接类", "icon": "icon-nav", "url": "three_all.do"}
+                {"menuid": "13", "menuname": "焊接类产品参数", "icon": "icon-nav", "url": "three_all.do"}
             ]
         }, {
-            "menuid": "2", "icon": "icon-sys", "menuname": "产品介绍",
+            "menuid": "2", "icon": "icon-sys", "menuname": "产品类别",
             "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
-                {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"}
+                {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"},
+                {"menuid": "23", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo1.html"}
             ]
         }, {
             "menuid": "3", "icon": "icon-sys", "menuname": "产品描述",
             "menus": [
                 {"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
                 {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"},
-                {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"}
+                {"menuid": "32", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo2.html"}
             ]
         }, {
             "menuid": "4", "icon": "icon-sys", "menuname": "其他",
@@ -42,7 +43,8 @@ function openPwd() {
         shadow: true,
         closed: true,
         height: 160,
-        resizable: false
+        resizable: false,
+        draggable: false
     });
 }
 //关闭登录窗口

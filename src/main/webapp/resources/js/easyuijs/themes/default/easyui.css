@@ -1,3 +1,8 @@
+.panel-header,
+.panel-body {
+  border-width: 1px;
+  border-style: solid;
+}
 .panel {
   overflow: hidden;
   text-align: left;
@@ -6,11 +11,6 @@
   -moz-border-radius: 0 0 0 0;
   -webkit-border-radius: 0 0 0 0;
   border-radius: 0 0 0 0;
-}
-.panel-header,
-.panel-body {
-  border-width: 1px;
-  border-style: solid;
 }
 .panel-header {
   padding: 5px;

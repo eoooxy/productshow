@@ -72,10 +72,10 @@
                 </c:if>
                 <td>
                     <a class="easyui-linkbutton l-btn l-btn-small" icon="icon-edit" href="javascript:void(0)"
-                       onclick="back_edit('${v.conductorA}','${v.fkChildRecId}')"><span class="l-btn-left l-btn-icon-left"><span
+                       onclick="back_edit('${v.recId}')"><span class="l-btn-left l-btn-icon-left"><span
                             class="l-btn-text">编辑</span><span class="l-btn-icon icon-edit">&nbsp;</span></span></a>
                     <a class="easyui-linkbutton l-btn l-btn-small" icon="icon-clear" href="javascript:void(0)"
-                       onclick="back_del('${v.conductorA}','${v.fkChildRecId}')"><span class="l-btn-left l-btn-icon-left"><span
+                       onclick="back_del('${v.recId}')"><span class="l-btn-left l-btn-icon-left"><span
                             class="l-btn-text">删除</span><span class="l-btn-icon icon-clear">&nbsp;</span></span></a>
 
                 </td>
