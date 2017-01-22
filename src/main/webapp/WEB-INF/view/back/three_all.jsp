@@ -9,13 +9,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link href="<%=request.getContextPath()%>/resources/css/default.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css"
           href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/default/easyui.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/icon.css"/>
     <link href="<%=request.getContextPath()%>/resources/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<div style="width:980px;margin: 0 auto;text-align: center">
+<div class="easyui-layout" style="width:980px;margin: 0 auto;text-align: center">
     <div style="margin-top: 20px;">
         <span style="color: red;font-size: 13px">* 焊接父类:</span>
         <select id="fatherselect" style="width:130px;" onchange="back_getChildType()" on>
@@ -33,48 +34,24 @@
         <a class="easyui-linkbutton" icon="icon-search" href="javascript:void(0)" onclick="back_getProDes()">查询</a>
     </div>
 
-    <div id="tableDiv" style="margin-top:30px;width: 100%;">
+    <div class="easyui-layout" id="tableDiv" style="margin-top:30px;width: 100%;"></div>
 
 
-    </div>
-
-
-
-    <!--修改密码窗口-->
-    <div id="w" class="easyui-window" title="修改密码" collapsible="false" minimizable="false"
-         maximizable="false" icon="icon-save" style="width: 300px; height: 150px; padding: 5px;
-        background: #fafafa;">
+    <!--修改参数的界面-->
+    <div id="desPro" class="easyui-window" title="修改密码" icon="icon-save" style="width: 300px; height: 150px; padding: 5px;
+        background: #fafafa;" closed="true">
         <div class="easyui-layout" fit="true">
-            <div region="center" border="false" style="padding: 10px; background: #fff; border: 1px solid #ccc;">
-                <table cellpadding=3>
-                    <tr>
-                        <td>新密码：</td>
-                        <td><input id="txtNewPass" type="Password" class="txt01"/></td>
-                    </tr>
-                    <tr>
-                        <td>确认密码：</td>
-                        <td><input id="txtRePass" type="Password" class="txt01"/></td>
-                    </tr>
-                </table>
-            </div>
-            <div region="south" border="false" style="text-align: right; height: 30px; line-height: 30px;">
-                <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">确定</a>
-                <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">取消</a>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div id="window_des" class="easyui-window" title="编辑数据" icon="icon-edit" style="width:500px;height:200px;padding:5px;background: #fafafa;">
-        <div class="easyui-layout" data-options="fit:true">
-            <div data-options="region:'center'" style="padding:10px;">
+            <form style="padding:10px 20px 10px 40px;">
+                <div region="center" border="false" style="padding: 10px; background: #fff; border: 1px solid #ccc;">
                 内容
-            </div>
-            <div data-options="region:'south',border:false" style="text-align:right;padding:5px 0 0;">
-                <a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="" style="width:80px">Ok</a>
-                <a class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" href="javascript:void(0)" onclick="" style="width:80px">Cancel</a>
-            </div>
+
+                </div>
+
+                <div region="south" border="false" style="text-align: right; height: 30px; line-height: 30px;">
+                    <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">确定</a>
+                    <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">取消</a>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -84,6 +61,8 @@
         src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
 <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/product.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
 
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>

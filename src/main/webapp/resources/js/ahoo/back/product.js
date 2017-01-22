@@ -121,11 +121,20 @@ function back_subPage(totalPage) {
 }
 
 
-function back_edit(a,id){
+function back_edit(a, id) {
+    $('#desPro').window({
+        title: '参数查看',
+        width: 300,
+        modal: true,
+        shadow: true,
+        closed: true,
+        height: 160,
+        resizable: false
+    });
 
 }
 
-function back_del(a,id){
+function back_del(a, id) {
 
 }
 

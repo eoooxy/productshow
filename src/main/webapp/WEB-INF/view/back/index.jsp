@@ -10,12 +10,14 @@
 <head>
     <title>主页</title>
 
-    <link href="<%=request.getContextPath()%>/resources/css/default.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/default/easyui.css" />
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/icon.css" />
+    <link href="<%=request.getContextPath()%>/resources/css/default.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/js/easyuijs/themes/icon.css"/>
     <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'> </script>
+    <script type="text/javascript"
+            src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'></script>
     <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
 
 </head>
