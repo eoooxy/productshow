@@ -58,11 +58,11 @@
                     </td>
                 </tr>
                 <input type="hidden" id="recIdMain" name="recId">
-                <input type="hidden" id="recIdMainDes" name="recDesId">
+                <input type="hidden" id="recIdMainDes" name="recIdDes">
             </table>
         </form>
         <div style="text-align: right;height: 35px; padding: 0 10px;">
-            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('main')">增加</a>
+            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('main')">新增</a>
             <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)"
                onclick="saveProDes('main')">更新</a>
         </div>
@@ -97,12 +97,12 @@
                     </td>
                 </tr>
                 <input type="hidden" id="recIdChild" name="recId">
-                <input type="hidden" id="recIdChildDes" name="recDesId">
+                <input type="hidden" id="recIdChildDes" name="recIdDes">
                 <input type="hidden" id="fkChildRecIdChild" name="fkChildRecId">
             </table>
         </form>
         <div style="text-align: right;height: 35px; padding: 3px 0 0;">
-            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('child')">增加</a>
+            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('child')">新增</a>
             <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)"
                onclick="saveProDes('child')">更新</a>
         </div>

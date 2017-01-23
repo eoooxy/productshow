@@ -124,6 +124,7 @@ function back_edit(id, mark) {
                     $("#productTitleChild").val(obj.productTitle);
                     $("#productDesChild").val(obj.productDes);
                     $("#fkChildRecIdChild").val(obj.fkRecId);
+                    $("#recIdChildDes").val(obj.recIdDes);
 
                     $("#fkChildValue").val("隶属于：" + $("#fatherselect option:selected").text());
                     $("#desEditMain").hide();
@@ -145,6 +146,7 @@ function back_edit(id, mark) {
                     $("#productMainType").val(obj.productMainType);
                     $("#productTitleMain").val(obj.productTitle);
                     $("#productDesMain").val(obj.productDes);
+                    $("#recIdMainDes").val(obj.recIdDes);
 
                     $("#desEditChild").hide();
                     $("#desEditMain").show();
@@ -166,13 +168,15 @@ function back_addPro(mark) {
         case 'child' :
             if ($("#productChildType").val() == "" || $("#productTitleChild").val() == "" || $("#productDesChild").val() == "" || $("#mainpic").val()) {
                 msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                return false;
             }
-            return false;
+            break;
         case 'main':
             if ($("#productMainType").val() == "" || $("#productTitleMain").val() == "" || $("#productDesMain").val() == "" || $("#childPic").val()) {
                 msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                return false;
             }
-            return false;
+            break;
     }
 
     var data = $("#desProFormMain").serialize();
@@ -191,14 +195,27 @@ function saveProDes(mark) {
         case 'child' :
             if ($("#productChildType").val() == "" || $("#productTitleChild").val() == "" || $("#productDesChild").val() == "" || $("#mainpic").val()) {
                 msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                return false;
             }
-            return false;
+            break;
         case 'main':
             if ($("#productMainType").val() == "" || $("#productTitleMain").val() == "" || $("#productDesMain").val() == "" || $("#childPic").val()) {
                 msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                return false;
             }
-            return false;
+            break;
+
     }
+    var data = $("#desProFormMain").serialize();
+    console.log(data);
+    $.ajax({
+        type: "post",
+        url: "editDes.json",
+        dataType: "json",
+        data: data,
+        success: function (data) {
+        }
+    });
 
 
 }

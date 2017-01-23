@@ -9,6 +9,7 @@ import com.ahoo.entity.ChildSeriesProDesEntity;
 import com.ahoo.entity.ChildSeriesProductEntity;
 import com.ahoo.entity.MainSeriesProDesEntity;
 import com.ahoo.entity.MainSeriesProductEntity;
+import com.ahoo.service.Base64ToImageService;
 import com.ahoo.service.MainSeriesProDesService;
 import com.ahoo.service.MainSeriesProductService;
 import com.sun.javafx.sg.prism.NGShape;
@@ -36,6 +37,8 @@ public class MainSeriesProductController {
     @Autowired
     MainSeriesProDesService mainSeriesProDesService;
 
+    @Autowired
+    Base64ToImageService base64ToImageService;
 
     @RequestMapping("proTotal.do")
     public String getProduct(ModelMap modelMap) {
@@ -107,10 +110,12 @@ public class MainSeriesProductController {
             MainSeriesProductDto dto = new MainSeriesProductDto();
 
             dto.setRecId(productEntity.getRecId());
+            dto.setRecIdDes(desEntity.getRecId());
             dto.setProductMainType(productEntity.getProductMainType());
             dto.setProductMainUrl(productEntity.getProductMainUrl());
             dto.setProductTitle(desEntity.getProductTitle());
             dto.setProductDes(desEntity.getProductDes());
+
             //dto.setFkRecId(productEntity.getFkRecId());
 
             modelMap.put("dto", dto);
@@ -127,10 +132,17 @@ public class MainSeriesProductController {
             productEntity.setRecId(dto.getRecId());
             productEntity.setProductMainType(dto.getProductMainType());
 
-            desEntity.setRecId(dto.getRecId());
+            desEntity.setRecId(dto.getRecIdDes());
             desEntity.setProductDes(dto.getProductDes());
             desEntity.setProductTitle(dto.getProductTitle());
             desEntity.setFkRecId(dto.getRecId());
+
+            //保存图片到服务器 把图片地址放到 数据库
+            String picName = System.currentTimeMillis() + ".jpg";
+            String path = "E:/ahoo/service";
+            base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, path);
+            productEntity.setProductMainUrl(path + "/" + picName);
+
 
             if (mainSeriesProductService.updatePro(productEntity) > 0 && mainSeriesProDesService.updatePro(desEntity) > 0) {
                 msg.setCode("1");

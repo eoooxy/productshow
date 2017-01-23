@@ -44,4 +44,19 @@ public class MainSeriesProductServiceImpl implements MainSeriesProductService {
     public MainSeriesProductEntity selectProByPkRecId(int pkRecId) {
         return mainSeriesProductEntityMapper.selectByPrimaryKey(pkRecId);
     }
+
+    @Override
+    public int addPro(MainSeriesProductEntity entity) {
+        return mainSeriesProductEntityMapper.insertSelective(entity);
+    }
+
+    @Override
+    public int updatePro(MainSeriesProductEntity entity) {
+        return mainSeriesProductEntityMapper.updateByPrimaryKeySelective(entity);
+    }
+
+    @Override
+    public int del(int pkRecId) {
+        return mainSeriesProductEntityMapper.deleteByPrimaryKey(pkRecId);
+    }
 }
