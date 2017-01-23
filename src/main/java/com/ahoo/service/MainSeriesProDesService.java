@@ -11,4 +11,10 @@ public interface MainSeriesProDesService {
     MainSeriesProDesEntity selectById(int id);
 
     MainSeriesProDesEntity selectByFkId(int fkId);
+
+    int addPro(MainSeriesProDesEntity entity);
+
+    int updatePro(MainSeriesProDesEntity entity);
+
+    int del(int pkRecId);
 }

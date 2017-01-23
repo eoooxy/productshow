@@ -14,7 +14,7 @@ var _menus = {
             "menuid": "2", "icon": "icon-sys", "menuname": "产品类别",
             "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
                 {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"},
-                {"menuid": "23", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo1.html"}
+                {"menuid": "23", "menuname": "焊接类别与描述", "icon": "icon-nav", "url": "three_des.do"}
             ]
         }, {
             "menuid": "3", "icon": "icon-sys", "menuname": "产品描述",
@@ -72,13 +72,13 @@ function serverLogin() {
         return false;
     }
 
-    $.post('/ajax/editpassword.ashx?newpass=' + $newpass.val(), function (msg) {
-        msgShow('系统提示', '恭喜，密码修改成功！<br>您的新密码为：' + msg, 'info');
-        $newpass.val('');
-        $rePass.val('');
-        close();
-    })
-
+    /* $.post('/ajax/editpassword.ashx?newpass=' + $newpass.val(), function (msg) {
+     msgShow('系统提示', '恭喜，密码修改成功！<br>您的新密码为：' + msg, 'info');
+     $newpass.val('');
+     $rePass.val('');
+     close();
+     })
+     */
 }
 
 $(function () {

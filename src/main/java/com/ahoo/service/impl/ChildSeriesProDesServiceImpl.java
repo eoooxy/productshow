@@ -31,4 +31,19 @@ public class ChildSeriesProDesServiceImpl implements ChildSeriesProDesService {
 
         return entity;
     }
+
+    @Override
+    public int addPro(ChildSeriesProDesEntity entity) {
+        return childSeriesProDesEntityMapper.insertSelective(entity);
+    }
+
+    @Override
+    public int updatePro(ChildSeriesProDesEntity entity) {
+        return childSeriesProDesEntityMapper.updateByPrimaryKeySelective(entity);
+    }
+
+    @Override
+    public int del(int pkRecId) {
+        return childSeriesProDesEntityMapper.deleteByPrimaryKey(pkRecId);
+    }
 }

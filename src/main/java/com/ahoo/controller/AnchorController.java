@@ -59,4 +59,9 @@ public class AnchorController {
         return "back/index";
     }
 
+    @RequestMapping("back/three_des.do")
+    public String getBackThreeDes() {
+        return "back/three_des";
+    }
+
 }

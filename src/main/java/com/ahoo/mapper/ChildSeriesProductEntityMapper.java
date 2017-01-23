@@ -4,6 +4,7 @@ import com.ahoo.entity.ChildSeriesProductEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface ChildSeriesProductEntityMapper {
@@ -20,4 +21,6 @@ public interface ChildSeriesProductEntityMapper {
     int updateByPrimaryKey(ChildSeriesProductEntity record);
 
     List<ChildSeriesProductEntity> selectChildProductByFk(int fkRecId);
+
+    List<ChildSeriesProductEntity> selectChildProductByFkPage(Map map);
 }

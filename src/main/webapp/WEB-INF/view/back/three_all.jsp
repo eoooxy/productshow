@@ -102,13 +102,12 @@
 <script type="text/javascript"
         src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
-<script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/product.js'></script>
-<script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'></script>
 <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
+<script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/product.js'></script>
 
-<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
+<%--<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
-<script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>--%>
 </body>
 <style>.panel-title {
     font-size: 13px;

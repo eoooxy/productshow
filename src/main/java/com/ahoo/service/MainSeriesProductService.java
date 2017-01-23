@@ -14,4 +14,13 @@ public interface MainSeriesProductService {
 
     List<MainSeriesProductEntity> selectAllProduct();
 
+    List<MainSeriesProductEntity> selectProductPage(int page, int pageSize);
+
+    MainSeriesProductEntity selectProByPkRecId(int pkRecId);
+
+    int addPro(MainSeriesProductEntity entity);
+
+    int updatePro(MainSeriesProductEntity entity);
+
+    int del(int pkRecId);
 }

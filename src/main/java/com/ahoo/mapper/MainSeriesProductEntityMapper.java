@@ -4,6 +4,7 @@ import com.ahoo.entity.MainSeriesProductEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface MainSeriesProductEntityMapper {
@@ -20,4 +21,6 @@ public interface MainSeriesProductEntityMapper {
     int updateByPrimaryKey(MainSeriesProductEntity record);
 
     List<MainSeriesProductEntity> selectAllProduct();
+
+    List<MainSeriesProductEntity> selectProductPage(Map map);
 }

@@ -25,4 +25,6 @@ public interface ProductParameterService {
     int addPro(ProductParameterEntity entity);
 
     int updatePro(ProductParameterEntity entity);
+
+    int del(int pkRecId);
 }

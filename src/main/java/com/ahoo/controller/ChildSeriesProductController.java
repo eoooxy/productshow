@@ -34,6 +34,9 @@ public class ChildSeriesProductController {
     ChildSeriesProductService childSeriesProductService;
 
     @Autowired
+    ChildSeriesProDesService childSeriesProDesService;
+
+    @Autowired
     MainSeriesProDesService mainSeriesProDesService;
 
     @RequestMapping("proChild.do")
@@ -65,4 +68,36 @@ public class ChildSeriesProductController {
         }
     }
 
+    @RequestMapping("back/childType.do")
+    public String getChildType(ModelMap modelMap, Integer fkRecId, Integer page, Integer pageSize) {
+
+        List<ChildSeriesProductEntity> entities = childSeriesProductService.selectChildProductByFkPage(fkRecId, page, pageSize);
+        if (entities.size() > 0) {
+            List<ChildSeriesProductDto.ChildSeriesProduct> dtos = ChildSeriesProductConvert.convertFromEntity(entities);
+            ChildSeriesProductDto dto = new ChildSeriesProductDto();
+            dto.setChildSeriesProductList(dtos);
+            dto.setMark("child");
+            dto.setTotalPage((entities.size() + pageSize - 1) / pageSize);
+            modelMap.put("dto", dto);
+            return "back/protable_des";
+        }
+        return "back/protable_des";
+    }
+
+    @RequestMapping("back/getChildByPk.json")
+    public void getProByFkRecId(ModelMap modelMap, Integer id) {
+        ChildSeriesProductEntity productEntity = childSeriesProductService.selectProByPkRecId(id);
+        ChildSeriesProDesEntity desEntity = childSeriesProDesService.selectByFkId(id);
+        if (productEntity != null && desEntity != null) {
+            ChildSeriesProductDto dto = new ChildSeriesProductDto();
+            dto.setRecId(productEntity.getRecId());
+            dto.setProductChildType(productEntity.getProductChildType());
+            dto.setProductChildUrl(productEntity.getProductChildUrl());
+            dto.setProductTitle(desEntity.getProductTitle());
+            dto.setProductDes(desEntity.getProductDes());
+            dto.setFkRecId(productEntity.getFkRecId());
+
+            modelMap.put("dto", dto);
+        }
+    }
 }

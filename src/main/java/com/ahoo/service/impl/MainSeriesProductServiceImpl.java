@@ -6,7 +6,9 @@ import com.ahoo.service.MainSeriesProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA.
@@ -27,5 +29,19 @@ public class MainSeriesProductServiceImpl implements MainSeriesProductService {
             return entities;
         }
         return null;
+    }
+
+    @Override
+    public List<MainSeriesProductEntity> selectProductPage(int page, int pageSize) {
+        Map map = new HashMap<>();
+        map.put("page", page);
+        map.put("pageSize", pageSize);
+        List<MainSeriesProductEntity> entities = mainSeriesProductEntityMapper.selectProductPage(map);
+        return entities;
+    }
+
+    @Override
+    public MainSeriesProductEntity selectProByPkRecId(int pkRecId) {
+        return mainSeriesProductEntityMapper.selectByPrimaryKey(pkRecId);
     }
 }

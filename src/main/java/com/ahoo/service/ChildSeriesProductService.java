@@ -11,5 +11,18 @@ import java.util.List;
  * Time: 16:48
  */
 public interface ChildSeriesProductService {
+
     List<ChildSeriesProductEntity> selectChildProductByFk(int fkRecId);
+
+    List<ChildSeriesProductEntity> selectChildProductByFkPage(int fkRecId, int page, int pageSize);
+
+    ChildSeriesProductEntity selectProByPkRecId(int pkRecId);
+
+    int addPro(ChildSeriesProductEntity entity);
+
+    int updatePro(ChildSeriesProductEntity entity);
+
+    int del(int pkRecId);
+
+
 }

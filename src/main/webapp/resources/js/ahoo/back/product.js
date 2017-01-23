@@ -26,7 +26,7 @@ function back_getProDes(totalPage, mark) {
     var fatherRecId = $("#fatherselect option:selected").val();
     if (childRecId == null || fatherRecId == null || childRecId == "" || fatherRecId == "") {
         msgShow('系统提示', '带*的必选！', 'warning');
-        return;
+        return false;
     }
     var paramA = $("#parameterselect option:selected").text().trim();
     if (paramA == null || paramA == "" || paramA == " ") {
@@ -58,7 +58,7 @@ function back_getChildType() {
     if (fkRecId == "" || fkRecId == null) {
         $("#childselect").empty();
         $("#parameterselect").empty();
-        return;
+        return false;
     }
     console.log(fkRecId);
     var data = {"fkRecId": fkRecId};
@@ -86,7 +86,7 @@ function back_getParam() {
     var fkRecId = $("#childselect option:selected").val();
     if (fkRecId == "" || fkRecId == null) {
         $("#parameterselect").empty();
-        return;
+        return false;
     }
 
     console.log(fkRecId);
@@ -117,7 +117,7 @@ function back_addPage(totalPage) {
     if (page > totalPage - 1) {
         msgShow('系统提示', '已经最后一页啦！', 'warning');
         page -= 1;
-        return;
+        return false;
     } else {
         back_getProDes(totalPage, true);
     }
@@ -128,7 +128,7 @@ function back_subPage(totalPage) {
     if (page < 0) {
         msgShow('系统提示', '已经是第一页啦！', 'warning');
         page = 0;
-        return;
+        return false;
     } else {
         back_getProDes(totalPage, true);
     }
@@ -139,7 +139,7 @@ function back_edit(id) {
     var data = {"recId": id};
     $.ajax({
         type: "post",
-        url: "editDes.json",
+        url: "editPro.json",
         dataType: "json",
         data: data,
         success: function (data) {
@@ -156,6 +156,7 @@ function back_edit(id) {
             $("#fkChildRecId").val(obj.fkChildRecId);
             var childRecId = $("#childselect option:selected").text();
             $("#childRecId").val(childRecId);
+            $("#recId").val(id);
         }
     });
     $('#desPro').window('open');
@@ -163,7 +164,22 @@ function back_edit(id) {
 }
 
 function back_del(id) {
-    var data = {"recId": id};
+    var data = {"pkRecId": id};
+    $.messager.confirm("系统消息", "确定要删除，此操作不可逆！", function (r) {
+        if (r) {
+            $.ajax({
+                type: "post",
+                url: "delPro.json",
+                dataType: "json",
+                data: data,
+                success: function (data) {
+                    var msg = data.msg;
+                    msgShow("系统消息", msg.ctx, "info");
+                    back_getProDes();
+                }
+            });
+        }
+    })
 }
 
 function back_addPro() {
@@ -173,7 +189,8 @@ function back_addPro() {
     $("#childRecId").val(childRecId);
     $("#fkChildRecId").val(fkChildRecId);
     if (childRecId == "" || childRecId == " " || childRecId == null || fkChildRecId == "" || fkChildRecId == " " || fkChildRecId == null) {
-        return;
+        msgShow('系统消息', '请先选定隶属子类', 'warning');
+        return false;
     }
     $('#desPro').window('open');
     state = "add";
@@ -183,16 +200,21 @@ function saveProDes() {
     var data = $.param({'state': state}) + '&' + $('#desProForm').serialize();
     $.ajax({
         type: "post",
-        url: "savePro.do",
+        url: "savePro.json",
+        dataType: "json",
         data: data,
         success: function (data) {
-
+            var msg = data.msg;
+            msgShow("系统消息", msg.ctx, "info");
+            cancelWindow();
+            back_getProDes();
         }
     });
 }
 function cancelWindow() {
     $('#desPro').window('close');
 }
+
 
 function msgShow(title, msgString, msgType) {
     $.messager.alert(title, msgString, msgType);

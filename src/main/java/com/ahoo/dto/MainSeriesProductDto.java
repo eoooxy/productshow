@@ -12,6 +12,10 @@ public class MainSeriesProductDto {
 
     private String productMainUrl;
 
+    private String productTitle;
+
+    private String productDes;
+
     private String remark;
 
     private List<String> strings;
@@ -19,6 +23,52 @@ public class MainSeriesProductDto {
     private MainSeriesProDesEntity desEntity;
 
     private List<MainSeriesProduct> mainSeriesProductList;
+
+    private Integer totalPage;
+
+    private String mark;
+
+    private Integer recIdDes;
+
+    public Integer getRecIdDes() {
+        return recIdDes;
+    }
+
+    public void setRecIdDes(Integer recIdDes) {
+        this.recIdDes = recIdDes;
+    }
+
+    public String getProductTitle() {
+        return productTitle;
+    }
+
+    public void setProductTitle(String productTitle) {
+        this.productTitle = productTitle;
+    }
+
+    public String getProductDes() {
+        return productDes;
+    }
+
+    public void setProductDes(String productDes) {
+        this.productDes = productDes;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
+
+    public Integer getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(Integer totalPage) {
+        this.totalPage = totalPage;
+    }
 
     public List<String> getStrings() {
         return strings;

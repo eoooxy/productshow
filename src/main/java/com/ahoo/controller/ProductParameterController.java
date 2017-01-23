@@ -186,8 +186,8 @@ public class ProductParameterController {
         return "protable";
     }
 
-    @RequestMapping("back/editDes.json")
-    public void editDes(ModelMap modelMap, Integer recId) {
+    @RequestMapping("back/editPro.json")
+    public void update(ModelMap modelMap, Integer recId) {
 
         ProductParameterEntity entity = productParameterService.selectByPkId(recId);
         if (entity != null) {
@@ -196,22 +196,23 @@ public class ProductParameterController {
         }
     }
 
-    @RequestMapping("back/savePro.do")
+    @RequestMapping("back/savePro.json")
     public void save(ModelMap modelMap, String state, ProductParameterDto.ProductParameter dto) {
         int flag;
         MessageDto msg = new MessageDto();
-        /*switch (state) {
+        switch (state) {
             case "edit":
                 ProductParameterEntity entityEdit = ProductParameterConvert.convertFromDto(dto);
                 if (entityEdit != null) {
                     flag = productParameterService.updatePro(entityEdit);
                     if (flag > 0) {
-                        msg.setMessageCode("1");
-                        msg.setMessageCtx("更改成功！");
+                        msg.setCode("1");
+                        msg.setCtx("更改成功！");
                     } else {
-                        msg.setMessageCode("0");
-                        msg.setMessageCtx("更改失败！");
+                        msg.setCode("0");
+                        msg.setCtx("更改失败！");
                     }
+                    modelMap.put("msg", msg);
                 }
                 break;
             case "add":
@@ -219,15 +220,30 @@ public class ProductParameterController {
                 if (entityAdd != null) {
                     flag = productParameterService.addPro(entityAdd);
                     if (flag > 0) {
-                        msg.setMessageCode("1");
-                        msg.setMessageCtx("新增成功！");
+                        msg.setCode("1");
+                        msg.setCtx("新增成功！");
                     } else {
-                        msg.setMessageCode("0");
-                        msg.setMessageCtx("新增成功！");
+                        msg.setCode("0");
+                        msg.setCtx("新增成功！");
                     }
+                    modelMap.put("msg", msg);
                 }
                 break;
-        }*/
+        }
+    }
+
+    @RequestMapping("back/delPro.json")
+    public void del(ModelMap modelMap, Integer pkRecId) {
+        MessageDto msg = new MessageDto();
+        if (pkRecId > 0 && productParameterService.del(pkRecId) > 0) {
+            msg.setCode("1");
+            msg.setCtx("删除成功！");
+            modelMap.put("msg", msg);
+        } else {
+            msg.setCode("0");
+            msg.setCtx("删除失败！");
+            modelMap.put("msg", msg);
+        }
     }
 
 }

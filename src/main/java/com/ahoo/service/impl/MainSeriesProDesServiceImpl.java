@@ -31,4 +31,19 @@ public class MainSeriesProDesServiceImpl implements MainSeriesProDesService {
 
         return entity;
     }
+
+    @Override
+    public int addPro(MainSeriesProDesEntity entity) {
+        return mainSeriesProDesEntityMapper.insertSelective(entity);
+    }
+
+    @Override
+    public int updatePro(MainSeriesProDesEntity entity) {
+        return mainSeriesProDesEntityMapper.updateByPrimaryKeySelective(entity);
+    }
+
+    @Override
+    public int del(int pkRecId) {
+        return mainSeriesProDesEntityMapper.deleteByPrimaryKey(pkRecId);
+    }
 }

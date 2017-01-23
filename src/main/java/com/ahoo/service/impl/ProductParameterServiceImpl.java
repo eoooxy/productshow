@@ -78,4 +78,9 @@ public class ProductParameterServiceImpl implements ProductParameterService {
         return productParameterEntityMapper.updateByPrimaryKeySelective(entity);
     }
 
+    @Override
+    public int del(int pkRecId) {
+        return productParameterEntityMapper.deleteByPrimaryKey(pkRecId);
+    }
+
 }

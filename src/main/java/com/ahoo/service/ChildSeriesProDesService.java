@@ -12,4 +12,10 @@ public interface ChildSeriesProDesService {
 
     ChildSeriesProDesEntity selectByFkId(int fkId);
 
+    int addPro(ChildSeriesProDesEntity entity);
+
+    int updatePro(ChildSeriesProDesEntity entity);
+
+    int del(int pkRecId);
+
 }

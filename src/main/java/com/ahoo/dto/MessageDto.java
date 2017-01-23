@@ -10,23 +10,24 @@ package com.ahoo.dto;
 public class MessageDto {
 
     //返回代码 1为成功 0为失败
-    private String MessageCode;
+    private String code;
     //返回的提示消息
-    private String MessageCtx;
+    private String ctx;
 
-    public String getMessageCode() {
-        return MessageCode;
+
+    public String getCode() {
+        return code;
     }
 
-    public void setMessageCode(String messageCode) {
-        MessageCode = messageCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getMessageCtx() {
-        return MessageCtx;
+    public String getCtx() {
+        return ctx;
     }
 
-    public void setMessageCtx(String messageCtx) {
-        MessageCtx = messageCtx;
+    public void setCtx(String ctx) {
+        this.ctx = ctx;
     }
 }
