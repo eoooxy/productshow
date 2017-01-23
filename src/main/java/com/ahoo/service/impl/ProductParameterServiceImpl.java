@@ -62,4 +62,20 @@ public class ProductParameterServiceImpl implements ProductParameterService {
         return entities;
     }
 
+    @Override
+    public ProductParameterEntity selectByPkId(int pkRecId) {
+
+        return productParameterEntityMapper.selectByPrimaryKey(pkRecId);
+    }
+
+    @Override
+    public int addPro(ProductParameterEntity entity) {
+        return productParameterEntityMapper.insertSelective(entity);
+    }
+
+    @Override
+    public int updatePro(ProductParameterEntity entity) {
+        return productParameterEntityMapper.updateByPrimaryKeySelective(entity);
+    }
+
 }

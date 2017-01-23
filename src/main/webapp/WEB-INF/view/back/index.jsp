@@ -18,6 +18,7 @@
     <script type="text/javascript"
             src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
     <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/easyuijs/outlook2.js'></script>
+    <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/product.js'></script>
     <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
 
 </head>
@@ -86,7 +87,5 @@
     <div class="menu-sep"></div>
     <div id="mm-exit">退出</div>
 </div>
-
-
 </body>
 </html>

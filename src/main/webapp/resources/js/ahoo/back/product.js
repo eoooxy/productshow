@@ -6,18 +6,18 @@ $(function () {
 
     $('#desPro').window({
         title: '修改产品参数',
-        width: 350,
-        height: 410,
+        width: 370,
+        height: 450,
         modal: true,
         shadow: true,
-        closed: false,
+        closed: true,
         resizable: false,
         draggable: false
     });
 
 });
 
-var page = 0, pageSize = 15;
+var page = 0, pageSize = 15, state;
 
 function back_getProDes(totalPage, mark) {
 
@@ -137,18 +137,62 @@ function back_subPage(totalPage) {
 
 function back_edit(id) {
     var data = {"recId": id};
-
-
+    $.ajax({
+        type: "post",
+        url: "editDes.json",
+        dataType: "json",
+        data: data,
+        success: function (data) {
+            var obj = data.dto;
+            console.log(obj);
+            $("#conductorA").val(obj.conductorA);
+            $("#conductorB").val(obj.conductorB);
+            $("#modelNumber").val(obj.modelNumber);
+            $("#modelType").val(obj.modelType);
+            $("#powerType").val(obj.powerType);
+            $("#modelClip").val(obj.modelClip);
+            $("#parameter1").val(obj.parameter1);
+            $("#parameter2").val(obj.parameter2);
+            $("#fkChildRecId").val(obj.fkChildRecId);
+            var childRecId = $("#childselect option:selected").text();
+            $("#childRecId").val(childRecId);
+        }
+    });
     $('#desPro').window('open');
+    state = "edit";
 }
 
 function back_del(id) {
-
     var data = {"recId": id};
-
-    $('#desPro').window('close');
 }
 
+function back_addPro() {
+    $("#desProTab input").val("");
+    var childRecId = $("#childselect option:selected").text();
+    var fkChildRecId = $("#childselect option:selected").val();
+    $("#childRecId").val(childRecId);
+    $("#fkChildRecId").val(fkChildRecId);
+    if (childRecId == "" || childRecId == " " || childRecId == null || fkChildRecId == "" || fkChildRecId == " " || fkChildRecId == null) {
+        return;
+    }
+    $('#desPro').window('open');
+    state = "add";
+}
+
+function saveProDes() {
+    var data = $.param({'state': state}) + '&' + $('#desProForm').serialize();
+    $.ajax({
+        type: "post",
+        url: "savePro.do",
+        data: data,
+        success: function (data) {
+
+        }
+    });
+}
+function cancelWindow() {
+    $('#desPro').window('close');
+}
 
 function msgShow(title, msgString, msgType) {
     $.messager.alert(title, msgString, msgType);

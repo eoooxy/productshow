@@ -20,4 +20,9 @@ public interface ProductParameterService {
 
     List<ProductParameterEntity> selectProByParamPage(int fkId, String paramA, Integer page, Integer pageSize);
 
+    ProductParameterEntity selectByPkId(int pkRecId);
+
+    int addPro(ProductParameterEntity entity);
+
+    int updatePro(ProductParameterEntity entity);
 }

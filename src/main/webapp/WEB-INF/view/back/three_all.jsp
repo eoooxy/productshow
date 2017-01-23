@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -32,7 +33,7 @@
         <select id="parameterselect" style="width:140px;">
         </select>
         <a class="easyui-linkbutton" icon="icon-search" href="javascript:void(0)" onclick="back_getProDes()">查询</a>
-        <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_getProDes()">增加</a>
+        <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro()">增加</a>
     </div>
 
     <div class="easyui-layout" id="tableDiv" style="margin-top:30px;width: 100%;"></div>
@@ -40,52 +41,58 @@
 
     <!--修改参数的界面-->
     <div id="desPro" class="easyui-window" title="修改产品参数" collapsible="false" minimizable="false" maximizable="false"
-         icon="icon-edit" style="width: 350px; height: 410px; padding: 5px; background: #fafafa;">
+         icon="icon-edit" style="width: 370px; height: 450px; padding: 5px; background: #fafafa;">
         <div class="easyui-layout" fit="true">
-            <div region="center" border="false" style="padding: 10px; background: #fff; border: 1px solid #ccc;">
-                <form>
-                    <table style="border-collapse:separate; border-spacing:10px;">
+            <div region="center" border="false"
+                 style=" text-align:center;padding: 10px;background: #fff; border: 1px solid #ccc;">
+                <form id="desProForm">
+                    <table id="desProTab" style="margin-top:20px;border-collapse:separate; border-spacing:10px;">
+                        <span style="color: red; font-size: 11px">*注：如若为空输入"---"或者不填</span>
                         <tr>
                             <td>导体A：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="conductorA" name="conductorA" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>导体B：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="conductorB" name="conductorB" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>模具型号：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="modelNumber" name="modelNumber" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>价格体系：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="modelType" name="modelType" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>焊粉型号：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="powerType" name="powerType" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>模具夹：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="modelClip" name="modelClip" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>套管(迷你模具)：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="parameter1" name="parameter1" class="txt01"/></td>
                         </tr>
                         <tr>
                             <td>整形模具(防漏材料)：</td>
-                            <td><input class="txt01"/></td>
+                            <td><input id="parameter2" name="parameter2" class="txt01"/></td>
                         </tr>
                         <tr>
-                            <span style="color: red; font-size: 11px">*注：如若为空输入"---"即可</span>
+                            <td>隶属子类：</td>
+                            <td><input id="childRecId" disabled="disabled" class="txt01"/></td>
                         </tr>
+                        <input type="hidden" id="recId" name="recId">
+                        <input type="hidden" id="fkChildRecId" name="fkChildRecId">
                     </table>
                 </form>
             </div>
             <div region="south" border="false" style="text-align: right;height: 35px; padding: 3px 0 0;">
-                <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)">确定</a>
-                <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" href="javascript:void(0)">取消</a>
+                <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" onclick="saveProDes()" href="javascript:void(0)">确定</a>
+                <a id="btnCancel" class="easyui-linkbutton" icon="icon-cancel" onclick="cancelWindow()"
+                   href="javascript:void(0)">取消</a>
             </div>
         </div>
     </div>

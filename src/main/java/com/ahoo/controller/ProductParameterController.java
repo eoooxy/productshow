@@ -1,6 +1,7 @@
 package com.ahoo.controller;
 
 import com.ahoo.convert.ProductParameterConvert;
+import com.ahoo.dto.MessageDto;
 import com.ahoo.dto.ProductParameterDto;
 import com.ahoo.entity.*;
 import com.ahoo.service.*;
@@ -188,10 +189,44 @@ public class ProductParameterController {
     @RequestMapping("back/editDes.json")
     public void editDes(ModelMap modelMap, Integer recId) {
 
-       /* ProductParameterEntity entity = productParameterService.selectByRecid(recId);
+        ProductParameterEntity entity = productParameterService.selectByPkId(recId);
         if (entity != null) {
             ProductParameterDto.ProductParameter dto = ProductParameterConvert.convertFromEntity(entity);
             modelMap.put("dto", dto);
+        }
+    }
+
+    @RequestMapping("back/savePro.do")
+    public void save(ModelMap modelMap, String state, ProductParameterDto.ProductParameter dto) {
+        int flag;
+        MessageDto msg = new MessageDto();
+        /*switch (state) {
+            case "edit":
+                ProductParameterEntity entityEdit = ProductParameterConvert.convertFromDto(dto);
+                if (entityEdit != null) {
+                    flag = productParameterService.updatePro(entityEdit);
+                    if (flag > 0) {
+                        msg.setMessageCode("1");
+                        msg.setMessageCtx("更改成功！");
+                    } else {
+                        msg.setMessageCode("0");
+                        msg.setMessageCtx("更改失败！");
+                    }
+                }
+                break;
+            case "add":
+                ProductParameterEntity entityAdd = ProductParameterConvert.convertFromDto(dto);
+                if (entityAdd != null) {
+                    flag = productParameterService.addPro(entityAdd);
+                    if (flag > 0) {
+                        msg.setMessageCode("1");
+                        msg.setMessageCtx("新增成功！");
+                    } else {
+                        msg.setMessageCode("0");
+                        msg.setMessageCtx("新增成功！");
+                    }
+                }
+                break;
         }*/
     }
 
