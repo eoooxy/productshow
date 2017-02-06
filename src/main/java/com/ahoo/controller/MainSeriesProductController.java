@@ -18,6 +18,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,8 +124,8 @@ public class MainSeriesProductController {
         }
     }
 
-    @RequestMapping("back/editDes.json")
-    public void update(ModelMap modelMap, MainSeriesProductDto dto) {
+    @RequestMapping("back/editMainDes.json")
+    public void update(ModelMap modelMap, MainSeriesProductDto dto, HttpServletRequest request) {
         MessageDto msg = new MessageDto();
         if (dto != null) {
             MainSeriesProductEntity productEntity = new MainSeriesProductEntity();
@@ -139,19 +141,81 @@ public class MainSeriesProductController {
 
             //保存图片到服务器 把图片地址放到 数据库
             String picName = System.currentTimeMillis() + ".jpg";
-            String path = "E:/ahoo/service";
-            base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, path);
-            productEntity.setProductMainUrl(path + "/" + picName);
+            String filePath = request.getSession().getServletContext().getRealPath("/");
+            //String path = "E:";
+
+            if (dto.getProductMainUrl() != "" && dto.getProductMainUrl() != null) {
+                base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, filePath);
+                productEntity.setProductMainUrl(filePath + picName);
+            }
 
 
             if (mainSeriesProductService.updatePro(productEntity) > 0 && mainSeriesProDesService.updatePro(desEntity) > 0) {
                 msg.setCode("1");
-                msg.setCtx("新增成功！");
+                msg.setCtx("父类更新成功！");
             } else {
                 msg.setCode("0");
-                msg.setCtx("新增失败！");
+                msg.setCtx("父类更新失败！");
             }
             modelMap.put("msg", msg);
         }
     }
+
+    @RequestMapping("back/addMainDes.json")
+    public void add(ModelMap modelMap, MainSeriesProductDto dto, HttpServletRequest request) {
+        MessageDto msg = new MessageDto();
+        if (dto != null) {
+            MainSeriesProductEntity productEntity = new MainSeriesProductEntity();
+            MainSeriesProDesEntity desEntity = new MainSeriesProDesEntity();
+
+            productEntity.setRecId(dto.getRecId());
+            productEntity.setProductMainType(dto.getProductMainType());
+
+            desEntity.setRecId(dto.getRecIdDes());
+            desEntity.setProductDes(dto.getProductDes());
+            desEntity.setProductTitle(dto.getProductTitle());
+            desEntity.setFkRecId(dto.getRecId());
+
+            //保存图片到服务器 把图片地址放到 数据库
+            String picName = System.currentTimeMillis() + ".jpg";
+            String filePath = request.getSession().getServletContext().getRealPath("/");
+            //String path = "E:";
+            if (dto.getProductMainUrl() == "" || dto.getProductMainUrl() == null) {
+                msg.setCode("0");
+                msg.setCtx("图像必须上传！");
+                modelMap.put("msg", msg);
+                return;
+            }
+            base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, filePath);
+            productEntity.setProductMainUrl(filePath + picName);
+
+
+            if (mainSeriesProductService.addPro(productEntity) > 0 && mainSeriesProDesService.addPro(desEntity) > 0) {
+                msg.setCode("1");
+                msg.setCtx("父类新增成功！");
+            } else {
+                msg.setCode("0");
+                msg.setCtx("父类新增失败！");
+            }
+            modelMap.put("msg", msg);
+        }
+    }
+
+    @RequestMapping("back/delMainDes.json")
+    public void del(ModelMap modelMap, MainSeriesProductDto dto, HttpServletRequest request) {
+       /* MessageDto msg = new MessageDto();
+        int productEntityId = dto.getRecId();
+        int desEntityId = dto.getRecIdDes();
+        int child
+
+        if (mainSeriesProductService.del(productEntityId) > 0 && mainSeriesProDesService.del(desEntityId) > 0) {
+            msg.setCode("1");
+            msg.setCtx("删除成功！");
+        } else {
+            msg.setCode("0");
+            msg.setCtx("删除失败！");
+        }
+        modelMap.put("msg", msg);*/
+    }
+
 }

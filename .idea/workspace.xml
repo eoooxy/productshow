@@ -1,71 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d4b0818-dede-4ea2-ad8f-921ffbffe7a5" name="Default" comment="ProductShow v0.16">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/entity/ProductParameterEntity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/entity/ProductParameterEntity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/view/product.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/mvc/resources/css/1bootstrap.min.css" afterPath="" />
+    <list default="true" id="4d4b0818-dede-4ea2-ad8f-921ffbffe7a5" name="Default" comment="ProductShow v0.19">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-cool.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-frown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-wink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/img/smiley-yell.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/img/anchor.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/img/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/img/object.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/img/trans.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/singleprodes.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/singlepro_des.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/jquery.tinymce.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/langs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/langs/zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/advlist/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/anchor/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/autolink/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/autoresize/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/autosave/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/bbcode/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/charmap/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/code/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/codesample/css/prism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/codesample/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/colorpicker/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/contextmenu/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/directionality/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/emoticons/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/example/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/example/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/example_dependency/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/fullpage/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/fullscreen/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/hr/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/image/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/imagetools/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/importcss/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/insertdatetime/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/legacyoutput/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/link/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/lists/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/media/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/nonbreaking/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/noneditable/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/pagebreak/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/paste/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/preview/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/print/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/save/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/searchreplace/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/spellchecker/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/tabfocus/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/table/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/template/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/textcolor/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/textpattern/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/toc/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/visualblocks/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/visualchars/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/wordcount/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/content.inline.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/content.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/skin.ie7.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/skins/lightgray/skin.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/themes/inlite/theme.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/themes/modern/theme.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/tinymce.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/controller/AnchorController.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/controller/AnchorController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/controller/MainSeriesProductController.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/controller/MainSeriesProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/convert/MainSeriesProductConvert.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/convert/MainSeriesProductConvert.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/dto/ChildSeriesProductDto.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/dto/ChildSeriesProductDto.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/dto/MainSeriesProductDto.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/dto/MainSeriesProductDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/dto/ProductParameterDto.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/dto/ProductParameterDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/entity/ChildSeriesProductEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/entity/ChildSeriesProductEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/entity/MainSeriesProductEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/entity/MainSeriesProductEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/ChildSeriesProductEntityMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/ChildSeriesProductEntityMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/MainSeriesProductEntityMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/MainSeriesProductEntityMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/ProductParameterEntityMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/mapper/ProductParameterEntityMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/service/MainSeriesProductService.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/service/MainSeriesProductService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ahoo/service/impl/MainSeriesProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ahoo/service/impl/MainSeriesProductServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc.war" afterPath="$PROJECT_DIR$/target/mvc.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/controller/AnchorController.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/controller/AnchorController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/controller/MainSeriesProductController.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/controller/MainSeriesProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/convert/MainSeriesProductConvert.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/convert/MainSeriesProductConvert.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/ChildSeriesProductDto.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/ChildSeriesProductDto.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/MainSeriesProductDto.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/MainSeriesProductDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/ProductParameterDto.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/dto/ProductParameterDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/entity/ChildSeriesProductEntity.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/entity/ChildSeriesProductEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/entity/MainSeriesProductEntity.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/entity/MainSeriesProductEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/ChildSeriesProductEntityMapper.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/ChildSeriesProductEntityMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/MainSeriesProductEntityMapper.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/MainSeriesProductEntityMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/ProductParameterEntityMapper.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/mapper/ProductParameterEntityMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/service/MainSeriesProductService.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/service/MainSeriesProductService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/service/impl/MainSeriesProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/com/ahoo/service/impl/MainSeriesProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/resources/img/total/main_10.jpg" afterPath="$PROJECT_DIR$/target/mvc/resources/img/total/main_10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Java8New.class" afterPath="$PROJECT_DIR$/target/test-classes/Java8New.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ProductShow_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ProductShow_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/MainSeriesProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/MainSeriesProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/service/Base64ToImageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/service/Base64ToImageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_des.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_des.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/pro_des.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/pro_des.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/ChildSeriesProductEntityMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/ChildSeriesProductEntityMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/MainSeriesProductEntityMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/MainSeriesProductEntityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis/ProductParameterEntityMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis/ProductParameterEntityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlet-context.xml" afterPath="$PROJECT_DIR$/target/classes/servlet-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/mvc/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/generatorConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/ChildSeriesProductEntityMapper.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/ChildSeriesProductEntityMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/MainSeriesProductEntityMapper.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/MainSeriesProductEntityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/ProductParameterEntityMapper.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/mybatis/ProductParameterEntityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/servlet-context.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/classes/servlet-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/view/about.jsp" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/view/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/view/services.jsp" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/view/services.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/mvc/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/resources/css/style.css" afterPath="$PROJECT_DIR$/target/mvc/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/resources/js/ahoo/anchor.js" afterPath="$PROJECT_DIR$/target/mvc/resources/js/ahoo/anchor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/resources/js/ahoo/mainseries.js" afterPath="$PROJECT_DIR$/target/mvc/resources/js/ahoo/mainseries.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/mvc/resources/simple-line-icons/Simple Line Icons_files/bootstrap.css" afterPath="$PROJECT_DIR$/target/mvc/resources/simple-line-icons/Simple Line Icons_files/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/java/Java8New.java" afterPath="$PROJECT_DIR$/test/java/Java8New.java" />
-    </list>
-    <list id="0b5d73bd-dac6-45ac-ab6e-bfb44956b84f" name="Rejected commit: Default" comment="ProductShow v0.16">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ProductParameterController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ProductParameterController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/product.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/default/easyui.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/default/easyui.css" />
     </list>
     <ignored path="ProductShow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,104 +149,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="three_all.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-45.115383">
-              <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductParameterDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/dto/ProductParameterDto.java">
+      <file leaf-file-name="singlepro_des.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/singlepro_des.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="25" />
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protable.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.192307">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductParameterPicUrlDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/dto/ProductParameterPicUrlDto.java">
+      <file leaf-file-name="plugin.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/product.js">
+      <file leaf-file-name="pro_des.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/pro_des.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <caret line="266" column="15" selection-start-line="266" selection-start-column="15" selection-end-line="266" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChildSeriesProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ChildSeriesProductServiceImpl.java">
+      <file leaf-file-name="SingleParameDesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChildSeriesProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java">
+      <file leaf-file-name="AnchorController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84424376">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipartFile.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.8.RELEASE/spring-web-4.2.8.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductParameterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/ProductParameterController.java">
+      <file leaf-file-name="spring-database.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-database.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="easyui.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/default/easyui.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21627907">
-              <caret line="2323" column="10" selection-start-line="2323" selection-start-column="10" selection-end-line="2323" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js">
+      <file leaf-file-name="spring-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#54#0" expanded="false" />
-              </folding>
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-base.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-base.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -201,9 +256,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="jsf" />
-        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -218,57 +273,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/about.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/services.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/SingleParameDesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/SingleParameDesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/mapper/SingleParameDesEntityMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/parem_introduce.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/ahoo.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/convert/Bean2MapConvert.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_param.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/paramtable.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/singe_product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_two.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_two.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_there.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/anchor.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_one.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_type.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/backjs.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/default.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/outlook2.js" />
-        <option value="$PROJECT_DIR$/test/java/com/spring/pojo/test.java" />
-        <option value="$PROJECT_DIR$/test/java/com/spring/pojo/RandomArray.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/default.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/product.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/protable.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/MainSeriesProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/dto/MainSeriesProductDto.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/mainseries.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/ProductParameterService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ProductParameterServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ahoo/mapper/ProductParameterEntityMapper.java" />
         <option value="$PROJECT_DIR$/test/java/Java8New.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ahoo/dto/ProductParameterDto.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/SingleParameDesEntityMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/ProductParameterEntityMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/default/easyui.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/dto/MessageDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/ProductParameterService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ProductParameterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/prodcut_des.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/mapper/MainSeriesProductEntityMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/mapper/ChildSeriesProductEntityMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/MainSeriesProductEntityMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/ChildSeriesProductEntityMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/MainSeriesProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable_des.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/product.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ProductParameterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/MainSeriesProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/MainSeriesProDesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/ChildSeriesProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/ChildSeriesProDesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ChildSeriesProDesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ChildSeriesProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/MainSeriesProDesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/dto/MainSeriesProductDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/dto/ChildSeriesProductDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/service/Base64ToImageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/MainSeriesProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_des.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/demo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/file_manager_json.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/image/plugin.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/visualblocks/plugin.min.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/singleprodes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/pro_des.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/singlepro_des.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.min.js" />
       </list>
     </option>
   </component>
@@ -373,8 +428,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -507,138 +560,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ahoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ahoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="productshow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -812,6 +733,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="productshow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="productshow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -844,18 +791,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/ideaWorkSpace/productshow/src/main/webapp/WEB-INF/view/singe_product.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/ideaWorkSpace/productshow/src/main/webapp/WEB-INF/view/back/singleprodes.jsp" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="253" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="265" />
@@ -875,22 +824,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\tinymce\themes" />
+      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\tinymce\langs" />
+      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js" />
+      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\WEB-INF\view\back" />
       <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\css" />
-      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\easyuijs" />
-      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\css\image" />
-      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\aridialog" />
-      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ahoo.util" />
       <recent name="com.doliao.controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\tinymce" />
       <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\WEB-INF\view\back" />
       <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\ahoo\back" />
       <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\css" />
       <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\easyuijs" />
-      <recent name="E:\ideaWorkSpace\productshow\src\main\webapp\resources\js\artdialog" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
@@ -1553,7 +1502,13 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ProductShow:war" />
+          <artifact name="ProductShow:war exploded" />
+        </option>
+      </method>
     </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
@@ -1600,7 +1555,11 @@
       <workItem from="1484796452559" duration="15360000" />
       <workItem from="1484872481598" duration="23850000" />
       <workItem from="1484900819599" duration="2533000" />
-      <workItem from="1485048058111" duration="16185000" />
+      <workItem from="1485048058111" duration="17796000" />
+      <workItem from="1485132916050" duration="31262000" />
+      <workItem from="1485219390665" duration="21618000" />
+      <workItem from="1486341557105" duration="55000" />
+      <workItem from="1486372225919" duration="181000" />
     </task>
     <task id="LOCAL-00001" summary="ProductShow v0.2">
       <created>1482916298762</created>
@@ -1662,7 +1621,25 @@
       <option name="project" value="LOCAL" />
       <updated>1484903336140</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ProductShow v0.16">
+      <created>1485076489667</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1485076489667</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ProductShow v0.16">
+      <created>1485076537014</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1485076537014</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ProductShow v0.18">
+      <created>1485162403173</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1485162403173</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1698,7 +1675,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259824000" />
+    <option name="totallyTimeSpent" value="314551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1715,34 +1692,34 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.49812934" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.50187063" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19027258" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20149653" sideWeight="0.4767616" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20149653" sideWeight="0.52323836" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20149653" sideWeight="0.4695946" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20149653" sideWeight="0.5304054" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35300547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35300547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1769,11 +1746,15 @@
     <MESSAGE value="ProductShow v0.13" />
     <MESSAGE value="ProductShow v0.14" />
     <MESSAGE value="ProductShow v0.16" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProductShow v0.16" />
+    <MESSAGE value="ProductShow v0.18" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProductShow v0.18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="57" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="72" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1782,65 +1763,87 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_there.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_total.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="48.37037">
-          <caret line="4" column="26624" selection-start-line="4" selection-start-column="26624" selection-end-line="4" selection-end-column="26624" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/ProductParameterEntityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8846154">
-          <caret line="189" column="28" selection-start-line="189" selection-start-column="16" selection-end-line="189" selection-end-column="28" />
-          <folding>
-            <marker date="1484885250349" expanded="true" signature="1455:1584" placeholder="select from productparameter" />
-            <marker date="1484885250349" expanded="true" signature="1674:1747" placeholder="delete from " />
-            <marker date="1484885250349" expanded="true" signature="1844:2403" placeholder="insert into productparameter... " />
-            <marker date="1484885250349" expanded="true" signature="4970:6288" placeholder="update produ... " />
-            <marker date="1484885250349" expanded="true" signature="6399:6979" placeholder="update produ... " />
-            <marker date="1484885250349" expanded="true" signature="7095:7235" placeholder="select from productparameter" />
-            <marker date="1484885250349" expanded="true" signature="8454:8835" placeholder="select from productparameter" />
-            <marker date="1484885250349" expanded="true" signature="8454:8839" placeholder="select from productparameter" />
-            <marker date="1484885250349" expanded="true" signature="8454:8840" placeholder="select from productparameter" />
-            <marker date="1484885250349" expanded="true" signature="8454:8894" placeholder="select from productparameter" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/search.png">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/edit_add.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/reload.png">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/edit_remove.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/redo.png">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/filesave.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/print.png">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/filter.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/help.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/large_chart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/large_clipart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/large_picture.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/large_shapes.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/large_smartart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/lock.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/man.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/mini_add.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/mini_edit.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/mini_refresh.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/more.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/no.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1850,24 +1853,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/color.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/blank.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/pencil.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/back.png">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/redo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/reload.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/search.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1882,34 +1883,83 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/cancel.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/undo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/material/easyui.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/jquery.tinymce.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.153846">
-          <caret line="472" column="1" selection-start-line="472" selection-start-column="1" selection-end-line="472" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/edit_remove.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/importcss/plugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/clear.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/easyloader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321492">
+          <caret line="11" column="526" selection-start-line="11" selection-start-column="521" selection-end-line="11" selection-end-column="526" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/langs/zh_CN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_des.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031657357">
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/visualblocks/plugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/image/plugin.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.7300177">
+          <caret line="256" column="22" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/tinymce.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34953272">
+          <caret line="9" column="28617" selection-start-line="9" selection-start-column="28617" selection-end-line="9" selection-end-column="28617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/jquery.form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321492">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/parem_introduce.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1917,30 +1967,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/metro/linkbutton.css">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/core/io/InputStreamSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state vertical-scroll-proportion="-3.642857">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_type.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/MainSeriesProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="45.115383">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="94" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/singleprodes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.461538">
+          <caret line="42" column="94" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/services.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.8.RELEASE/spring-web-4.2.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.692307">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.392858">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.8.RELEASE/spring-webmvc-4.2.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_two.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-database.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1948,30 +2012,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/product_param.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="33" column="23" selection-start-line="29" selection-start-column="15" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1156" column="0" selection-start-line="1156" selection-start-column="0" selection-end-line="1156" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/artdialog/artDialog.source.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/mobile.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1979,183 +2020,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/mainseries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="23" selection-start-line="365" selection-start-column="23" selection-end-line="365" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#93#0" expanded="false" />
-            <marker date="1484814753089" expanded="true" signature="7224:7239" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/outlook2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="138" column="44" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
-          <folding>
-            <marker date="1485050744617" expanded="true" signature="2588:2611" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery.easing.1.3.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-base.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.60714287">
-          <caret line="1" column="3024" selection-start-line="1" selection-start-column="3024" selection-end-line="1" selection-end-column="3024" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/jquery.easyui.min.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13614" column="25" selection-start-line="13614" selection-start-column="25" selection-end-line="13614" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/mini_add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icons/edit_add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11111111">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.769231">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/legacy.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7246892">
-          <caret line="824" column="18" selection-start-line="824" selection-start-column="18" selection-end-line="824" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.230769">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/service/impl/ChildSeriesProductServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.8.RELEASE/spring-web-4.2.8.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/ChildSeriesProductController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/pro_des.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <caret line="266" column="15" selection-start-line="266" selection-start-column="15" selection-end-line="266" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/backjs.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/singlepro_des.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#54#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/three_all.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-45.115383">
-          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/dto/ProductParameterPicUrlDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tinymce/plugins/uploadimage/plugin.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/dto/ProductParameterDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/SingleParameDesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="25" />
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/protable.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/AnchorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.192307">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/ahoo/back/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ahoo/controller/ProductParameterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/easyuijs/themes/default/easyui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21627907">
-          <caret line="2323" column="10" selection-start-line="2323" selection-start-column="10" selection-end-line="2323" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.84424376">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2219,7 +2143,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

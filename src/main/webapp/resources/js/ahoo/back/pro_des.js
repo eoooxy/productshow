@@ -160,6 +160,7 @@ function back_edit(id, mark) {
 function back_addPro(mark) {
 
     var val = $('input:radio[name="proType"]:checked').val();
+    var data;
     if (val == null) {
         msgShow('系统提示', '必须选定一个类别！', 'warning');
         return false;
@@ -167,26 +168,52 @@ function back_addPro(mark) {
     switch (mark) {
         case 'child' :
             if ($("#productChildType").val() == "" || $("#productTitleChild").val() == "" || $("#productDesChild").val() == "" || $("#mainpic").val()) {
-                msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                msgShow('系统提示', '类别、标题、内容必须填写！', 'warning');
                 return false;
+            } else {
+                data = $("#desProFormChild").serialize();
+                $.ajax({
+                    type: "post",
+                    url: "addChildDes.json",
+                    dataType: "json",
+                    data: data,
+                    success: function (data) {
+                        var msg = data.msg;
+                        msgShow("系统消息", msg.ctx, "info");
+                        $("#desProTabChild input").val("");
+
+                    }
+                });
             }
             break;
         case 'main':
             if ($("#productMainType").val() == "" || $("#productTitleMain").val() == "" || $("#productDesMain").val() == "" || $("#childPic").val()) {
-                msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                msgShow('系统提示', '类别、标题、内容必须填写！', 'warning');
                 return false;
+            } else {
+                data = $("#desProFormMain").serialize();
+                $.ajax({
+                    type: "post",
+                    url: "addMainDes.json",
+                    dataType: "json",
+                    data: data,
+                    success: function (data) {
+                        var msg = data.msg;
+                        msgShow("系统消息", msg.ctx, "info");
+                        $("#desProTabMain input").val("");
+                    }
+                });
             }
             break;
     }
 
-    var data = $("#desProFormMain").serialize();
-    console.log(data);
 
 }
 
 function saveProDes(mark) {
 
     var val = $('input:radio[name="proType"]:checked').val();
+    var data;
     if (val == null) {
         msgShow('系统提示', '必须选定一个类别！', 'warning');
         return false;
@@ -194,32 +221,45 @@ function saveProDes(mark) {
     switch (mark) {
         case 'child' :
             if ($("#productChildType").val() == "" || $("#productTitleChild").val() == "" || $("#productDesChild").val() == "" || $("#mainpic").val()) {
-                msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                msgShow('系统提示', '类别、标题、内容必须填写！', 'warning');
                 return false;
+            } else {
+                data = $("#desProFormChild").serialize();
+                $.ajax({
+                    type: "post",
+                    url: "editChildDes.json",
+                    dataType: "json",
+                    data: data,
+                    success: function (data) {
+                        var msg = data.msg;
+                        msgShow("系统消息", msg.ctx, "info");
+                        $("#desProTabChild input").val("");
+                    }
+                });
             }
             break;
         case 'main':
             if ($("#productMainType").val() == "" || $("#productTitleMain").val() == "" || $("#productDesMain").val() == "" || $("#childPic").val()) {
-                msgShow('系统提示', '类别、标题、内容、图片不能为空', 'warning');
+                msgShow('系统提示', '类别、标题、内容必须填写！', 'warning');
                 return false;
+            } else {
+                data = $("#desProFormMain").serialize();
+                $.ajax({
+                    type: "post",
+                    url: "editMainDes.json",
+                    dataType: "json",
+                    data: data,
+                    success: function (data) {
+                        var msg = data.msg;
+                        msgShow("系统消息", msg.ctx, "info");
+                        $("#desProTabMain input").val("");
+                    }
+                });
             }
             break;
-
     }
-    var data = $("#desProFormMain").serialize();
-    console.log(data);
-    $.ajax({
-        type: "post",
-        url: "editDes.json",
-        dataType: "json",
-        data: data,
-        success: function (data) {
-        }
-    });
-
 
 }
-
 
 // 图片转base64
 function imgChange(obj, mark) {

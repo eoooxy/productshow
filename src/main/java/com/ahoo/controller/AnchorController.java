@@ -64,4 +64,9 @@ public class AnchorController {
         return "back/three_des";
     }
 
+    @RequestMapping("back/singleprodes.do")
+    public String getBackSingleProDes() {
+        return "back/singleprodes";
+    }
+
 }

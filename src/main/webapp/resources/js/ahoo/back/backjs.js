@@ -11,24 +11,18 @@ var _menus = {
                 {"menuid": "13", "menuname": "焊接类产品参数", "icon": "icon-nav", "url": "three_all.do"}
             ]
         }, {
-            "menuid": "2", "icon": "icon-sys", "menuname": "产品类别",
+            "menuid": "2", "icon": "icon-sys", "menuname": "产品分类与介绍",
             "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
                 {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"},
-                {"menuid": "23", "menuname": "焊接类别与描述", "icon": "icon-nav", "url": "three_des.do"}
+                {"menuid": "23", "menuname": "焊接类别与描述", "icon": "icon-nav", "url": "three_des.do"},
+                {"menuid": "24", "menuname": "产品细节描述", "icon": "icon-nav", "url": "singleprodes.do"}
             ]
         }, {
-            "menuid": "3", "icon": "icon-sys", "menuname": "产品描述",
+            "menuid": "3", "icon": "icon-sys", "menuname": "其他数据管理",
             "menus": [
                 {"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
                 {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"},
                 {"menuid": "32", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo2.html"}
-            ]
-        }, {
-            "menuid": "4", "icon": "icon-sys", "menuname": "其他",
-            "menus": [
-                {"menuid": "41", "menuname": "收支分类", "icon": "icon-nav", "url": "demo.html"},
-                {"menuid": "42", "menuname": "报表统计", "icon": "icon-nav", "url": "demo1.html"},
-                {"menuid": "43", "menuname": "添加支出", "icon": "icon-nav", "url": "demo2.html"}
             ]
         }
     ]

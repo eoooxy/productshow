@@ -70,7 +70,7 @@
 
     <div id="desEditChild"
          style=" padding:15px;margin-top:30px;width: 50%;height: 400px;float: right;border: 1px solid #ddd;display: none">
-        <span style="color: red; font-size: 11px;">*注：标题与内容分别是页面产品展示中的标题介绍</span>
+        <span style="color: red; font-size: 11px;">*注：标题与内容分别是页面产品展示中的标题介绍（必填）</span>
         <form id="desProFormChild">
             <table id="desProTabChild" style="margin-top:20px;border-collapse:separate; border-spacing:10px;">
                 <tr>

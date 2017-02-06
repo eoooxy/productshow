@@ -25,7 +25,7 @@ public class Base64ToImageService {
      * @return
      */
     public int Base64ToImageService(String imgStr, String name, String workPath) {
-        String path = workPath + "/" + name;
+        String path = workPath + name;
         saveImage(decode(imgStr.substring(22)), path);
         return 1;
     }
