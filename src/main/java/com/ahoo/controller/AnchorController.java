@@ -21,7 +21,7 @@ public class AnchorController {
 
     @RequestMapping("productType.do")
     public String getProductType() {
-        return "product_type";
+        return "product";
     }
 
     @RequestMapping("services.do")
@@ -36,17 +36,17 @@ public class AnchorController {
 
     @RequestMapping("productOne.do")
     public String getProductOne() {
-        return "product_one";
+        return "one/product_one";
     }
 
     @RequestMapping("productTwo.do")
     public String getProductTwo() {
-        return "product_two";
+        return "two/product_two";
     }
 
     @RequestMapping("productThere.do")
     public String getProductThere() {
-        return "product_there";
+        return "three/product_there";
     }
 
     @RequestMapping("back/login.do")

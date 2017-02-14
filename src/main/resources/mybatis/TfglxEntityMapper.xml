@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.TfglxEntityMapper">
+    <resultMap id="BaseResultMap" type="com.ahoo.entity.TfglxEntity">
+        <id column="REC_ID" jdbcType="INTEGER" property="recId"/>
+        <result column="PRODUCT_TYPE" jdbcType="VARCHAR" property="productType"/>
+        <result column="PRODUCT_URL" jdbcType="VARCHAR" property="productUrl"/>
+        <result column="REMARK" jdbcType="VARCHAR" property="remark"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    REC_ID, PRODUCT_TYPE, PRODUCT_URL, REMARK
+  </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from tfglx
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tfglx
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.ahoo.entity.TfglxEntity">
+    insert into tfglx (REC_ID, PRODUCT_TYPE, PRODUCT_URL, 
+      REMARK)
+    values (#{recId,jdbcType=INTEGER}, #{productType,jdbcType=VARCHAR}, #{productUrl,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.ahoo.entity.TfglxEntity">
+        insert into tfglx
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                REC_ID,
+            </if>
+            <if test="productType != null">
+                PRODUCT_TYPE,
+            </if>
+            <if test="productUrl != null">
+                PRODUCT_URL,
+            </if>
+            <if test="remark != null">
+                REMARK,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="recId != null">
+                #{recId,jdbcType=INTEGER},
+            </if>
+            <if test="productType != null">
+                #{productType,jdbcType=VARCHAR},
+            </if>
+            <if test="productUrl != null">
+                #{productUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.TfglxEntity">
+        update tfglx
+        <set>
+            <if test="productType != null">
+                PRODUCT_TYPE = #{productType,jdbcType=VARCHAR},
+            </if>
+            <if test="productUrl != null">
+                PRODUCT_URL = #{productUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="remark != null">
+                REMARK = #{remark,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where REC_ID = #{recId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.TfglxEntity">
+    update tfglx
+    set PRODUCT_TYPE = #{productType,jdbcType=VARCHAR},
+      PRODUCT_URL = #{productUrl,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+    <select id="selectByAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from tfglx
+    </select>
+
+
+</mapper>

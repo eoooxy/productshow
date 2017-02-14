@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 
@@ -36,10 +35,10 @@ public class SingleParameDesController {
         SingleParameDesEntity entity = singleParameDesService.selectByParame(type, des);
 
         if (entity != null) {
-            return "parem_introduce";
+            return "one/parem_introduce";
         }
 
-        return "parem_introduce";
+        return "one/parem_introduce";
     }
 
     @RequestMapping("/back/uploadImg.json")

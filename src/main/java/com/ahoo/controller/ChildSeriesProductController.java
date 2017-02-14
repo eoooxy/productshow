@@ -1,21 +1,16 @@
 package com.ahoo.controller;
 
 import com.ahoo.convert.ChildSeriesProductConvert;
-import com.ahoo.convert.MainSeriesProductConvert;
-import com.ahoo.convert.ProductParameterConvert;
 import com.ahoo.dto.ChildSeriesProductDto;
 import com.ahoo.dto.MainSeriesProductDto;
 import com.ahoo.dto.MessageDto;
-import com.ahoo.dto.ProductParameterDto;
 import com.ahoo.entity.ChildSeriesProDesEntity;
 import com.ahoo.entity.ChildSeriesProductEntity;
 import com.ahoo.entity.MainSeriesProDesEntity;
-import com.ahoo.entity.MainSeriesProductEntity;
 import com.ahoo.service.Base64ToImageService;
 import com.ahoo.service.ChildSeriesProDesService;
 import com.ahoo.service.ChildSeriesProductService;
 import com.ahoo.service.MainSeriesProDesService;
-import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -59,9 +54,9 @@ public class ChildSeriesProductController {
             dto.setDesEntity(mainSeriesProDesEntity);
             modelMap.put("dto", dto);
 
-            return "product_child";
+            return "one/product_child";
         }
-        return "product_child";
+        return "one/product_child";
     }
 
     @RequestMapping("back/childType.json")

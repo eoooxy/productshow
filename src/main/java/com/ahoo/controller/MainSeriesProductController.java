@@ -1,26 +1,19 @@
 package com.ahoo.controller;
 
 import com.ahoo.convert.MainSeriesProductConvert;
-import com.ahoo.dto.ChildSeriesProductDto;
 import com.ahoo.dto.MainSeriesProductDto;
 import com.ahoo.dto.MessageDto;
-import com.ahoo.dto.ProductParameterDto;
-import com.ahoo.entity.ChildSeriesProDesEntity;
-import com.ahoo.entity.ChildSeriesProductEntity;
 import com.ahoo.entity.MainSeriesProDesEntity;
 import com.ahoo.entity.MainSeriesProductEntity;
 import com.ahoo.service.Base64ToImageService;
 import com.ahoo.service.MainSeriesProDesService;
 import com.ahoo.service.MainSeriesProductService;
-import com.sun.javafx.sg.prism.NGShape;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -53,9 +46,9 @@ public class MainSeriesProductController {
             dto.setMainSeriesProductList(dtos);
             dto.setDesEntity(mainSeriesProDesEntity);
             modelMap.put("dto", dto);
-            return "product_total";
+            return "one/product_total";
         }
-        return "product_total";
+        return "one/product_total";
     }
 
     @RequestMapping("back/three_all.do")

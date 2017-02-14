@@ -74,9 +74,9 @@ public class ProductParameterController {
 
             modelMap.put("dto", dto);
 
-            return "product_param";
+            return "one/product_param";
         }
-        return "product_param";
+        return "one/product_param";
     }
 
     @RequestMapping("back/selectA.json")
@@ -146,9 +146,9 @@ public class ProductParameterController {
 
             modelMap.put("dto", dto);
 
-            return "singe_product";
+            return "one/singe_product";
         }
-        return "singe_product";
+        return "one/singe_product";
     }
 
 
@@ -164,9 +164,9 @@ public class ProductParameterController {
             modelMap.put("dto", dto);
             modelMap.put("entity", entity);
 
-            return "paramtable";
+            return "one/paramtable";
         }
-        return "paramtable";
+        return "one/paramtable";
     }
 
     @RequestMapping("back/table.do")

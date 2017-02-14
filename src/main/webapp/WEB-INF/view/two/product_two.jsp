@@ -27,6 +27,7 @@
 
 </head>
 <body>
+<!-- 离子接地 -->
 <div id="wrapper">
 
     <!-- start header -->
@@ -56,68 +57,23 @@
     <!-- end header -->
     <section id="content">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="portfolio-categ" id="convert-ul">
                         <li><a href="javascript:void(0);" onclick="jumpProduct()">产品类型：</a></li>
+                        <li><a href="javascript:void(0);" onclick="getMainSeriesProduct()">离子接地</a></li>
+                        <%-- <li><a href="#" title="">Finance</a></li>
+                         <li><a href="#" title="">Products</a></li>
+                         <li><a href="#" title="">Services</a></li>--%>
                     </ul>
                 </div>
             </div>
-            <div class="row" style="margin-top:-55px">
-                <div class="col-md-12">
-                    <div>
-                        <div><h2>整个产品类型介绍</h2>
-                            整个产品类型介绍巴拉巴拉巴拉巴拉……
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
+        </div>
+        <div class="container" id="convert" style="margin-top:-55px">
 
-            <div class="row">
-                <div class="skill-home">
-                    <div class="skill-home-solid clearfix">
-
-                        <div class="col-md-4 text-center" onclick="getProductOne()">
-                            <div class="box">
-                                <span class="icons c1"><i class="icon-settings icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Chemical</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center" onclick="getProductTwo()">
-                            <div class="box">
-                                <span class="icons c2"><i class="icon-diamond icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Rubber</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center" onclick="getProductThere()">
-                            <div class="box">
-                                <span class="icons c3"><i class="icon-user icons"></i></span>
-                                <div class="box-area">
-                                    <h3>Marbel</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <%-- <jsp:include page="product_total.jsp"/>--%>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -188,11 +144,16 @@
 <script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>--%>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/ahoo/back/product.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/twoseries.js"></script>
 
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>
 </body>
+<script>
+
+    window.onload = function () {
+        getMainSeriesProduct();
+    };
+</script>
 </html>
