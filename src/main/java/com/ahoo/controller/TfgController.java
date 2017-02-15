@@ -71,12 +71,17 @@ public class TfgController {
             dto.setProType(entity.getProductType());
 
             List<String> strings = new ArrayList<String>();
+            List<String> nStrings = new ArrayList<String>();
             for (TfgDto.Tfg d : dtos) {
                 if (!strings.contains(d.getProductNorms())) {
                     strings.add(d.getProductNorms());
                 }
+                if (!nStrings.contains(d.getProductName())) {
+                    nStrings.add(d.getProductName());
+                }
             }
             dto.setRecId(fkRecId);
+            dto.setnStrings(nStrings);
             dto.setStrings(strings);
             modelMap.put("dto", dto);
 

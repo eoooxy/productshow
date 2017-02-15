@@ -41,6 +41,16 @@ public class TfgDto {
 
     private List<String> strings;
 
+    private List<String> nStrings;
+
+    public List<String> getnStrings() {
+        return nStrings;
+    }
+
+    public void setnStrings(List<String> nStrings) {
+        this.nStrings = nStrings;
+    }
+
     private int pageNumber;
 
     private String proType;

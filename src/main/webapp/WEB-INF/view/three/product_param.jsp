@@ -17,19 +17,21 @@
             </div>
 
             <div style="margin-top: 50px;">
-                <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
-                    <option>请选择您需要导体A</option>
+                <c:if test="${dto.proType =='组合式接地棒配件'}">
+                    <select id="parameterA" class="form-control" onchange="getParamB()" style="width:190px;">
+                        <option>请选择产品名称</option>
+                        <c:forEach items="${dto.nStrings}" var="v">
+                            <option>${v}</option>
+                        </c:forEach>
+                    </select>
+                </c:if>
+                <select id="parameterB" class="form-control" style="width:190px;margin-left: 10px;">
+                    <option>请选择产品规格</option>
                     <c:forEach items="${dto.strings}" var="v">
                         <option>${v}</option>
                     </c:forEach>
                 </select>
 
-
-                <%--<c:if test="${dto.productParameterList[0].conductorB !=null && dto.productParameterList[0].conductorB !=''}">
-                    <select id="parameterB" class="form-control" style="width:190px; margin-left: 10px;">
-                        <option>请选择您需要导体B</option>
-                    </select>
-                </c:if>--%>
 
                 <input type="button" class="btn btn-default" style="margin-left: 10px" value="查询"
                        onclick="getOneParam()">

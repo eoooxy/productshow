@@ -265,10 +265,10 @@ function getParamB() {
         success: function (data) {
             var obj = data.dtoB;
             $("#parameterB").empty();
-            $("#parameterB").append("<option>请选择规格B</option>");
+            $("#parameterB").append("<option>请选择产品规格</option>");
             for (var i = 0; i < obj.length; i++) {
                 //console.log(obj[i].conductorB);
-                $("#parameterB").append("<option>" + obj[i].productNormsB + "</option>");
+                $("#parameterB").append("<option>" + obj[i].productNorms + "</option>");
             }
         }
     });
@@ -282,10 +282,10 @@ function getOneParam() {
     var data = {"fkRecId": fkRecId};
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").val();
-    if (paramA != undefined && paramA != '请选择规格A') {
+    if (paramA != undefined && paramA != "请选择产品名称") {
         data.paramA = paramA;
     }
-    if (paramB != undefined && paramB != '请选择规格B') {
+    if (paramB != undefined && paramB != "请选择产品规格") {
         data.paramB = paramB;
     }
 

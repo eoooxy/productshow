@@ -172,10 +172,10 @@
                 FK_REC_ID = #{fkRecId,jdbcType=INTEGER}
             </if>
             <if test="paramA !=null and paramA!=''">
-                AND PRODUCT_NORMS = #{paramA,jdbcType=VARCHAR}
+                AND PRODUCT_NAME = #{paramA,jdbcType=VARCHAR}
             </if>
             <if test="paramB !=null and paramB!=''">
-                AND PRODUCT_NAME = #{paramB,jdbcType=VARCHAR}
+                AND PRODUCT_NORMS = #{paramB,jdbcType=VARCHAR}
             </if>
         </where>
     </select>
