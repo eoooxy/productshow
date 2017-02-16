@@ -34,6 +34,8 @@ function back_getProDes(totalPage, mark) {
 
     $("#desEditMain input").val("");
     $("#desEditChild input").val("");
+    $("#productDesMain").val("");
+
 
     var val = $('input:radio[name="proType"]:checked').val();
     var data;
@@ -278,6 +280,18 @@ function imgChange(obj, mark) {
             $("#productChildUrl").val(this.result);
         }
     }
+
+}
+
+
+function back_showPic(url) {
+    console.log(url);
+    art.dialog({
+        padding: 0,
+        title: '照片',
+        content: '<img src=' + url + '/>',
+        lock: true
+    });
 
 }
 function msgShow(title, msgString, msgType) {

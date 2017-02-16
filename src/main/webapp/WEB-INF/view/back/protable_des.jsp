@@ -25,7 +25,7 @@
                     <td>
                         <a class="easyui-linkbutton l-btn l-btn-small" icon="icon-large-picture"
                            href="javascript:void(0)"
-                           onclick="back_edit('${v.productMainUrl}')"><span class="l-btn-left l-btn-icon-left"><span
+                           onclick="back_showPic('${v.productMainUrl}')"><span class="l-btn-left l-btn-icon-left"><span
                                 class="l-btn-text">预览</span><span
                                 class="l-btn-icon icon-large-picture">&nbsp;</span></span></a>
                     </td>
@@ -48,7 +48,7 @@
                     <td>
                         <a class="easyui-linkbutton l-btn l-btn-small" icon="icon-large-picture"
                            href="javascript:void(0)"
-                           onclick="back_edit('${v.productChildUrl}')"><span class="l-btn-left l-btn-icon-left"><span
+                           onclick="back_edit('<%=request.getContextPath()%>+${v.productChildUrl}')"><span class="l-btn-left l-btn-icon-left"><span
                                 class="l-btn-text">预览</span><span
                                 class="l-btn-icon icon-large-picture">&nbsp;</span></span></a>
                     </td>

@@ -25,6 +25,7 @@ tinymce.PluginManager.add('uploadimage', function (editor) {
                     if (data && data.file_path) {
                         editor.focus();
                         data.file_path.forEach(function (src) {
+                            console.log(src);
                             editor.selection.setContent(dom.createHTML('img', {src: src}));
                         })
                     }
