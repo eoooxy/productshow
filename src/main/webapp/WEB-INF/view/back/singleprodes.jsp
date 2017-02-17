@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -20,10 +21,13 @@
 <div style="width:980px;margin: 0 auto;text-align: center">
     <div style="margin-top: 20px;width:100%">
         <span style="font-size: 13px">选择你需要更改的产品：</span>
-        <select id="fatherselect" style="width:130px; margin-right: 20px">
-
+        <select id="fatherselect" style="width:100px; margin-right: 20px" onchange="back_getProDes()">
+            <c:forEach items="${dto.lists}" var="v">
+                <option id="${v.recId}">${v.proType}</option>
+            </c:forEach>
         </select>
-        <a class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)" onclick="back_getProDes()">确定</a>
+
+        <%-- <a class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)" onclick="back_getProDes()">确定</a>--%>
         <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)" onclick="back_saveProDes()">保存修改</a>
     </div>
     <div style="margin-top: 20px;width:100% ;text-align: center ">

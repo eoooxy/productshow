@@ -1,9 +1,11 @@
 package com.ahoo.controller;
 
+import com.ahoo.convert.SingleProDesConvert;
 import com.ahoo.dto.MessageDto;
-import com.ahoo.entity.SingleParameDesEntity;
+import com.ahoo.dto.SingleProDesDto;
+import com.ahoo.entity.SingleProDesEntity;
 import com.ahoo.service.Base64ToImageService;
-import com.ahoo.service.SingleParameDesService;
+import com.ahoo.service.SingleProDesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -23,16 +25,16 @@ import java.io.IOException;
 public class SingleParameDesController {
 
     @Autowired
-    SingleParameDesService singleParameDesService;
+    SingleProDesService singleProDesService;
 
     @Autowired
     Base64ToImageService base64ToImageService;
 
 
     @RequestMapping("getParameDes.do")
-    public String getParameDes(ModelMap modelMap, String type, String des) {
+    public String getParameDes(ModelMap modelMap, String type) {
 
-        SingleParameDesEntity entity = singleParameDesService.selectByParame(type, des);
+        SingleProDesEntity entity = singleProDesService.selectOneByParame(type);
 
         if (entity != null) {
             return "one/parem_introduce";
@@ -87,4 +89,37 @@ public class SingleParameDesController {
     }
 
 
+    @RequestMapping("/back/saveProDes.do")
+    public void saveProDes(ModelMap modelMap, SingleProDesDto.SingleProDes dto) {
+
+        MessageDto msg = new MessageDto();
+        if (dto != null) {
+            SingleProDesEntity entity = SingleProDesConvert.convertFromDto(dto);
+            if (singleProDesService.update(entity) > 0) {
+                msg.setCode("1");
+                msg.setCtx("更改成功！");
+                modelMap.put("msg", msg);
+                return;
+            } else {
+                msg.setCode("0");
+                msg.setCtx("更改失败，请联系管理员！");
+                modelMap.put("msg", msg);
+            }
+
+        }
+    }
+
+    @RequestMapping("/back/getProDes.do")
+    public void getProDes(ModelMap modelMap, int recId) {
+
+        MessageDto msg = new MessageDto();
+        if (recId > 0) {
+            SingleProDesEntity entity = singleProDesService.selectById(recId);
+            if (entity != null) {
+                SingleProDesDto.SingleProDes dto = SingleProDesConvert.convertFromEntity(entity);
+                modelMap.put("dto", dto);
+                return;
+            }
+        }
+    }
 }

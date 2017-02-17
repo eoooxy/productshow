@@ -26,11 +26,42 @@ function msgShow(title, msgString, msgType) {
 
 
 function back_getProDes() {
+    var recId = $("#fatherselect").val();
+    var text = $("#fatherselect  option:selected").text();
 
+    console.log(recId + "   " + text);
+
+    var data = {"recId": recId};
+    $.ajax({
+        type: "post",
+        url: "getProDes.do",
+        dataType: "html",
+        data: data,
+        success: function (data) {
+            if (data && data.htmlDes) {
+                tinyMCE.activeEditor.setContent(data.htmlDes);
+            }
+        }
+    });
 }
 
 function back_saveProDes() {
-
     var str = tinyMCE.activeEditor.getContent();
-    console.log(str);
+    var recId = $("#fatherselect").val();
+    var data = {"htmlDes": str, "recId": recId};
+
+    $.ajax({
+        type: "post",
+        url: "saveProDes.do",
+        dataType: "html",
+        data: data,
+        success: function (data) {
+            /*$("#tableDiv").html(data);
+             if (mark == true) {
+             $("#pageNum").text("");
+             var lables = page + 1 + "/" + totalPage;
+             $("#pageNum").html(lables);
+             }*/
+        }
+    });
 }

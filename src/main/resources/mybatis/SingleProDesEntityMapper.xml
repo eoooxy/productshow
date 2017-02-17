@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahoo.mapper.SingleProDesEntityMapper">
+  <resultMap id="BaseResultMap" type="com.ahoo.entity.SingleProDesEntity">
+    <id column="REC_ID" jdbcType="INTEGER" property="recId" />
+    <result column="PRO_TYPE" jdbcType="VARCHAR" property="proType" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="TYPE" jdbcType="VARCHAR" property="type" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.ahoo.entity.SingleProDesEntity">
+    <result column="HTML_DES" jdbcType="LONGVARCHAR" property="htmlDes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    REC_ID, PRO_TYPE, REMARK, TYPE
+  </sql>
+  <sql id="Blob_Column_List">
+    HTML_DES
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from singleprodes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from singleprodes
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ahoo.entity.SingleProDesEntity">
+    insert into singleprodes (REC_ID, PRO_TYPE, REMARK, 
+      TYPE, HTML_DES)
+    values (#{recId,jdbcType=INTEGER}, #{proType,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{type,jdbcType=VARCHAR}, #{htmlDes,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ahoo.entity.SingleProDesEntity">
+    insert into singleprodes
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        REC_ID,
+      </if>
+      <if test="proType != null">
+        PRO_TYPE,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="type != null">
+        TYPE,
+      </if>
+      <if test="htmlDes != null">
+        HTML_DES,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recId != null">
+        #{recId,jdbcType=INTEGER},
+      </if>
+      <if test="proType != null">
+        #{proType,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="htmlDes != null">
+        #{htmlDes,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ahoo.entity.SingleProDesEntity">
+    update singleprodes
+    <set>
+      <if test="proType != null">
+        PRO_TYPE = #{proType,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        TYPE = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="htmlDes != null">
+        HTML_DES = #{htmlDes,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ahoo.entity.SingleProDesEntity">
+    update singleprodes
+    set PRO_TYPE = #{proType,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      TYPE = #{type,jdbcType=VARCHAR},
+      HTML_DES = #{htmlDes,jdbcType=LONGVARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ahoo.entity.SingleProDesEntity">
+    update singleprodes
+    set PRO_TYPE = #{proType,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      TYPE = #{type,jdbcType=VARCHAR}
+    where REC_ID = #{recId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByParame"  resultMap="ResultMapWithBLOBs">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from singleprodes
+  </select>
+
+  <select id="selectOneByParame" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from singleprodes
+    where PRO_TYPE = #{proType,jdbcType=VARCHAR}
+  </select>
+
+</mapper>
