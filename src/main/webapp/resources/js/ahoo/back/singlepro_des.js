@@ -20,7 +20,17 @@ tinymce.init({
 });
 
 
-
 function msgShow(title, msgString, msgType) {
     $.messager.alert(title, msgString, msgType);
+}
+
+
+function back_getProDes() {
+
+}
+
+function back_saveProDes() {
+
+    var str = tinyMCE.activeEditor.getContent();
+    console.log(str);
 }

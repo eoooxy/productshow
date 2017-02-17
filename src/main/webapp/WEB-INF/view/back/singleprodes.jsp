@@ -24,7 +24,7 @@
 
         </select>
         <a class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)" onclick="back_getProDes()">确定</a>
-        <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)" onclick="back_getProDes()">保存修改</a>
+        <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)" onclick="back_saveProDes()">保存修改</a>
     </div>
     <div style="margin-top: 20px;width:100% ;text-align: center ">
         <div align="center">

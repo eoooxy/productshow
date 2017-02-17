@@ -22,12 +22,11 @@ tinymce.PluginManager.add('uploadimage', function (editor) {
                     return true;
                 },
                 success: function (data) {
-                    if (data && data.file_path) {
+                    if (data && data.src) {
                         editor.focus();
-                        data.file_path.forEach(function (src) {
-                            console.log(src);
-                            editor.selection.setContent(dom.createHTML('img', {src: src}));
-                        })
+                        console.log(data.src);
+                        var src2 = "http://img0.bdstatic.com/static/searchdetail/img/logo-2X_b99594a.png";
+                        editor.selection.setContent(dom.createHTML('img', {src: src2}))
                     }
                 }
             });
