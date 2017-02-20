@@ -19,6 +19,8 @@
     <link href="<%=request.getContextPath()%>/resources/css/fancybox/jquery.fancybox.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/resources/css/flexslider.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet"/>
+    <link href="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/resources/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -79,36 +81,39 @@
                 <div class="skill-home">
                     <div class="skill-home-solid clearfix">
 
-                        <div class="col-md-4 text-center" onclick="getProductOne()">
-                            <div class="box">
-                                <span class="icons c1"><i class="icon-settings icons"></i></span>
-                                <div class="box-area">
-                                    <h3>放热焊接</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
-                            </div>
-                        </div>
-
                         <div class="col-md-4 text-center" onclick="getProductTwo()">
                             <div class="box">
-                                <span class="icons c2"><i class="icon-diamond icons"></i></span>
+                                <span class="icons c2"><i class="icon-wrench icons"></i></span>
                                 <div class="box-area">
                                     <h3>电解离子接地极</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
+                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
+                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
+                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                   </div>
                             </div>
                         </div>
 
                         <div class="col-md-4 text-center" onclick="getProductThere()">
                             <div class="box">
-                                <span class="icons c3"><i class="icon-user icons"></i></span>
+                                <span class="icons c3"><i class="icon-magic-wand icons"></i></span>
                                 <div class="box-area">
                                     <h3>铜包钢接地棒</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-                                        consequatur aliquam, incidunt eius magni provident</p>
-                                    <p><a href="#">Learn More</a></p></div>
+                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
+                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
+                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center" onclick="getProductOne()">
+                            <div class="box">
+                                <span class="icons c1"><i class="icon-settings icons"></i></span>
+                                <div class="box-area">
+                                    <h3>放热焊接</h3>
+                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
+                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
+                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                </div>
                             </div>
                         </div>
 
@@ -117,49 +122,37 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Our Contact</h5>
-                        <address>
-                            <strong>Industry company Inc</strong><br>
-                            JC Main Road, Near Silnile tower<br>
-                            Pin-21542 NewYork US.
-                        </address>
+                        <h5 class="widgetheading">联系我们</h5>
                         <p>
-                            <i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-                            <i class="icon-envelope-alt"></i> email@domainname.com
+                            <i class="icon-user-female"></i> 邱女士<br>
+                            <i class="icon-phone"></i> 150-5020-4116<br>
+                            <i class="icon-link"></i><a href="https://400528.1688.com/"
+                                                        style="text-decoration:none;color: #888;" target="_blank"> 旺
+                            铺：400528.1688.com</a><br>
+                            <i class="icon-map"></i> 江苏省昆山市千灯镇
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Quick Links</h5>
+                        <h5 class="widgetheading">友情链接</h5>
                         <ul class="link-list">
-                            <li><a href="#">Latest Events</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">暂无</a></li>
+                            <%-- <li><a href="#">Terms and conditions</a></li>
+                             <li><a href="#">Privacy policy</a></li>
+                             <li><a href="#">Career</a></li>
+                             <li><a href="#">Contact us</a></li>--%>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Latest posts</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Recent News</h5>
+                        <h5 class="widgetheading">关注我们</h5>
                         <ul class="link-list">
                             <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
                             <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
@@ -169,6 +162,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
@@ -191,6 +185,7 @@
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/back/product.js"></script>
 
+<script src="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
 <script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>

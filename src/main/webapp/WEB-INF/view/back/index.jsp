@@ -31,7 +31,8 @@
 <div region="north" split="true" border="false" style="overflow: hidden; height: 30px;
         background: #7f99be repeat-x center 50%;
         line-height: 20px;color: #fff; font-family: Verdana, 微软雅黑,黑体">
-    <span style="float:right; padding-right:20px;" class="head">欢迎 denglu  <a href="#" id="editpass">修改密码</a> <a
+    <span style="float:right; padding-right:20px;" class="head">欢迎 <%=session.getAttribute("username") %>  <a href="#"
+                                                                                                              id="editpass">修改密码</a> <a
             href="#" id="loginOut">安全退出</a></span>
 </div>
 <div region="west" hide="true" split="true" title="导航菜单" style="width:180px;" id="west">

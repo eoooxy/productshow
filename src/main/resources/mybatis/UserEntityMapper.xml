@@ -68,6 +68,14 @@
       PASSWD = #{passwd,jdbcType=VARCHAR}
     where REC_ID = #{recId,jdbcType=INTEGER}
   </update>
+
+    <update id="updateByName" parameterType="com.ahoo.entity.UserEntity">
+        update user
+        set PASSWD = #{passwd,jdbcType=VARCHAR}
+        where USERNAME = #{username,jdbcType=VARCHAR}
+    </update>
+
+
     <select id="selectByUserNameAndPassWd" parameterType="com.ahoo.entity.UserEntity" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>

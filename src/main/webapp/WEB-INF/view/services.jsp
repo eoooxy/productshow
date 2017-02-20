@@ -19,6 +19,8 @@
     <link href="<%=request.getContextPath()%>/resources/css/jcarousel.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/flexslider.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet"/>
+    <link href="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/resources/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -67,145 +69,74 @@
         <div class="container content">
             <div class="row">
                 <div class="col-md-12">
-                    <div><h2>Our Quality Service</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                    <div><h2>我们提供的服务</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
                         quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident,
                         doloribus omnis minus temporibus perferendis nesciunt..
                     </div>
                     <br>
                 </div>
             </div>
+
+            <hr class="margin-bottom-50">
+
             <!-- Service Blcoks -->
             <div class="row service-v1 margin-bottom-40">
                 <div class="col-md-4 md-margin-bottom-40">
                     <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service1.jpg" alt="">
-                    <h2>Managment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                        incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam
-                        repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                    <h2>电解离子接地极</h2>
+                    <p>电解离子接地极这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
                 </div>
                 <div class="col-md-4">
                     <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service2.jpg" alt="">
-                    <h2>Construction</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                        incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam
-                        repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                    <h2>铜包钢接地棒</h2>
+                    <p>铜包钢接地棒这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
                 </div>
                 <div class="col-md-4 md-margin-bottom-40">
                     <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service3.jpg" alt="">
-                    <h2>Finance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam,
-                        incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam
-                        repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                    <h2>放热焊接</h2>
+                    <p>放热焊接这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
                 </div>
             </div>
             <!-- End Service Blcoks -->
-
-            <hr class="margin-bottom-50">
-
-            <!-- Info Blcoks -->
-            <div class="row">
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-user"></i>
-                    <div class="info-blocks-in">
-                        <h3>Awesome Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-star"></i>
-                    <div class="info-blocks-in">
-                        <h3>FontAwesome</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-book"></i>
-                    <div class="info-blocks-in">
-                        <h3>Bootstrap</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Info Blcoks -->
-
-
-            <!-- Info Blcoks -->
-            <div class="row">
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-home"></i>
-                    <div class="info-blocks-in">
-                        <h3>SEO Ready</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-flag-o"></i>
-                    <div class="info-blocks-in">
-                        <h3>Fully Responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 info-blocks">
-                    <i class="icon-info-blocks fa fa-thumbs-o-up"></i>
-                    <div class="info-blocks-in">
-                        <h3>CSS3 + HTML5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End Info Blcoks -->
-
-
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Our Contact</h5>
-                        <address>
-                            <strong>Industry company Inc</strong><br>
-                            JC Main Road, Near Silnile tower<br>
-                            Pin-21542 NewYork US.
-                        </address>
+                        <h5 class="widgetheading">联系我们</h5>
                         <p>
-                            <i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-                            <i class="icon-envelope-alt"></i> email@domainname.com
+                            <i class="icon-user-female"></i> 邱女士<br>
+                            <i class="icon-phone"></i> 150-5020-4116<br>
+                            <i class="icon-link"></i><a href="https://400528.1688.com/"
+                                                        style="text-decoration:none;color: #888;" target="_blank"> 旺
+                            铺：400528.1688.com</a><br>
+                            <i class="icon-map"></i> 江苏省昆山市千灯镇
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Quick Links</h5>
+                        <h5 class="widgetheading">友情链接</h5>
                         <ul class="link-list">
-                            <li><a href="#">Latest Events</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">暂无</a></li>
+                            <%-- <li><a href="#">Terms and conditions</a></li>
+                             <li><a href="#">Privacy policy</a></li>
+                             <li><a href="#">Career</a></li>
+                             <li><a href="#">Contact us</a></li>--%>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Latest posts</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Recent News</h5>
+                        <h5 class="widgetheading">关注我们</h5>
                         <ul class="link-list">
                             <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
                             <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
@@ -215,6 +146,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
@@ -233,5 +165,6 @@
 <script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>

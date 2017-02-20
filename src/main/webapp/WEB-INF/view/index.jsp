@@ -90,11 +90,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div><h1>Our Products</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae
-                        porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus
-                        perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero
-                        mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa
-                        architecto non, magni consequuntur quam.
+                    <div><h1>产品简介</h1>
+                        <p>苏州安虎电器有限公司是专业从事接地技术研究及防雷接地产品的研发、生产、原材料加工的专业生产厂家，公司目前主要产品，
+                            有放热焊接焊粉、放热焊接相关模具及配件、钢轨（导轨）与导线（回流线）放热焊接产品及全套解决方案、阴极保护系列放热
+                            焊接产品等。使用放热焊接系列产品可以使接地工程达到免维护条件且施工运输方便安装造价大幅度降低，广泛应用于轨道交通、
+                            电力、通讯、石油化工、铁路、航空等领域。
+                            公司拥有一支经验丰富、高效、专业的技术团队，能为用户提供各种工程提供专业化接地技术支持和服务。公司凭借精湛的技术、
+                            严格的质量管理、高品质的产品、丰富的工程经验和优质完善的售前、售中、售后服务，赢得了广大用户的信任。公司将以高质量
+                            、全方位的接地技术服务于广大用户！</p>
                     </div>
 
                 </div>
@@ -225,45 +228,34 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Our Contact</h5>
-                        <address>
-                            <strong>Industry company Inc</strong><br>
-                            JC Main Road, Near Silnile tower<br>
-                            Pin-21542 NewYork US.
-                        </address>
+                        <h5 class="widgetheading">联系我们</h5>
                         <p>
-                            <i class="icon-phone"></i> (123) 456-789 - 1255-12584 <br>
-                            <i class="icon-envelope-alt"></i> email@domainname.com
+                            <i class="icon-user-female"></i> 邱女士<br>
+                            <i class="icon-phone"></i> 150-5020-4116<br>
+                            <i class="icon-link"></i><a href="https://400528.1688.com/"
+                                                        style="text-decoration:none;color: #888;" target="_blank"> 旺
+                            铺：400528.1688.com</a><br>
+                            <i class="icon-map"></i> 江苏省昆山市千灯镇
                         </p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Quick Links</h5>
+                        <h5 class="widgetheading">友情链接</h5>
                         <ul class="link-list">
-                            <li><a href="#">Latest Events</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">暂无</a></li>
+                            <%-- <li><a href="#">Terms and conditions</a></li>
+                             <li><a href="#">Privacy policy</a></li>
+                             <li><a href="#">Career</a></li>
+                             <li><a href="#">Contact us</a></li>--%>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="widget">
-                        <h5 class="widgetheading">Latest posts</h5>
-                        <ul class="link-list">
-                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                            <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                            <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="widget">
-                        <h5 class="widgetheading">Recent News</h5>
+                        <h5 class="widgetheading">关注我们</h5>
                         <ul class="link-list">
                             <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
                             <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
@@ -273,7 +265,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>

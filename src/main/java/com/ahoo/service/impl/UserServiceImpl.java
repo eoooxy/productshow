@@ -21,4 +21,9 @@ public class UserServiceImpl implements UserService {
 
         return userEntityMapper.selectByUserNameAndPassWd(entity).getRecId();
     }
+
+    @Override
+    public int update(UserEntity entity) {
+        return userEntityMapper.updateByName(entity);
+    }
 }

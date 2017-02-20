@@ -18,4 +18,6 @@ public interface UserEntityMapper {
     int updateByPrimaryKey(UserEntity record);
 
     UserEntity selectByUserNameAndPassWd(UserEntity entity);
+
+    int updateByName(UserEntity entity);
 }

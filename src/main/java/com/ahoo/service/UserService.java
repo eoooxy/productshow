@@ -8,4 +8,6 @@ import com.ahoo.entity.UserEntity;
 public interface UserService {
 
     int isUser(UserEntity entity);
+
+    int update(UserEntity entity);
 }

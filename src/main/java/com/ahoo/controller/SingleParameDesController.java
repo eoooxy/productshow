@@ -37,6 +37,8 @@ public class SingleParameDesController {
         SingleProDesEntity entity = singleProDesService.selectOneByParame(type);
 
         if (entity != null) {
+            SingleProDesDto.SingleProDes dto = SingleProDesConvert.convertFromEntity(entity);
+            modelMap.put("dto", dto);
             return "one/parem_introduce";
         }
 

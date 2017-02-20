@@ -6,25 +6,22 @@ var _menus = {
         {
             "menuid": "1", "icon": "icon-sys", "menuname": "产品数据",
             "menus": [
-                {"menuid": "11", "menuname": "用户管理", "icon": "icon-nav", "url": "login.do"},
-                {"menuid": "12", "menuname": "角色管理", "icon": "icon-nav", "url": "demo2.html"},
-                {"menuid": "13", "menuname": "焊接类产品参数", "icon": "icon-nav", "url": "three_all.do"}
+                {"menuid": "11", "menuname": "焊接类产品参数", "icon": "icon-nav", "url": "three_all.do"}
             ]
         }, {
             "menuid": "2", "icon": "icon-sys", "menuname": "产品分类与介绍",
-            "menus": [{"menuid": "21", "menuname": "员工列表", "icon": "icon-nav", "url": "demo.html"},
-                {"menuid": "22", "menuname": "视频监控", "icon": "icon-nav", "url": "demo1.html"},
-                {"menuid": "23", "menuname": "焊接类别与描述", "icon": "icon-nav", "url": "three_des.do"},
-                {"menuid": "24", "menuname": "产品细节描述", "icon": "icon-nav", "url": "singleprodes.do"}
-            ]
-        }, {
-            "menuid": "3", "icon": "icon-sys", "menuname": "其他数据管理",
             "menus": [
-                {"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
-                {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"},
-                {"menuid": "32", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo2.html"}
+                {"menuid": "21", "menuname": "焊接类别与描述", "icon": "icon-nav", "url": "three_des.do"},
+                {"menuid": "22", "menuname": "产品细节描述", "icon": "icon-nav", "url": "singleprodes.do"}
             ]
-        }
+        }/*, {
+         "menuid": "3", "icon": "icon-sys", "menuname": "其他数据管理",
+         "menus": [
+         {"menuid": "31", "menuname": "添加部门", "icon": "icon-nav", "url": "demo1.html"},
+         {"menuid": "32", "menuname": "部门列表", "icon": "icon-nav", "url": "demo2.html"},
+         {"menuid": "32", "menuname": "焊接类产品", "icon": "icon-nav", "url": "demo2.html"}
+         ]
+         }*/
     ]
 };
 
@@ -66,13 +63,18 @@ function serverLogin() {
         return false;
     }
 
-    /* $.post('/ajax/editpassword.ashx?newpass=' + $newpass.val(), function (msg) {
-     msgShow('系统提示', '恭喜，密码修改成功！<br>您的新密码为：' + msg, 'info');
-     $newpass.val('');
-     $rePass.val('');
-     close();
-     })
-     */
+    $.ajax({
+        type: "post",
+        url: "updateUser.json",
+        dataType: "json",
+        data: data,
+        success: function (data) {
+            var msg = data.msg;
+            msgShow('系统提示', msg.ctx, 'info');
+            $newpass.val('');
+            $rePass.val('');
+        },
+    });
 }
 
 $(function () {

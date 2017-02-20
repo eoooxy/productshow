@@ -8,10 +8,11 @@
 var pageFlag = 0;
 
 function queryDes(value) {
+    var data = {"type": value};
     switch (value) {
         case "导体":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '导体', height: 500, width: 700,
@@ -23,7 +24,7 @@ function queryDes(value) {
             break;
         case "模具型号":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '模具型号', height: 500, width: 700,
@@ -35,7 +36,7 @@ function queryDes(value) {
             break;
         case "价格体系":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '价格体系', height: 500, width: 700,
@@ -47,7 +48,7 @@ function queryDes(value) {
             break;
         case "焊粉型号":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '焊粉型号', height: 500, width: 700,
@@ -59,7 +60,7 @@ function queryDes(value) {
             break;
         case "模具夹":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '模具夹', height: 500, width: 700,
@@ -71,7 +72,7 @@ function queryDes(value) {
             break;
         case "套管":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '套管', height: 500, width: 700,
@@ -83,7 +84,7 @@ function queryDes(value) {
             break;
         case "整形模具":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '整形模具', height: 500, width: 700,
@@ -95,7 +96,7 @@ function queryDes(value) {
             break;
         case "工具箱":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '工具箱', height: 500, width: 700,
@@ -107,7 +108,7 @@ function queryDes(value) {
             break;
         case "点火枪":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '点火枪', height: 500, width: 700,
@@ -119,7 +120,7 @@ function queryDes(value) {
             break;
         case "喷灯":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '喷灯', height: 500, width: 700,
@@ -131,7 +132,7 @@ function queryDes(value) {
             break;
         case "清模铜刷":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '清模铜刷', height: 500, width: 700,
@@ -143,7 +144,7 @@ function queryDes(value) {
             break;
         case "清模毛刷":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: '清模毛刷', height: 500, width: 700,
@@ -155,7 +156,7 @@ function queryDes(value) {
             break;
         case "C型夹":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: 'C型夹', height: 500, width: 700,
@@ -167,7 +168,7 @@ function queryDes(value) {
             break;
         case "F型夹":
             $.ajax({
-                type: "post", url: "getParameDes.do", dataType: "html",//data: data,
+                type: "post", url: "getParameDes.do", dataType: "html", data: data,
                 success: function (data) {
                     ArtDialogCommon({
                         id: 'edit', content: data, title: 'F型夹', height: 500, width: 700,
@@ -281,11 +282,16 @@ function getOneParam() {
     var fkRecId = $("#fkId").val();
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").text();
-    if (paramB == undefined) {
-        var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": null};
+    if (paramA == undefined) {
+        return;
     } else {
-        var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": paramB};
+        if (paramB == undefined) {
+            var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": null};
+        } else {
+            var data = {"fkRecId": fkRecId, "paramA": paramA, "paramB": paramB};
+        }
     }
+
 
     $.ajax({
         type: "post",
