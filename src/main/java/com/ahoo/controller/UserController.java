@@ -24,16 +24,21 @@ public class UserController {
     UserService userService;
 
 
-    @RequestMapping("/back/isLogin.do")
-    public String isLogin(UserEntity userEntity, HttpServletRequest request) {
-
+    @RequestMapping("/back/isLogin.json")
+    public void isLogin(UserEntity userEntity, HttpServletRequest request, ModelMap modelMap) {
+        MessageDto msg = new MessageDto();
         if (userService.isUser(userEntity) > 0) {
             HttpSession session = request.getSession();
             session.setAttribute("username", userEntity.getUsername());
             session.setAttribute("passwd", userEntity.getPasswd());
-            return "back/index";
+            System.out.println(userEntity.getPasswd() + " and" + userEntity.getUsername());
+            msg.setCode("1");
+            modelMap.put("msg", msg);
+            return;
         }
-        return "back/login";
+        msg.setCode("0");
+        modelMap.put("msg", msg);
+        return;
     }
 
     @RequestMapping("/back/updateUser.json")
@@ -51,9 +56,11 @@ public class UserController {
                 session.setAttribute("passwd", entity.getPasswd());
                 msg.setCode("1");
                 msg.setCtx("更改成功，新密码为" + entity.getPasswd());
+                return;
             } else {
                 msg.setCode("0");
                 msg.setCtx("更改失败,请联系管理员");
+                return;
             }
 
         }
