@@ -89,17 +89,17 @@ public class SingleParameDesController {
     }
 
 
-    @RequestMapping("/back/saveProDes.do")
+    @RequestMapping("/back/saveProDes.json")
     public void saveProDes(ModelMap modelMap, SingleProDesDto.SingleProDes dto) {
 
         MessageDto msg = new MessageDto();
         if (dto != null) {
-            SingleProDesEntity entity = SingleProDesConvert.convertFromDto(dto);
+            SingleProDesEntity entity = singleProDesService.selectById(dto.getRecId());
+            entity.setHtmlDes(dto.getHtmlDes());
             if (singleProDesService.update(entity) > 0) {
                 msg.setCode("1");
                 msg.setCtx("更改成功！");
                 modelMap.put("msg", msg);
-                return;
             } else {
                 msg.setCode("0");
                 msg.setCtx("更改失败，请联系管理员！");
@@ -109,7 +109,7 @@ public class SingleParameDesController {
         }
     }
 
-    @RequestMapping("/back/getProDes.do")
+    @RequestMapping("/back/getProDes.json")
     public void getProDes(ModelMap modelMap, int recId) {
 
         MessageDto msg = new MessageDto();
@@ -118,7 +118,6 @@ public class SingleParameDesController {
             if (entity != null) {
                 SingleProDesDto.SingleProDes dto = SingleProDesConvert.convertFromEntity(entity);
                 modelMap.put("dto", dto);
-                return;
             }
         }
     }

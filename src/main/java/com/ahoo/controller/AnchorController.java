@@ -65,7 +65,7 @@ public class AnchorController {
 
     @RequestMapping("back/login.do")
     public String getBackLogin() {
-        return "back/index";
+        return "back/login";
     }
 
     @RequestMapping("back/index.do")

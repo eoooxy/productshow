@@ -27,19 +27,23 @@ function msgShow(title, msgString, msgType) {
 
 function back_getProDes() {
     var recId = $("#fatherselect").val();
-    var text = $("#fatherselect  option:selected").text();
+    var text = $("#fatherselect").find("option:selected").text();
+//    var text = $("#fatherselect  option:selected").text();
 
     console.log(recId + "   " + text);
 
     var data = {"recId": recId};
     $.ajax({
         type: "post",
-        url: "getProDes.do",
-        dataType: "html",
+        url: "getProDes.json",
+        dataType: "json",
         data: data,
         success: function (data) {
-            if (data && data.htmlDes) {
-                tinyMCE.activeEditor.setContent(data.htmlDes);
+            var dto = data.dto;
+            console.log(dto);
+            if (dto && dto.htmlDes) {
+                console.log(data);
+                tinyMCE.activeEditor.setContent(dto.htmlDes);
             }
         }
     });
@@ -48,20 +52,23 @@ function back_getProDes() {
 function back_saveProDes() {
     var str = tinyMCE.activeEditor.getContent();
     var recId = $("#fatherselect").val();
+
+    console.log(recId, str);
     var data = {"htmlDes": str, "recId": recId};
 
     $.ajax({
         type: "post",
-        url: "saveProDes.do",
-        dataType: "html",
+        url: "saveProDes.json",
+        dataType: "json",
         data: data,
         success: function (data) {
-            /*$("#tableDiv").html(data);
-             if (mark == true) {
-             $("#pageNum").text("");
-             var lables = page + 1 + "/" + totalPage;
-             $("#pageNum").html(lables);
-             }*/
+            console.log(data);
+            if(data && data.msg){
+                var msg = data.msg;
+                msgShow("系统消息", msg.ctx, "info");
+                tinyMCE.activeEditor.setContent("");
+            }
+
         }
     });
 }

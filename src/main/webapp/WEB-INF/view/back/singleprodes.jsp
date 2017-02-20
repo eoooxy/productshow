@@ -23,7 +23,7 @@
         <span style="font-size: 13px">选择你需要更改的产品：</span>
         <select id="fatherselect" style="width:100px; margin-right: 20px" onchange="back_getProDes()">
             <c:forEach items="${dto.lists}" var="v">
-                <option id="${v.recId}">${v.proType}</option>
+                <option value="${v.recId}">${v.proType}</option>
             </c:forEach>
         </select>
 
