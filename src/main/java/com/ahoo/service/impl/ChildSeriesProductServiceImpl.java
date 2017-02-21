@@ -53,7 +53,7 @@ public class ChildSeriesProductServiceImpl implements ChildSeriesProductService 
 
     @Override
     public int updatePro(ChildSeriesProductEntity entity) {
-        return childSeriesProductEntityMapper.updateByPrimaryKey(entity);
+        return childSeriesProductEntityMapper.updateByPrimaryKeySelective(entity);
     }
 
     @Override

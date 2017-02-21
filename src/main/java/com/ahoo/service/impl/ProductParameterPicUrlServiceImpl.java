@@ -1,7 +1,9 @@
 package com.ahoo.service.impl;
 
 import com.ahoo.entity.ProductParameterPicUrlEntity;
+import com.ahoo.mapper.ProductParameterPicUrlEntityMapper;
 import com.ahoo.service.ProductParameterPicUrlService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,8 +14,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductParameterPicUrlServiceImpl implements ProductParameterPicUrlService {
 
+
+    @Autowired
+    ProductParameterPicUrlEntityMapper productParameterPicUrlEntityMapper;
+
     @Override
     public ProductParameterPicUrlEntity selectByFkId(int fkId) {
-        return null;
+        return productParameterPicUrlEntityMapper.selectByPrimaryKey(1);
     }
 }

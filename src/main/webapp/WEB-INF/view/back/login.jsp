@@ -29,6 +29,7 @@
                    onFocus="$('.login_password').hide()" onBlur="if(this.value=='') $('.login_password').show()"
                    value="" type="password">
         </div>
+        <div id="tips" hidden="hidden"><label style="color:#FFFFFF;"> * 帐号或密码错误，请联系管理员</label></div>
         <div class="mb2"><a class="act-but submit" onclick="login()" style="color: #FFFFFF;">登录</a></div>
     </form>
 

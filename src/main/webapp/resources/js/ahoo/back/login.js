@@ -15,6 +15,7 @@ function login() {
                 location.href = "/back/index.do";
             } else {
                 location.href = "/back/login.do";
+                $("#tips").show();
             }
 
         }

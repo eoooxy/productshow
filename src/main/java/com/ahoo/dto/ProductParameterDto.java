@@ -36,13 +36,6 @@ public class ProductParameterDto {
 
     private List<ProductParameter> productParameterList;
 
-    private Map productParameterMap;
-
-    private Map productParameterPicUrlMap;
-
-    private Map supProductParameterMap;
-
-    private Map supProductParameterUrlMap;
 
     private List<String> strings;
 
@@ -71,37 +64,6 @@ public class ProductParameterDto {
     private SupProductParameterUrlEntity supProductParameterUrlEntity;
 
 
-    public Map getProductParameterMap() {
-        return productParameterMap;
-    }
-
-    public void setProductParameterMap(Map productParameterMap) {
-        this.productParameterMap = productParameterMap;
-    }
-
-    public Map getProductParameterPicUrlMap() {
-        return productParameterPicUrlMap;
-    }
-
-    public void setProductParameterPicUrlMap(Map productParameterPicUrlMap) {
-        this.productParameterPicUrlMap = productParameterPicUrlMap;
-    }
-
-    public Map getSupProductParameterMap() {
-        return supProductParameterMap;
-    }
-
-    public void setSupProductParameterMap(Map supProductParameterMap) {
-        this.supProductParameterMap = supProductParameterMap;
-    }
-
-    public Map getSupProductParameterUrlMap() {
-        return supProductParameterUrlMap;
-    }
-
-    public void setSupProductParameterUrlMap(Map supProductParameterUrlMap) {
-        this.supProductParameterUrlMap = supProductParameterUrlMap;
-    }
 
     public ChildSeriesProDesEntity getDesEntity() {
         return desEntity;

@@ -61,14 +61,14 @@ public class SingleParameDesController {
                     // 项目在容器中实际发布运行的根路径
                     String realPath = request.getSession().getServletContext().getRealPath("/");
                     // 自定义的文件名称
-                    String trueFileName = String.valueOf(System.currentTimeMillis()) + fileName;
+                    String trueFileName = String.valueOf(System.currentTimeMillis());
                     // 设置存放图片文件的路径
-                    path = realPath +/*System.getProperty("file.separator")+*/trueFileName;
-                    System.out.println("存放图片文件的路径:" + path);
+                    path = realPath + "images/" + trueFileName + "." + type;
+                    //System.out.println("存放图片文件的路径:" + realPath + "名称" + trueFileName);
                     // 转存文件到指定的路径
                     thumbnail.transferTo(new File(path));
                     System.out.println("文件成功上传到指定目录下");
-                    modelMap.put("src", path);
+                    modelMap.put("src", "/images/" + trueFileName + "." + type);
 
                 } else {
                     msg.setCode("0");

@@ -118,11 +118,10 @@ public class ProductParameterController {
     public String getSelectOne(ModelMap modelMap, Integer fkRecId, String paramA, String paramB) {
 
         List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkRecId, paramA, paramB);
-        ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(fkRecId);
+        ProductParameterPicUrlEntity productParameterPicUrlEntity = productParameterPicUrlService.selectByFkId(1);
         SupProductParameterEntity supProductParameterEntity = supProductParameterService.selectByFkId(fkRecId);
         SupProductParameterUrlEntity supProductParameterUrlEntity = supProductParameterUrlService.selectByFkId(fkRecId);
 
-//productParameterPicUrlEntity != null &&
         if (entities.size() > 0 && supProductParameterEntity != null && supProductParameterUrlEntity != null) {
             List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);
             ProductParameterDto dto = new ProductParameterDto();
@@ -131,18 +130,6 @@ public class ProductParameterController {
             dto.setSupProductParameterEntity(supProductParameterEntity);
             dto.setSupProductParameterUrlEntity(supProductParameterUrlEntity);
             dto.setProductParameterList(parameters);
-
-
-            //Map productParameterMap = Bean2MapConvert.transBean2Map(entity);
-            //Map productParameterPicUrlMap = Bean2MapConvert.transBean2Map(productParameterPicUrlEntity);
-            //Map supProductParameterMap = Bean2MapConvert.transBean2Map(supProductParameterEntity);
-            //Map supProductParameterUrlMap = Bean2MapConvert.transBean2Map(supProductParameterUrlEntity);
-
-            //dto.setProductParameterMap(productParameterMap);
-            //dto.setProductParameterPicUrlMap(productParameterPicUrlMap);
-            //dto.setSupProductParameterMap(supProductParameterMap);
-            //dto.setSupProductParameterUrlMap(supProductParameterUrlMap);
-
 
             modelMap.put("dto", dto);
 
@@ -156,7 +143,7 @@ public class ProductParameterController {
     public String getPage(ModelMap modelMap, Integer page, Integer fkId, String paramA, String paramB) {
 
         List<ProductParameterEntity> entities = productParameterService.selectProByParam(fkId, paramA, paramB);
-        ProductParameterPicUrlEntity entity = productParameterPicUrlService.selectByFkId(fkId);
+        ProductParameterPicUrlEntity entity = productParameterPicUrlService.selectByFkId(1);
         if (entities.size() > 0) {
 
             List<ProductParameterDto.ProductParameter> parameters = ProductParameterConvert.convertFromEntity(entities);

@@ -23,7 +23,7 @@
                     <span style="font-size: 14px;align-content: center"><input type="checkbox" name="m"
                                                                                value="">导体A:${dto.productParameterList[0].conductorA}</span><br/>
                         <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
-                             src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                             src="${dto.productParameterPicUrlEntity.conductorUrl}"
                              class="img-rounded">
                     </div>
                 </td>
@@ -34,7 +34,7 @@
                                                          value="">焊粉型号:${dto.productParameterList[0].powerType}</span><br/>
 
                         <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('焊粉型号')"
-                             src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                             src="${dto.productParameterPicUrlEntity.powerTypeUrl}"
                              class="img-rounded">
                     </div>
                 </td>
@@ -46,7 +46,7 @@
                                                          value="">模具型号:${dto.productParameterList[0].modelNumber}</span><br/>
 
                         <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('模具型号')"
-                             src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                             src="${dto.productParameterPicUrlEntity.modelNumberUrl}"
                              class="img-rounded">
                     </div>
                 </td>
@@ -58,7 +58,7 @@
                                                          value="">价格体系:${dto.productParameterList[0].modelType}</span><br/>
 
                             <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('价格体系')"
-                                 src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                                 src="${dto.productParameterPicUrlEntity.modelTypeUrl}"
                                  class="img-rounded">
                         </div>
                     </td>
@@ -71,7 +71,7 @@
                         <span style="font-size: 14px"><input type="checkbox" name="m"
                                                              value="">导体B:${dto.productParameterList[0].conductorB}</span><br/>
                             <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
-                                 src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                                 src="${dto.productParameterPicUrlEntity.conductorUrl}"
                                  class="img-rounded">
                         </div>
                     </td>
@@ -83,7 +83,7 @@
                                                          value="">模具夹:${dto.productParameterList[0].modelClip}</span><br/>
 
                             <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('模具夹')"
-                                 src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                                 src="${dto.productParameterPicUrlEntity.modelClipUrl}"
                                  class="img-rounded">
                         </div>
                     </td>
@@ -96,7 +96,7 @@
 
                             <img style="width:200px;height:150px;border: 1px solid #dddddd;"
                                  onclick="queryDes('套管')"
-                                 src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                                 src="${dto.productParameterPicUrlEntity.parameter1Url}"
                                  class="img-rounded">
                         </div>
                     </td>
@@ -109,7 +109,7 @@
 
                             <img style="width:200px;height:150px;border: 1px solid #dddddd;"
                                  onclick="queryDes('整形模具')"
-                                 src="<%=request.getContextPath()%>/resources/img/total/main_1.jpg"
+                                 src="${dto.productParameterPicUrlEntity.parameter2Url}"
                                  class="img-rounded">
                         </div>
                     </td>

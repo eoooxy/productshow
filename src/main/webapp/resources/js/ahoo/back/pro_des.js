@@ -125,6 +125,7 @@ function back_edit(id, mark) {
                     $("#productChildType").val(obj.productChildType);
                     $("#productTitleChild").val(obj.productTitle);
                     $("#productDesChild").val(obj.productDes);
+
                     $("#fkChildRecIdChild").val(obj.fkRecId);
                     $("#recIdChildDes").val(obj.recIdDes);
 
@@ -182,7 +183,7 @@ function back_addPro(mark) {
                     success: function (data) {
                         var msg = data.msg;
                         msgShow("系统消息", msg.ctx, "info");
-                        $("#desProTabChild input").val("");
+                        $("#desProTabChild").val("");
 
                     }
                 });
@@ -202,7 +203,7 @@ function back_addPro(mark) {
                     success: function (data) {
                         var msg = data.msg;
                         msgShow("系统消息", msg.ctx, "info");
-                        $("#desProTabMain input").val("");
+                        $("#desProTabMain").val("");
                     }
                 });
             }
@@ -235,7 +236,7 @@ function saveProDes(mark) {
                     success: function (data) {
                         var msg = data.msg;
                         msgShow("系统消息", msg.ctx, "info");
-                        $("#desProTabChild input").val("");
+                        $("#desProTabChild").val("");
                     }
                 });
             }
@@ -254,7 +255,7 @@ function saveProDes(mark) {
                     success: function (data) {
                         var msg = data.msg;
                         msgShow("系统消息", msg.ctx, "info");
-                        $("#desProTabMain input").val("");
+                        $("#desProTabMain").val("");
                     }
                 });
             }
@@ -286,11 +287,16 @@ function imgChange(obj, mark) {
 
 function back_showPic(url) {
     console.log(url);
+    var ct = "<img width='350px' height='250px' src='" + url + "'/>";
     art.dialog({
         padding: 0,
-        title: '照片',
-        content: '<img src=' + url + '/>',
-        lock: true
+        title: '图片预览',
+        content: ct,
+        lock: true,
+        resize: false,
+        drag: false,
+        left: '50%',
+        top: '50%'
     });
 
 }

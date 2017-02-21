@@ -139,7 +139,8 @@ public class MainSeriesProductController {
 
             if (dto.getProductMainUrl() != "" && dto.getProductMainUrl() != null) {
                 base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, filePath);
-                productEntity.setProductMainUrl(filePath + picName);
+                productEntity.setProductMainUrl("/images/total/" + picName);
+
             }
 
 
@@ -180,7 +181,7 @@ public class MainSeriesProductController {
                 return;
             }
             base64ToImageService.Base64ToImageService(dto.getProductMainUrl(), picName, filePath);
-            productEntity.setProductMainUrl(filePath + picName);
+            productEntity.setProductMainUrl("/images/total/" + picName);
 
 
             if (mainSeriesProductService.addPro(productEntity) > 0 && mainSeriesProDesService.addPro(desEntity) > 0) {

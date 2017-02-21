@@ -62,6 +62,7 @@ function serverLogin() {
         msgShow('系统提示', '两次密码不一至！请重新输入', 'warning');
         return false;
     }
+    var data = {"passwd": $rePass.val()};
 
     $.ajax({
         type: "post",
@@ -69,10 +70,12 @@ function serverLogin() {
         dataType: "json",
         data: data,
         success: function (data) {
-            var msg = data.msg;
-            msgShow('系统提示', msg.ctx, 'info');
             $newpass.val('');
             $rePass.val('');
+            $('#w').window('close');
+            var msg = data.msg;
+            msgShow('系统提示', msg.ctx, 'info');
+
         },
     });
 }
@@ -97,7 +100,15 @@ $(function () {
         $.messager.confirm('系统提示', '您确定要退出本次登录吗?', function (r) {
 
             if (r) {
-                location.href = '/back/loginOut.do';
+                $.ajax({
+                    type: "post",
+                    url: "loginOut.json",
+                    dataType: "json",
+                    //data: data,
+                    success: function () {
+                        location.href = '/back/login.do';
+                    },
+                });
             }
         });
     })

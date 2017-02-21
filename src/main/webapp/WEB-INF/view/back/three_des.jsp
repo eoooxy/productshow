@@ -62,9 +62,9 @@
             </table>
         </form>
         <div style="text-align: right;height: 35px; padding: 0 10px;">
-            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('main')">新增</a>
+            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('main')">新增类别</a>
             <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)"
-               onclick="saveProDes('main')">更新</a>
+               onclick="saveProDes('main')">保存修改</a>
         </div>
     </div>
 
@@ -98,18 +98,22 @@
                 </tr>
                 <input type="hidden" id="recIdChild" name="recId">
                 <input type="hidden" id="recIdChildDes" name="recIdDes">
-                <input type="hidden" id="fkChildRecIdChild" name="fkChildRecId">
+                <input type="hidden" id="fkChildRecIdChild" name="fkRecId">
             </table>
         </form>
         <div style="text-align: right;height: 35px; padding: 3px 0 0;">
-            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('child')">新增</a>
+            <a class="easyui-linkbutton" icon="icon-add" href="javascript:void(0)" onclick="back_addPro('child')">新增类别</a>
             <a class="easyui-linkbutton" icon="icon-reload" href="javascript:void(0)"
-               onclick="saveProDes('child')">更新</a>
+               onclick="saveProDes('child')">保存修改</a>
         </div>
     </div>
 
 </div>
 </body>
+
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.min.js"></script>
 <script type="text/javascript"
         src="<%=request.getContextPath()%>/resources/js/easyuijs/jquery.easyui.min.js"></script>
@@ -117,9 +121,7 @@
 <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/backjs.js'></script>
 <script type="text/javascript" src='<%=request.getContextPath()%>/resources/js/ahoo/back/pro_des.js'></script>
 
-<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
-<script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>
+
 <style>.panel-title {
     font-size: 13px;
 }</style>

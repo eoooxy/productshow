@@ -127,7 +127,7 @@ public class ChildSeriesProductController {
 
             if (dto.getProductChildUrl() != "" && dto.getProductChildUrl() != null) {
                 base64ToImageService.Base64ToImageService(dto.getProductChildUrl(), picName, filePath);
-                productEntity.setProductChildUrl(filePath + picName);
+                productEntity.setProductChildUrl("/images/branch/" + picName);
             }
 
             if (childSeriesProductService.updatePro(productEntity) > 0 && childSeriesProDesService.updatePro(desEntity) > 0) {
@@ -169,7 +169,7 @@ public class ChildSeriesProductController {
                 return;
             }
             base64ToImageService.Base64ToImageService(dto.getProductChildUrl(), picName, filePath);
-            productEntity.setProductChildUrl(filePath + picName);
+            productEntity.setProductChildUrl("/images/branch/" + picName);
 
             if (childSeriesProductService.addPro(productEntity) > 0 && childSeriesProDesService.addPro(desEntity) > 0) {
                 msg.setCode("1");
