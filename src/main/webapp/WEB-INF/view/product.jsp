@@ -46,7 +46,7 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li><a href="javascript:void(0);" onclick="jumpIndex()">主页</a></li>
+                        <li><a href="javascript:void(0);" onclick="jumpIndex()">首页</a></li>
                         <li class="active"><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
                         <li><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
                         <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>
@@ -89,7 +89,20 @@
                                     <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
                                         嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
                                         放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
-                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 text-center" onclick="getProductOne()">
+                            <div class="box">
+                                <span class="icons c1"><i class="icon-settings icons"></i></span>
+                                <div class="box-area">
+                                    <h3>放热焊接接地棒</h3>
+                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
+                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
+                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                </div>
                             </div>
                         </div>
 
@@ -97,19 +110,7 @@
                             <div class="box">
                                 <span class="icons c3"><i class="icon-magic-wand icons"></i></span>
                                 <div class="box-area">
-                                    <h3>铜包钢接地棒</h3>
-                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
-                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
-                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center" onclick="getProductOne()">
-                            <div class="box">
-                                <span class="icons c1"><i class="icon-settings icons"></i></span>
-                                <div class="box-area">
-                                    <h3>放热焊接</h3>
+                                    <h3>铜覆钢接地棒</h3>
                                     <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
                                         嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
                                         放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>

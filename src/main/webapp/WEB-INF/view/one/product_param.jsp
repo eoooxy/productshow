@@ -20,7 +20,7 @@
 
             <div style="margin-top: 50px;">
                 <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
-                    <option>请选择您需要导体A</option>
+                    <option>请选择您需要的导体A</option>
                     <c:forEach items="${dto.strings}" var="v">
                         <option>${v}</option>
                     </c:forEach>
@@ -29,12 +29,13 @@
 
                 <c:if test="${dto.productParameterList[0].conductorB !=null && dto.productParameterList[0].conductorB !=''}">
                     <select id="parameterB" class="form-control" style="width:190px; margin-left: 10px;">
-                        <option>请选择您需要导体B</option>
+                        <option>请选择您需要的导体B</option>
                     </select>
                 </c:if>
 
                 <input type="button" class="btn btn-default" style="margin-left: 10px" value="查询"
                        onclick="getOneParam()">
+                <label  id="tipsId" hidden="hidden"  style="color: red"> * 必须选择导体的规格</label>
             </div>
         </div>
 

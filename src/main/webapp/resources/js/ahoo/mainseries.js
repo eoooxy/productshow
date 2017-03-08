@@ -266,7 +266,7 @@ function getParamB() {
         success: function (data) {
             var obj = data.dtoB;
             $("#parameterB").empty();
-            $("#parameterB").append("<option>请选择您需要导体B</option>");
+            $("#parameterB").append("<option>请选择您需要的导体B</option>");
             for (var i = 0; i < obj.length; i++) {
                 //console.log(obj[i].conductorB);
                 $("#parameterB").append("<option>" + obj[i].conductorB + "</option>");
@@ -280,8 +280,14 @@ function getOneParam() {
 
     pageFlag = 0;
     var fkRecId = $("#fkId").val();
+
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").text();
+    if(paramA=="请选择您需要的导体A" || paramB=="请选择您需要的导体B"){
+        $("#tipsId").show();
+        return;
+    }
+    $("#tipsId").hide();
     if (paramA == undefined) {
         return;
     } else {
