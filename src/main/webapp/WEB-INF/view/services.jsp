@@ -49,7 +49,7 @@
                         <li><a href="javascript:void(0);" onclick="jumpIndex()">首页</a></li>
                         <li><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
                         <li class="active"><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
-                        <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>
+                       <%-- <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>--%>
                     </ul>
                 </div>
             </div>
@@ -69,38 +69,27 @@
         <div class="container content">
             <div class="row">
                 <div class="col-md-12">
-                    <div><h2>我们提供的服务</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-                        quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident,
-                        doloribus omnis minus temporibus perferendis nesciunt..
+                    <div><h2>我们提供的服务</h2>
                     </div>
-                    <br>
                 </div>
             </div>
-
-            <hr class="margin-bottom-50">
-
             <!-- Service Blcoks -->
             <div class="row service-v1 margin-bottom-40">
                 <div class="col-md-4 md-margin-bottom-40">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service1.jpg" alt="">
-                    <h2>电解离子接地极</h2>
-                    <p>电解离子接地极这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
-                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
-                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service1.jpg" alt=""><br/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司拥有一支经验丰 富、高效、专业的工程技术团队，能为客户 提供全方位的系统防雷、接地技术咨询、技 术
+                        培训、工程指导、工程施工等服务;在生 产车间，专业的技术工人、技术人员、质检 人员，能为您提供合格的产品和服务。
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service2.jpg" alt="">
-                    <h2>铜包钢接地棒</h2>
-                    <p>铜包钢接地棒这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
-                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
-                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service3.jpg" alt=""><br/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司运行ISO9001-20 08质量管理体系，通过了质量管理体系认证， 并获得质量管理体系认证证书。 </p>
                 </div>
                 <div class="col-md-4 md-margin-bottom-40">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service3.jpg" alt="">
-                    <h2>放热焊接</h2>
-                    <p>放热焊接这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
+                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service2.jpg" alt=""><br/>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放热焊接这类是干嘛的，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
                         巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉
-                        巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</p>
+                        </p>
                 </div>
             </div>
             <!-- End Service Blcoks -->

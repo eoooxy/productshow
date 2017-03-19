@@ -12,9 +12,11 @@
 <div class="row">
     <div class="col-lg-12">
         <div>
-            <div><h2>${dto.desEntity.productTitle}</h2>
-                ${dto.desEntity.productDes}
-            </div>
+            <c:if test="${dto.desEntity.productTitle == '导线与钢轨'}">
+                <div>
+                        ${dto.desEntity.productDes}123
+                </div>
+            </c:if>
         </div>
         <br>
     </div>
@@ -37,7 +39,8 @@
                                         class="icon-info-blocks fa fa-check-square"></i></span>
                             </a>
                             <!-- Thumb Image and Description -->
-                            <img style="border: 1px solid #dddddd" src="<%=request.getContextPath()%>${v.productChildUrl}"
+                            <img style="border: 1px solid #dddddd"
+                                 src="<%=request.getContextPath()%>${v.productChildUrl}"
                                  alt="">
                         </li>
                     </c:forEach>

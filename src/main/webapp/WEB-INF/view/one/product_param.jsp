@@ -14,10 +14,10 @@
     <div class="input-group col-lg-12">
         <input type="hidden" id="fkId" value="${dto.recId}"/>
         <div>
-            <div><h2>${dto.desEntity.productTitle}</h2>
-                ${dto.desEntity.productDes}
-            </div>
 
+          <%--  <div><h2>${dto.desEntity.productTitle}</h2>
+                ${dto.desEntity.productDes}
+            </div>--%>
             <div style="margin-top: 50px;">
                 <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
                     <option>请选择您需要的导体A</option>
@@ -35,7 +35,7 @@
 
                 <input type="button" class="btn btn-default" style="margin-left: 10px" value="查询"
                        onclick="getOneParam()">
-                <label  id="tipsId" hidden="hidden"  style="color: red"> * 必须选择导体的规格</label>
+                <label id="tipsId" hidden="hidden" style="color: red"> * 必须选择导体的规格</label>
             </div>
         </div>
 

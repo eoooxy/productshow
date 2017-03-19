@@ -49,7 +49,7 @@
                         <li><a href="javascript:void(0);" onclick="jumpIndex()">首页</a></li>
                         <li class="active"><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
                         <li><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
-                        <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>
+                        <%--<li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>--%>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="row" style="margin-top:-55px">
+            <%--<div class="row" style="margin-top:-55px">
                 <div class="col-md-12">
                     <div>
                         <div><h2>整个产品类型介绍</h2>
@@ -75,7 +75,7 @@
                     </div>
                     <br>
                 </div>
-            </div>
+            </div>--%>
 
             <div class="row">
                 <div class="skill-home">
@@ -83,12 +83,11 @@
 
                         <div class="col-md-4 text-center" onclick="getProductTwo()">
                             <div class="box">
-                                <span class="icons c2"><i class="icon-wrench icons"></i></span>
+                                <%--<span class="icons c2"><i class="icon-wrench icons"></i></span>--%>
                                 <div class="box-area">
                                     <h3>电解离子接地极</h3>
-                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
-                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
-                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                    <p>电解离子接地系统由先进的可逆性缓释化合物组成。电极外表材质为纯铜或者为铜覆钢，以确保高导电性能及较长的寿命。电解离子接地系统在
+                                    高土壤电阻率的地区提供一个较低电阻接地系统。在季节因素导致土壤电阻率波动的地区，电解离子接地系统也能保证稳定和可靠的低电阻接地效果。</p>
                                 </div>
                             </div>
                         </div>
@@ -96,24 +95,25 @@
 
                         <div class="col-md-4 text-center" onclick="getProductOne()">
                             <div class="box">
-                                <span class="icons c1"><i class="icon-settings icons"></i></span>
+                                <%--<span class="icons c1"><i class="icon-settings icons"></i></span>--%>
                                 <div class="box-area">
-                                    <h3>放热焊接接地棒</h3>
-                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
-                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
-                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                    <h3>放热焊接</h3>
+                                    <p>放热焊接是新型的焊接的工艺，它的原理是利用铜的氧化物及其其他金属材料，在高温的条件下，发生氧化还原反应，将铜置换出来，变成高温金属铜溶
+                                        液、在特质模具的包裹下，将需要的焊接的两种金属熔接在一起。</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4 text-center" onclick="getProductThere()">
                             <div class="box">
-                                <span class="icons c3"><i class="icon-magic-wand icons"></i></span>
+                                <%--<span class="icons c3"><i class="icon-magic-wand icons"></i></span>--%>
                                 <div class="box-area">
                                     <h3>铜覆钢接地棒</h3>
-                                    <p>放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干
-                                        嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的
-                                        放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的放热焊接是干嘛干嘛干嘛的</p>
+                                    <p>铜覆钢垂直接地棒采用电镀、连铸或包覆的生产工艺将电解铜覆盖到特定的高温度低碳铜芯生产制成，具备
+                                    足够的致密均匀放入同层厚度和铜层纯度，由于集肤效应的存在使其导电能力和防腐能力近似纯铜，但价格比纯铜材质低廉很多，
+                                        同时由于内部的高强度铜芯，使其具有足够的机械强度,能够使用冲击锤安装到相当的深度，具备铜和钢两种材料的优点，是
+                                        最适合做接地用途的复合型接地材料。
+                                    </p>
                                 </div>
                             </div>
                         </div>

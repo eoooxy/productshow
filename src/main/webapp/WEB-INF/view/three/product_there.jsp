@@ -49,7 +49,7 @@
                         <li><a href="javascript:void(0);" onclick="jumpIndex()">主页</a></li>
                         <li class="active"><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
                         <li><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
-                        <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>
+                        <%--<li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>--%>
                     </ul>
                 </div>
             </div>
