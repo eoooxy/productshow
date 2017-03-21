@@ -65,11 +65,13 @@ function getMainSeriesProduct() {
         dataType: "html",
         //data:data,
         success: function (data) {
-            art.dialog.list['loading'].close();
-            $("#convert").html(data);
+            //art.dialog.list['loading'].close();
+            //$("#convert").html(data);
 
-            $("#convert-ul").find("#child-li").remove();
-            $("#convert-ul").find("#des-li").remove();
+            //$("#convert-ul").find("#child-li").remove();
+            //$("#convert-ul").find("#des-li").remove();
+            getChildSeriesProduct(1);
+
         }
     });
 }
@@ -90,6 +92,8 @@ function getChildSeriesProduct(id) {
             $("#convert-ul").find("#des-li").remove();
             var li = "<li id='child-li'><a href='#' onclick='getChildSeriesProduct(" + id + ")'>详细参数</a></li>";
             $("#convert-ul").append(li);
+
+            getOneParam();
         }
     });
 

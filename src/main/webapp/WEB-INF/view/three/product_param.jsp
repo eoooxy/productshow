@@ -12,9 +12,9 @@
     <div class="input-group col-lg-12">
         <input type="hidden" id="fkId" value="${dto.recId}"/>
         <div>
-            <div><h2>${dto.desEntity.productTitle}</h2>
+           <%-- <div><h2>${dto.desEntity.productTitle}</h2>
                 ${dto.desEntity.productDes}
-            </div>
+            </div>--%>
 
             <div style="margin-top: 50px;">
                 <c:if test="${dto.proType =='组合式接地棒配件'}">

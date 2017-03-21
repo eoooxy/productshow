@@ -14,11 +14,23 @@
     <div class="input-group col-lg-12">
         <input type="hidden" id="fkId" value="${dto.recId}"/>
         <div>
-            <div><h2>${dto.desEntity.productTitle}</h2>
-                ${dto.desEntity.productDes}
+            <div>
+                <div style="width: 35%;float: left">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电解离子接地系统由先进的可逆性缓释化合物组成。电极外表材质为纯铜或者为铜覆钢，以确保高导电性能及较长的寿命。
+                        电解离子接地系统在 高土壤电阻率的地区提供一个较低电阻接地系统。在季节因素导致土壤电阻率波动的地区，电解离子
+                        接地系统也能保证稳定和可靠的低电阻接地效果。</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电解离子接地极已普遍应用于通信、电力交通、金融、石化、建筑系统等等诸多领域，如发电厂、变电站、电力输电线路、通信
+                        局（站）、移动基站、调度机房、高速公路、铁路（地铁、高铁）化工厂、加油站、石油库、军事基地、银行、计算机房、智能
+                        化小区等系统的接地建设或改造。
+                    </p>
+                </div>
+                <div style="width: 63%;float: right">
+                    <img src="<%=request.getContextPath()%>/resources/img/djlz.jpg" style="height: 250px">
+                </div>
             </div>
 
-            <div style="margin-top: 50px;">
+
+            <div style="margin-top: 50px;clear: both;">
                 <select id="parameterA" class="form-control" style="width:190px;" onchange="getParamB()">
                     <option>请选择规格A</option>
                     <c:forEach items="${dto.strings}" var="v">

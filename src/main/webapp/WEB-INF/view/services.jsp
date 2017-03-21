@@ -77,8 +77,8 @@
             <div class="row service-v1 margin-bottom-40">
                 <div class="col-md-4 md-margin-bottom-40">
                     <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service1.jpg" alt=""><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司拥有一支经验丰 富、高效、专业的工程技术团队，能为客户 提供全方位的系统防雷、接地技术咨询、技 术
-                        培训、工程指导、工程施工等服务;在生 产车间，专业的技术工人、技术人员、质检 人员，能为您提供合格的产品和服务。
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司拥有一支经验丰富、高效、专业的工程技术团队，能为客户提供全方位的系统防雷、接地技术咨询、技术
+                        培训、工程指导、工程施工等服务;在生产车间，专业的技术工人、技术人员、质检人员，能为您提供合格的产品和服务。
                     </p>
                 </div>
                 <div class="col-md-4">

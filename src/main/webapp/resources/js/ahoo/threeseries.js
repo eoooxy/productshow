@@ -30,10 +30,13 @@ function getParamB() {
 
 }
 
-function getOneParam() {
-
+function getOneParam(id) {
+    var fkRecId;
+    if (id != undefined && id != null) {
+        fkRecId = id;
+    }
     pageFlag = 0;
-    var fkRecId = $("#fkId").val();
+    fkRecId = $("#fkId").val();
     var data = {"fkRecId": fkRecId};
     var paramA = $("#parameterA option:selected").val();
     var paramB = $("#parameterB option:selected").val();
@@ -89,6 +92,8 @@ function getChildSeriesProduct(id) {
             $("#convert-ul").find("#des-li").remove();
             var li = "<li id='child-li'><a href='#' onclick='getChildSeriesProduct(" + id + ")'>详细参数</a></li>";
             $("#convert-ul").append(li);
+            var fid = $("#fkId").val();
+            getOneParam(fid)
         }
     });
 
