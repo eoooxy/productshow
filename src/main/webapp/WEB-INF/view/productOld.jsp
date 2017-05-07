@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -9,14 +10,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>服务</title>
+    <title>产品信息</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-
+    <!-- css -->
     <link href="<%=request.getContextPath()%>/resources/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/resources/css/jcarousel.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/flexslider.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet"/>
     <link href="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.css" rel="stylesheet">
@@ -47,52 +47,80 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="javascript:void(0);" onclick="jumpIndex()">首页</a></li>
-                        <li><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
-                        <li class="active"><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
-                       <%-- <li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>--%>
+                        <li class="active"><a href="javascript:void(0);" onclick="jumpProduct()">产品</a></li>
+                        <li><a href="javascript:void(0);" onclick="jumpServices()">服务</a></li>
+                        <%--<li><a href="javascript:void(0);" onclick="jumpAbout()">关于我们</a></li>--%>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <!-- end header -->
-    <%--  <section id="inner-headline">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <h2 class="pageTitle">服务</h2>
-                  </div>
-              </div>
-          </div>
-      </section>--%>
     <section id="content">
-        <div class="container content">
+        <div class="container">
+
             <div class="row">
+                <div class="col-lg-12">
+                    <ul class="portfolio-categ" id="convert-ul">
+                        <li><a href="javascript:void(0);" onclick="jumpProduct()">产品类型：</a></li>
+                    </ul>
+                </div>
+            </div>
+            <%--<div class="row" style="margin-top:-55px">
                 <div class="col-md-12">
-                    <div><h2>我们提供的服务</h2>
+                    <div>
+                        <div><h2>整个产品类型介绍</h2>
+                            整个产品类型介绍巴拉巴拉巴拉巴拉……
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>--%>
+
+            <div class="row">
+                <div class="skill-home">
+                    <div class="skill-home-solid clearfix">
+
+                        <div class="col-md-4 text-center" onclick="getProductTwo()">
+                            <div class="box">
+                                <%--<span class="icons c2"><i class="icon-wrench icons"></i></span>--%>
+                                <div class="box-area">
+                                    <h3>电解离子接地极</h3>
+                                    <p>电解离子接地系统由先进的可逆性缓释化合物组成。电极外表材质为纯铜或者为铜覆钢，以确保高导电性能及较长的寿命。电解离子接地系统在
+                                    高土壤电阻率的地区提供一个较低电阻接地系统。在季节因素导致土壤电阻率波动的地区，电解离子接地系统也能保证稳定和可靠的低电阻接地效果。</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 text-center" onclick="getProductOne()">
+                            <div class="box">
+                                <%--<span class="icons c1"><i class="icon-settings icons"></i></span>--%>
+                                <div class="box-area">
+                                    <h3>放热焊接</h3>
+                                    <p>放热焊接是新型的焊接的工艺，它的原理是利用铜的氧化物及其其他金属材料，在高温的条件下，发生氧化还原反应，将铜置换出来，变成高温金属铜溶
+                                        液、在特质模具的包裹下，将需要的焊接的两种金属熔接在一起。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 text-center" onclick="getProductThere()">
+                            <div class="box">
+                                <%--<span class="icons c3"><i class="icon-magic-wand icons"></i></span>--%>
+                                <div class="box-area">
+                                    <h3>铜覆钢接地棒</h3>
+                                    <p>铜覆钢垂直接地棒采用电镀、连铸或包覆的生产工艺将电解铜覆盖到特定的高温度低碳铜芯生产制成，具备
+                                    足够的致密均匀放入同层厚度和铜层纯度，由于集肤效应的存在使其导电能力和防腐能力近似纯铜，但价格比纯铜材质低廉很多，
+                                        同时由于内部的高强度铜芯，使其具有足够的机械强度,能够使用冲击锤安装到相当的深度，具备铜和钢两种材料的优点，是
+                                        最适合做接地用途的复合型接地材料。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <!-- Service Blcoks -->
-            <div class="row service-v1 margin-bottom-40">
-                <div class="col-md-4 md-margin-bottom-40">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service1.jpg" alt=""><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司拥有一支经验丰富、高效、专业的工程技术团队，能为客户提供全方位的系统防雷、接地技术咨询、技术
-                        培训、工程指导、工程施工等服务;在生产车间，专业的技术工人、技术人员、质检人员，能为您提供合格的产品和服务。
-                    </p>
-                </div>
-                <div class="col-md-4 md-margin-bottom-40">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service2.jpg" alt=""><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏州安虎电气有限公司运行ISO9001-20 08质量管理体系，通过了质量管理体系认证， 并获得质量管理体系认证证书。
-                        </p>
-                </div>
-                <div class="col-md-4">
-                    <img class="img-responsive" src="<%=request.getContextPath()%>/resources/img/service3.jpg" alt=""><br/>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们严格控制原材料的质量，对各种原材料，各中间生产环、以及最终的产品，进行全面的检测试和控制，确保产品质量。生产中
-                        需要的原材料均严格按照产品技术指标进行采购；原材料进场后公司对其检测完毕方可入库，生产过程中严格批次抽查；通过层层把关，全面的严格的控制产品质量。</p>
-                </div>
-            </div>
-            <!-- End Service Blcoks -->
         </div>
     </section>
     <footer>
@@ -143,17 +171,24 @@
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="<%=request.getContextPath()%>/resources/js/jquery.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/jquery.easing.1.3.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
+
+<%--<script src="<%=request.getContextPath()%>/resources/js/jquery.easing.1.3.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.fancybox.pack.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.fancybox-media.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/portfolio/jquery.quicksand.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/portfolio/setting.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/jquery.flexslider.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/animate.js"></script>
-<script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/custom.js"></script>--%>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/ahoo.js"></script>
 <script src="<%=request.getContextPath()%>/resources/js/ahoo/anchor.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/mainseries.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/ahoo/back/product.js"></script>
+
 <script src="<%=request.getContextPath()%>/resources/js/owl-carousel/owl.carousel.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/jquery.artDialog.source.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/artDialog.source.js?skin=aero"></script>
+<script src="<%=request.getContextPath()%>/resources/js/artdialog/iframeTools.source.js"></script>
 </body>
 </html>

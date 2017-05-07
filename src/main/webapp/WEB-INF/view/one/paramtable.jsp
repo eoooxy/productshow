@@ -11,15 +11,6 @@
     <tr>
         <td class="col-lg-3">
             <div align="center">
-                    <span style="font-size: 14px;align-content: center"><input type="checkbox" name="m"
-                                                                               value="">导体A:${dto.conductorA}</span><br/>
-                <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
-                     src="${entity.conductorUrl}"
-                     class="img-rounded">
-            </div>
-        </td>
-        <td class="col-lg-3">
-            <div align="center">
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">焊粉型号:${dto.powerType}</span><br/>
 
@@ -39,39 +30,12 @@
                      class="img-rounded">
             </div>
         </td>
-        <c:if test="${dto.modelType !=null && dto.modelType !=''}">
-            <td class="col-lg-3">
-                <div align="center">
-                    <span style="font-size: 14px"><input type="checkbox" name="m"
-                                                         value="">价格体系:${dto.modelType}</span><br/>
-
-                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('价格体系')"
-                         src="${entity.modelTypeUrl}"
-                         class="img-rounded">
-                </div>
-            </td>
-        </c:if>
-    </tr>
-    <tr>
-        <c:if test="${dto.conductorB !=null && dto.conductorB !=''}">
-            <td class="col-lg-3">
-                <div align="center">
-                        <span style="font-size: 14px"><input type="checkbox" name="m"
-                                                             value="">导体B:${dto.conductorB}</span><br/>
-                    <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('导体')"
-                         src="${entity.conductorUrl}"
-                         class="img-rounded">
-                </div>
-            </td>
-        </c:if>
-
         <c:if test="${dto.modelClip !=null && dto.modelClip !=''}">
             <td class="col-lg-3">
 
                 <div align="center">
                     <span style="font-size: 14px"><input type="checkbox" name="m"
                                                          value="">模具夹:${dto.modelClip}</span><br/>
-
                     <img style="width:200px;height:150px;border: 1px solid #dddddd;" onclick="queryDes('模具夹')"
                          src="${entity.modelClipUrl}"
                          class="img-rounded">
@@ -83,7 +47,6 @@
                 <div align="center">
                         <span style="font-size: 14px"><input type="checkbox" name="m"
                                                              value="">套管(迷你模具):${dto.parameter1}</span><br/>
-
                     <img style="width:200px;height:150px;border: 1px solid #dddddd;"
                          onclick="queryDes('套管')"
                          src="${entity.parameter1Url}"
@@ -91,12 +54,13 @@
                 </div>
             </td>
         </c:if>
+    </tr>
+    <tr>
         <c:if test="${dto.parameter2 !=null && dto.parameter2 !=''}">
             <td class="col-lg-3">
                 <div align="center">
                         <span style="font-size: 14px"><input type="checkbox" name="m"
                                                              value="">整形模具(防漏材料):${dto.parameter2}</span><br/>
-
                     <img style="width:200px;height:150px;border: 1px solid #dddddd;"
                          onclick="queryDes('整形模具')"
                          src="${entity.parameter2Url}"

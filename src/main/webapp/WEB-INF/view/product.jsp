@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>产品信息</title>
+    <title>产品套餐</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -30,7 +30,6 @@
 </head>
 <body>
 <div id="wrapper">
-
     <!-- start header -->
     <header>
         <div class="navbar navbar-default navbar-static-top" style="border-bottom: 10px solid #c98f0f ">
@@ -55,70 +54,359 @@
             </div>
         </div>
     </header>
+
+
     <!-- end header -->
     <section id="content">
+        <%--放热焊接部分--%>
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="portfolio-categ" id="convert-ul">
-                        <li><a href="javascript:void(0);" onclick="jumpProduct()">产品类型：</a></li>
-                    </ul>
-                </div>
-            </div>
-            <%--<div class="row" style="margin-top:-55px">
                 <div class="col-md-12">
                     <div>
-                        <div><h2>整个产品类型介绍</h2>
-                            整个产品类型介绍巴拉巴拉巴拉巴拉……
+                        <div><%--h2>${dto.desEntity.productTitle}</h2>--%>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放热焊接（又成为火泥熔核、火泥焊接、火泥焊接、放热溶接、放热熔焊、放热溶接）是新型的焊接的工艺，它的原理是利 
+                                用铜的氧化物及其其他金属材料，在高温的条件下，发生氧化还原反应，将铜置换出来，变成高温金属铜溶液、在特质模具
+                                的 包裹下，将需要的焊接的两种金属熔接在一起，形成分子结合，相比传统的金属连续工艺具有更强的耐腐蚀能力，裹在能
+                                力以及热稳定性 ，同时还有具有焊接速度快，无需水电等能源，施工效率快，能够链接多种金属类等技术特点。</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放热焊接为真正的分子结合，接点面积一般是所连接导体界面的两倍以上，接点的过载能力、耐受高温能力、耐腐蚀能力、
+                                机械强度高于导体（以铜为参照）。由于工艺的限制，机械连接点的是实际接触面往往小于所连接的导体界面，造成接点的过
+                                载能力、机械强度、耐腐蚀能力较差。</p>
+
                         </div>
                     </div>
                     <br>
                 </div>
-            </div>--%>
-
-            <div class="row">
-                <div class="skill-home">
-                    <div class="skill-home-solid clearfix">
-
-                        <div class="col-md-4 text-center" onclick="getProductTwo()">
-                            <div class="box">
-                                <%--<span class="icons c2"><i class="icon-wrench icons"></i></span>--%>
-                                <div class="box-area">
-                                    <h3>电解离子接地极</h3>
-                                    <p>电解离子接地系统由先进的可逆性缓释化合物组成。电极外表材质为纯铜或者为铜覆钢，以确保高导电性能及较长的寿命。电解离子接地系统在
-                                    高土壤电阻率的地区提供一个较低电阻接地系统。在季节因素导致土壤电阻率波动的地区，电解离子接地系统也能保证稳定和可靠的低电阻接地效果。</p>
+            </div>
+            <div class="panel panel-default" style="margin-top: 20px">
+                <div class="panel-heading" style="background-color:#c98f0f">
+                    <span style="font-size: 16px;color: white">放热焊粉及放热焊接模具</span><br/>
+                </div>
+                <div class="panel-body" style="background:#FFFFFF">
+                    <table class="col-lg-12" style="border-collapse: separate;border-spacing: 0px 20px">
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/hf.jpg"
+                                            class="img-rounded"></a>
+                                    <span style="font-size: 14px;align-content: center;">10~300#放热焊粉</span><br/>
                                 </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 text-center" onclick="getProductOne()">
-                            <div class="box">
-                                <%--<span class="icons c1"><i class="icon-settings icons"></i></span>--%>
-                                <div class="box-area">
-                                    <h3>放热焊接</h3>
-                                    <p>放热焊接是新型的焊接的工艺，它的原理是利用铜的氧化物及其其他金属材料，在高温的条件下，发生氧化还原反应，将铜置换出来，变成高温金属铜溶
-                                        液、在特质模具的包裹下，将需要的焊接的两种金属熔接在一起。</p>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"> <img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/1_cc1.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">"一"字放热焊接模具</span><br/>
                                 </div>
-                            </div>
-                        </div>
+                            </td>
 
-                        <div class="col-md-4 text-center" onclick="getProductThere()">
-                            <div class="box">
-                                <%--<span class="icons c3"><i class="icon-magic-wand icons"></i></span>--%>
-                                <div class="box-area">
-                                    <h3>铜覆钢接地棒</h3>
-                                    <p>铜覆钢垂直接地棒采用电镀、连铸或包覆的生产工艺将电解铜覆盖到特定的高温度低碳铜芯生产制成，具备
-                                    足够的致密均匀放入同层厚度和铜层纯度，由于集肤效应的存在使其导电能力和防腐能力近似纯铜，但价格比纯铜材质低廉很多，
-                                        同时由于内部的高强度铜芯，使其具有足够的机械强度,能够使用冲击锤安装到相当的深度，具备铜和钢两种材料的优点，是
-                                        最适合做接地用途的复合型接地材料。
-                                    </p>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/1_cc2.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">"T"型放热焊接模具</span><br/>
                                 </div>
-                            </div>
-                        </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/1_cc4.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">"十"字放热焊接模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/6_cb1.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">电缆与导线"一"字焊接模具</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/6_cb5.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">电缆与导线"T"型焊接模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/4_br2.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">扁铜与接地棒焊接模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
 
-                    </div>
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/3_bb7.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">扁铜水平"一"字焊接模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/3_bb14.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">扁铜水平"T"型焊接模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/branch/3_bb44.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">扁铜水平"十"字焊接模具</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <%--阴级系列--%>
+        <div class="container">
+            <div class="panel panel-default" style="margin-top: 20px">
+                <div class="panel-heading" style="background-color:#c98f0f">
+                    <span style="font-size: 16px;color: white"> 阴极保护系列</span><br/>
+                </div>
+                <div class="panel-body" style="background:#FFFFFF">
+                    <table class="col-lg-12" style="border-collapse: separate;border-spacing: 0px 20px">
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/hf.jpg"
+                                            class="img-rounded"></a>
+                                    <span style="font-size: 14px;align-content: center;">10~25#放热焊粉</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/yjmj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">迷你模具(阴极保护专用)</span><br/>
+                                </div>
+                            </td>
+
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/dhq.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">点火枪</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/pd.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">喷灯</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/qm2.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">清模毛刷</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <%--导线与钢轨--%>
+        <div class="container">
+            <div class="panel panel-default" style="margin-top: 20px">
+                <div class="panel-heading" style="background-color:#c98f0f">
+                    <span style="font-size: 16px;color: white"> 导线与钢轨焊接系列</span><br/>
+                </div>
+                <div class="panel-body" style="background:#FFFFFF">
+                    <table class="col-lg-12" style="border-collapse: separate;border-spacing: 0px 20px">
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/hf.jpg"
+                                            class="img-rounded"></a>
+                                    <span style="font-size: 14px;align-content: center;">65~250#放热焊粉</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/ggmj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">导轨与导线焊接专用模具</span><br/>
+                                </div>
+                            </td>
+
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/ggmj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">轨道模具夹</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/dmj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">"D"型整形模具</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/product/tt.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">配套铜套</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <%--辅助配件--%>
+        <div class="container">
+            <div class="panel panel-default" style="margin-top: 20px">
+                <div class="panel-heading" style="background-color:#c98f0f">
+                    <span style="font-size: 16px;color: white">辅助配件</span><br/>
+                </div>
+                <div class="panel-body" style="background:#FFFFFF">
+                    <table class="col-lg-12" style="border-collapse: separate;border-spacing: 0px 20px">
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"> <img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/toolbox.jpg"
+                                            class="img-rounded"></a>
+                                    <span style="font-size: 14px;align-content: center;">工具箱</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/cgmjj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">常规模具夹</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/xpxmjj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">小偏心模具夹</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/xpxmjj.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">大偏心模具夹</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/dhq.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">点火枪</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/pd.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">喷灯(套装)</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"> <img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/qm1.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">清模铜刷</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/qm2.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">清模毛刷</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"><img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/c_clip.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">C型夹</span><br/>
+                                </div>
+                            </td>
+                            <td class="_20">
+                                <div align="center">
+                                    <a href="https://400528.1688.com/" target="_blank"> <img
+                                            style="width:200px;height:150px;border: 1px solid #dddddd;margin-bottom: 10px;"
+                                            src="<%=request.getContextPath()%>/resources/img/suppic/f_clip.jpg"
+                                            class="img-rounded"></a>
+                                    <br/><span style="font-size: 14px;align-content: center">F型夹</span><br/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -132,8 +420,8 @@
                         <p>
                             <i class="icon-user-female"></i> 邱女士<br>
                             <i class="icon-phone"></i> 150-5020-4116<br>
-                            <i class="icon-link"></i><a href="https://400528.1688.com/"
-                                                        style="text-decoration:none;color: #888;" target="_blank"> 旺
+                            <i class="icon-link"></i><a
+                                style="text-decoration:none;color: #888;" target="_blank"> 旺
                             铺：400528.1688.com</a><br>
                             <i class="icon-map"></i> 江苏省昆山市千灯镇
                         </p>

@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Home</title>
+    <meta name="Keywords" content="铜焊粉，放热焊接，放热焊粉，铝热焊粉，防雷接地">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -112,7 +113,7 @@
     <section class="clients">
         <div class="container">
             <div class="clients-slider">
-                <h3 class="header-title">Our Clients</h3>
+                <h3 class="header-title">我们的合作企业</h3>
                 <div class="clients-control pull-right">
                     <a class="prev btn btn-gray btn-xs"><i class="fa fa-angle-left fa-2x"></i></a>
                     <a class="next btn btn-gray btn-xs"><i class="fa fa-angle-right fa-2x"></i></a>
