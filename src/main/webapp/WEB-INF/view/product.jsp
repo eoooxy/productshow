@@ -454,6 +454,15 @@
 
     </footer>
 </div>
+<div class="fixdiv">
+    <div>
+        <p style="color: #fff">尊敬的顾客：</p>
+        <a href="javascript:void(0);" onclick="jumpOldProduct()" style="text-decoration: none;color: #fff;"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放热焊接模具型号种类多、规格多，更多选择点击这里</p>
+        </a>
+        <p style="color: #fff">或联系</p>
+        <p style="color: #fff">张经理：150-5020-4116</p>
+    </div>
+</div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->

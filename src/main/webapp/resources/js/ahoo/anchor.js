@@ -15,6 +15,10 @@ function jumpProduct() {
     location.href = "/productType.do";
 }
 
+function jumpOldProduct() {
+    location.href = "/productOld.do";
+}
+
 function jumpServices() {
     location.href = "/services.do";
 }

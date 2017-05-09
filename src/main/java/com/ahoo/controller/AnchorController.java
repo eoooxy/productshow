@@ -35,6 +35,11 @@ public class AnchorController {
         return "product";
     }
 
+    @RequestMapping("productOld.do")
+    public String getOldProductType() {
+        return "productOld";
+    }
+
     @RequestMapping("services.do")
     public String getServices() {
         return "services";

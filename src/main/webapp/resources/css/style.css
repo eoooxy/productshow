@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-._20{
+._20 {
     width: 20%;
 }
 
@@ -1642,6 +1642,15 @@ ul.social-network li {
     bottom: 0px;
     right: 20px;
     background: #E48907;
+}
+
+.fixdiv {
+    position: fixed;
+    width: 150px;
+    height: 200px;
+    bottom: 50%;
+    left: 10px;
+    background: #c98f0f;
 }
 
 a.scrollup {
